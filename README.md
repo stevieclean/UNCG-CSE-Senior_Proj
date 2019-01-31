@@ -9,6 +9,6 @@ Joshua Brown - https://github.com/stevieclean/UNCG-CSE-Senior_Proj/tree/Josh
 
 Charles Stamey - https://github.com/stevieclean/UNCG-CSE-Senior_Proj
 
-Nikava Guylain - https://github.com/stevieclean/UNCG-CSE-Senior_Proj/tree/Guylain
+Nakava Kibunzi - https://github.com/stevieclean/UNCG-CSE-Senior_Proj/tree/Guylain
 
 https://docs.google.com/document/d/1BE-n_oF-ujd3SaUupH9GyffUdC91hFmny_jdhQk2UOs/edit
