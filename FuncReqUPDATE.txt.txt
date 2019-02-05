@@ -1,0 +1,8 @@
+Functionality Requirments UPDATES
+
+Text-Help
+Chat with professionals
+Chat System (AWS free hosting service)
+Email Set-up to Cone Health
+*Crisis Text-Line
+
