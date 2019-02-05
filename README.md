@@ -7,7 +7,7 @@ Brian Goughnor - https://github.com/stevieclean/UNCG-CSE-Senior_Proj/tree/Brian
 
 Joshua Brown - https://github.com/stevieclean/UNCG-CSE-Senior_Proj/tree/Josh
 
-Charles Stamey - https://github.com/stevieclean/UNCG-CSE-Senior_Proj
+Charles Stamey - https://github.com/stevieclean/UNCG-CSE-Senior_Proj/tree/Steve
 
 Nakava Kibunzi - https://github.com/stevieclean/UNCG-CSE-Senior_Proj/tree/Guylain
 
