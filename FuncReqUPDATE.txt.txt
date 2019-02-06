@@ -10,3 +10,8 @@ Location services
 Google maps API for implementation
 Viewing facilities info and event location
 Mongo DB
+
+Hot Dial
+Should provide a single button press that initiates a call to Cone Health Services,
+911, and Suicide Prevention services, etc.
+This module exists within an Emergency Menu which can be switched to through swiping.
