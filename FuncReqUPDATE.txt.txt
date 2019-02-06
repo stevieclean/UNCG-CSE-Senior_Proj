@@ -6,3 +6,7 @@ Chat System (AWS free hosting service)
 Email Set-up to Cone Health
 *Crisis Text-Line
 
+Location services
+Google maps API for implementation
+Viewing facilities info and event location
+Mongo DB
