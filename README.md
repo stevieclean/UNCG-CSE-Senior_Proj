@@ -14,6 +14,25 @@ Nakava Kibunzi - https://github.com/stevieclean/UNCG-CSE-Senior_Proj/tree/Guylai
 https://docs.google.com/document/d/1BE-n_oF-ujd3SaUupH9GyffUdC91hFmny_jdhQk2UOs/edit
 
 
-Charles Stamey - For this project, I am electing to assist primarily with the Calendar function within the app. First, there is a need to find a reasonably private API for this section. The features functionality within the calendar will be:
- - Track events and dates
- - Pull events from websites and update accordingly on the app
+Project definition: We need to update this app, develop additional functionality (find nearest services, autodial,
+calendar appointment, prescreen, use text, connect with live person, etc.). The app is also currently under-utilized
+
+FROM PREVIOUS iOS attempts
+A brief summary of the iOS architecture and history:
+The iOS version was developed using Dropsource with final coding in Xcode/Swift 4, which can be provided as a
+starting point. All the graphics were designed and produced in Adobe software products: Illustrator,
+Photoshop, and Fireworks. The last “build” in the simulator is available at this link: CURE which may be readily
+viewed on your Apple iPhone.
+ 
+You will see from the simulated app that it is very similar to the Android version, which was designed to be a
+compilation of resources and webpages. The app was submitted to the Apple review process two times. The
+final submission and second iteration included an interactive, functioning Action Planner where the user could
+create a list and an APNS (Apple notification service). These additions were made as an effort to add more
+functionality to the initial rejection which was said to mimic a website. It wasn’t enough.
+ 
+The iOS app must include features, content, and UI that elevates it beyond a repackaged website, or it will be
+rejected. So, the challenge is not to recreate the current Android app functionality. We need a new concept
+with creative ideas for the CURE app that elevates it above a compilation of webpages. This would appear to
+be an excellent design and development challenge for Information System students and the capstone team in
+the spring.
+Deliverables: iOS adaptation and expansion of current Android app
