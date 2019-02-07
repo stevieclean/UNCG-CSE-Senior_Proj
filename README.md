@@ -14,6 +14,6 @@ Nakava Kibunzi - https://github.com/stevieclean/UNCG-CSE-Senior_Proj/tree/Guylai
 https://docs.google.com/document/d/1BE-n_oF-ujd3SaUupH9GyffUdC91hFmny_jdhQk2UOs/edit
 
 
-Charles Stamey - FOr this project, I am electing to assist primarily with the Calendar function within the app. First, there is a need to find a reasonably private API for this section. The features functionality within the calendar will be:
+Charles Stamey - For this project, I am electing to assist primarily with the Calendar function within the app. First, there is a need to find a reasonably private API for this section. The features functionality within the calendar will be:
  - Track events and dates
  - Pull events from websites and update accordingly on the app
