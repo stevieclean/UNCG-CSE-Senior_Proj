@@ -6,10 +6,10 @@ Chat System (AWS free hosting service)
 Email Set-up to Cone Health
 *Crisis Text-Line
 
-Location services
-Google maps API for implementation
-Viewing facilities info and event location
-Mongo DB
+Nakava Kibunzi - I'll assist with the location services fuction within the app.
+ - Google maps API for implementation
+ - Viewing facilities info and event location
+ - Mongo DB
 
 Hot Dial
 Should provide a single button press that initiates a call to Cone Health Services,
