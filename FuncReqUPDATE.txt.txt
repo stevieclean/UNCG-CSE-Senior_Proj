@@ -15,3 +15,8 @@ Hot Dial
 Should provide a single button press that initiates a call to Cone Health Services,
 911, and Suicide Prevention services, etc.
 This module exists within an Emergency Menu which can be switched to through swiping.
+
+
+Charles Stamey - For this project, I am electing to assist primarily with the Calendar function within the app. First, there is a need to find a reasonably private API for this section. The features functionality within the calendar will be:
+ - Track events and dates
+ - Pull events from websites and update accordingly on the app
