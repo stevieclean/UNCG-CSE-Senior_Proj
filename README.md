@@ -17,7 +17,7 @@ https://docs.google.com/document/d/1BE-n_oF-ujd3SaUupH9GyffUdC91hFmny_jdhQk2UOs/
 Project definition: We need to update this app, develop additional functionality (find nearest services, autodial,
 calendar appointment, prescreen, use text, connect with live person, etc.). The app is also currently under-utilized
 
-FROM PREVIOUS iOS attempts
+From Previous iOS attempts
 A brief summary of the iOS architecture and history:
 The iOS version was developed using Dropsource with final coding in Xcode/Swift 4, which can be provided as a
 starting point. All the graphics were designed and produced in Adobe software products: Illustrator,
