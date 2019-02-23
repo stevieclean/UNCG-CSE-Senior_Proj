@@ -1,0 +1,23 @@
+<head>
+  <title>hello-world</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> todosList}}
+</body>
+
+<template name = "todosList">
+  <h3>My Todos</h3>
+  <ul>
+    {{#each todos}}
+      {{> todo}}
+    {{/each}}
+  </ul>
+  <button class = "add-todo">Add todo</button>
+</template>
+
+<template name = "todo">
+  <li class = "{{#if done}} done {{/if}}">{{label}}</li>
+</template>
