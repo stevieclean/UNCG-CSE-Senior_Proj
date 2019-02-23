@@ -36,3 +36,5 @@ with creative ideas for the CURE app that elevates it above a compilation of w
 be an excellent design and development challenge for Information System students and the capstone team in
 the spring.
 Deliverables: iOS adaptation and expansion of current Android app
+
+Future updates provided and changes will be reflected in documentation folder.
