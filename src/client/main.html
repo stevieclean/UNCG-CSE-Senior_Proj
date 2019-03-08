@@ -3,21 +3,22 @@
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
-
+  <img src="/images/GreensboroAHEC.jpg" class="AHEC" alt="AHECIcon" style="width:30%">
+  <br>
+  <img src="/images/CURESymbol.jpg" class="CENTER" alt="CURElogo" style="width:100%">
   {{> todosList}}
-</body>
+</body> 
 
-<template name = "todosList">
-  <h3>My Todos</h3>
-  <ul>
+<template name="todosList">
+  <h3 class="center">My Todos</h3>
+  <ul class="center">
     {{#each todos}}
       {{> todo}}
     {{/each}}
   </ul>
-  <button class = "add-todo">Add todo</button>
+  <button class="add-todo buttonDeco">Add todo</button>
 </template>
 
-<template name = "todo">
-  <li class = "{{#if done}} done {{/if}}">{{label}}</li>
+<template name="todo">
+  <li><input type="checkbox" />{{label}}</li>
 </template>

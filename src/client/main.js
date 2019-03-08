@@ -5,22 +5,9 @@ import Controller from './Controller.js';
 import './main.html';
 import { Destination } from './Events/Destination.js';
 
-Todos = new Mongo.Collection("todos");
 var controller = new Controller();
 console.log(Destination['GOALTRACKER']);
-
-Session.set("todos", [
-{
-	label: "End it all",
-	done: true
-},
-{
-	label: "Skyrocket to the top"
-},
-{
-	label: "Finish college"
-}
-]);
+Todos = new Mongo.Collection("todos");
 
 Template.todosList.helpers({
 	todos: function () {
@@ -36,3 +23,10 @@ Template.todosList.events({
 		})
 	}
 });
+
+Template.todo.events({
+	"click input": function () {
+		var isDone=Todos.findOne({_id: this._id}).done;
+		Todos.update({_id: this._id}, {$set: {done: !isDone}});
+	}
+})
