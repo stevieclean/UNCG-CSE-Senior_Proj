@@ -13,7 +13,7 @@ h1.center {
   background-image: url('/images/GreensboroAHEC.jpg');
   background-repeat: no-repeat;
   background-color: white;
-  background-size: 20% 60%;
+  background-size: 40% 40%;
   position: fixed;
   left: 0;
   right: 0;
@@ -30,10 +30,10 @@ h1.center {
   height: 100%;
 }
 
-.header {
-  margin-top: 8em;
+.CURE {
+  margin-top: 6em;
   background-image: url('/images/CURESymbol.jpg');
-  background-size: 100% 40%;
+  background-size: 100% 30%;
   background-repeat: no-repeat;
   position: fixed;
   left: 0;
