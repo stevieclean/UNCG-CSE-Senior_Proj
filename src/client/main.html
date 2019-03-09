@@ -3,19 +3,28 @@
 </head>
 
 <body>
-  <img src="/images/GreensboroAHEC.jpg" class="AHEC" alt="AHECIcon" style="width:30%">
   <br>
-  <img src="/images/CURESymbol.jpg" class="CENTER" alt="CURElogo" style="width:100%">
-  {{> todosList}}
+  <div class="AHEC">
+    <!--<img src="/images/GreensboroAHEC.jpg" class="AHEC" alt="AHECIcon" style="width:30%">-->
+  </div>
+  <br><br><br><br><br><br>
+  <div class="header">
+      <!--<img src="/images/CURESymbol.jpg" class="CENTER" alt="CURElogo" style="width:100%">-->
+      <div class="CENTER">
+        {{> todosList}}
+      </div>
+    </div>
 </body> 
 
 <template name="todosList">
+  <!--
   <h3 class="center">My Todos</h3>
   <ul class="center">
     {{#each todos}}
       {{> todo}}
     {{/each}}
   </ul>
+  -->
   <button class="add-todo buttonDeco">Add todo</button>
 </template>
 

@@ -9,16 +9,33 @@ h1.center {
 }
 
 .AHEC {
-  margin-right: auto;
-  resize: both;
-  display: block;
-  box-shadow: 12px 12px 15px;  
+  margin-top: -2em;
+  background-image: url('/images/GreensboroAHEC.jpg');
+  background-repeat: no-repeat;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 1600px;
+  height: 500px; 
 }
 
 .CENTER {
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 4px 12px 15px
+  margin-top: 40em;
+  height: 15em;
+}
+
+.header {
+  margin-top: 5em;
+  background-image: url('/images/CURESymbol.jpg');
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 1600px;
+  height: 500px;
 }
 
 h3.center {
