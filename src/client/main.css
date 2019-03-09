@@ -8,6 +8,71 @@ h1.center {
   text-align: center;
 }
 
+.TouchBar {
+  width: 100%;
+  height: 5em;
+  border-radius: 2em;
+  margin-top: 38%;
+  padding: 6px 0px;
+  box-shadow: 0px 3px 5px;
+}
+
+.Locations {
+  background: transparent;
+  width: 7em;
+  height: 5.5em;
+  margin-left: 5.5%;
+  padding: 0px;
+  border: none;
+  /*box-shadow: 0px 3px 5px;*/
+  border-radius: 2em;
+}
+
+.Calendar {
+  width: 7em;
+  height: 5.5em;
+  margin-left: 10%;
+  padding: 0px;
+  box-shadow: 0px 3px 5px;
+  border-radius: 2em;
+}
+
+.HomeButton {
+  width: 7em;
+  height: 5.5em;
+  margin-left: 10%;
+  padding: 0px;
+  box-shadow: 0px 3px 5px;
+  border-radius: 2em;
+}
+
+.GoalTracker {
+  width: 7em;
+  height: 5.5em;
+  margin-left: 10%;
+  padding: 0px;
+  box-shadow: 0px 3px 5px;
+  border-radius: 2em;
+}
+
+.Education {
+  width: 7em;
+  height: 5.5em;
+  margin-left: 10%;
+  padding: 0px;
+  box-shadow: 0px 3px 5px;
+  border-radius: 2em;
+}
+
+.Settings {
+  width: 7em;
+  height: 5.5em;
+  margin-left: 10%;
+  padding: 0px;
+  box-shadow: 0px 3px 5px;
+  border-radius: 2em;
+}
+
 .AHEC {
   margin-top: -3em;
   background-image: url('/images/GreensboroAHEC.jpg');
