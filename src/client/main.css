@@ -9,18 +9,18 @@ h1.center {
 }
 
 .TouchBar {
-  width: 97%;
+  width: 60%;
   height: 10%;
   position: fixed;
   border-radius: 2em;
-  margin-top: 35%;
+  margin-top: 39%;
   padding: 6px 0px;
   box-shadow: 0px 3px 5px;
 }
 
 .Locations {
   background: transparent;
-  width: 7em;
+  width: 6em;
   height: 5.5em;
   margin-left: 5.5%;
   padding: 0px;
@@ -30,45 +30,45 @@ h1.center {
 }
 
 .Calendar {
-  width: 7em;
+  width: 6em;
   height: 5.5em;
-  margin-left: 10%;
+  margin-left: 5%;
   padding: 0px;
   box-shadow: 0px 3px 5px;
   border-radius: 2em;
 }
 
 .HomeButton {
-  width: 7em;
+  width: 6em;
   height: 5.5em;
-  margin-left: 10%;
+  margin-left: 5%;
   padding: 0px;
   box-shadow: 0px 3px 5px;
   border-radius: 2em;
 }
 
 .GoalTracker {
-  width: 7em;
+  width: 6em;
   height: 5.5em;
-  margin-left: 10%;
+  margin-left: 5%;
   padding: 0px;
   box-shadow: 0px 3px 5px;
   border-radius: 2em;
 }
 
 .Education {
-  width: 7em;
+  width: 6em;
   height: 5.5em;
-  margin-left: 10%;
+  margin-left: 5%;
   padding: 0px;
   box-shadow: 0px 3px 5px;
   border-radius: 2em;
 }
 
 .Settings {
-  width: 7em;
+  width: 6em;
   height: 5.5em;
-  margin-left: 10%;
+  margin-left: 5%;
   padding: 0px;
   box-shadow: 0px 3px 5px;
   border-radius: 2em;
