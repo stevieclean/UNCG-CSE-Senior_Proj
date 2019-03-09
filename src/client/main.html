@@ -1,0 +1,32 @@
+<head>
+  <title>hello-world</title>
+</head>
+
+<body>
+  <br>
+  <div class="AHEC">
+    <!--<img src="/images/GreensboroAHEC.jpg" class="AHEC" alt="AHECIcon" style="width:30%">-->
+  </div>
+  <div class="CURE">
+      <!--<img src="/images/CURESymbol.jpg" class="CENTER" alt="CURElogo" style="width:100%">-->
+      <div class="CENTER">
+        {{> todosList}}
+      </div>
+  </div>
+</body> 
+
+<template name="todosList">
+  <!--
+  <h3 class="center">My Todos</h3>
+  <ul class="center">
+    {{#each todos}}
+      {{> todo}}
+    {{/each}}
+  </ul>
+  -->
+  <button class="add-todo buttonDeco">One Dial</button>
+</template>
+
+<template name="todo">
+  <li><input type="checkbox" />{{label}}</li>
+</template>
