@@ -24,9 +24,88 @@ h1.center {
   width: 4em;
   height: 4em;
   padding: 0px;
+  
   box-shadow: 0px 3px 5px;
   border-radius: 2em;
   outline: none;
+}
+.LocButton{
+  width: 4em;
+  height: 4em;
+  padding: 0px;
+  background:transparent;
+  background-image: url('/images/arrow1.png');
+  background-size: 500%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: auto;
+  border:none;
+  outline: none;
+}
+.CalButton{
+  background:transparent;
+  width: 4em;
+  height: 4em;
+  padding: 0px;
+  background-image: url('/images/calendar2.png');
+  background-size: 300%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border:none;
+  outline: none;
+  border-radius: auto;
+}
+.HomeButton{
+  background:transparent;
+  width: 4em;
+  height: 4em;
+  padding: 0px;
+  background-image: url('/images/1home.png');
+  background-size: 115%;
+  background-repeat: no-repeat;
+  background-position: center;
+  outline: none;
+  border:none;
+  border-radius: auto;
+}
+.GTButton{
+  background:transparent;
+  width: 4em;
+  height: 4em;
+  padding: 0px;
+  background-image: url('/images/goal.png');
+  background-size: 175%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border:none;
+  outline: none;
+  border-radius: auto;
+}
+.EduButton{
+  background:transparent;
+  width: 4em;
+  height: 4em;
+  padding: 0px;
+  background-image: url('/images/education.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border:none;
+  outline: none;
+  border-radius: auto;
+}
+.SettingsButton{
+  background:transparent;
+  width: 4em;
+  height: 4em;
+  padding: 0px;
+  background-image: url('/images/settings.png');
+  background-size: 250%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border:none;
+  outline: none;
+  border-radius: auto;
 }
 
 .AHEC {
@@ -69,6 +148,7 @@ h1.center {
   width: 100%;
   height: auto;
   margin-top: 20%;
+  margin-bottom: 3.5%;
   border-radius: 2em;
   /*box-shadow: 0px 3px 5px;*/
 }
@@ -97,7 +177,7 @@ ul.center {
   display: block;
   width: 4.5em;
   height: 4.5em;
-  border-radius: 100%;
+  border-radius: 80%;
   padding: 15px 32px;
   box-shadow: 0px 3px 5px;
   outline: none;
