@@ -17,11 +17,15 @@ Template.todosList.helpers({
 });
 
 Template.todosList.events({
-	"click .add-todo": function () {
-		Todos.insert({
-			label: "new todo",
-			createdAt: new Date()
-		})
+	"click #onedial": function () {
+		function onSuccess(result) {
+			console.log("Success:"+result);
+		}
+		  
+		function onError(result) {
+			console.log("Error:"+result);
+		}
+		window.plugins.CallNumber.callNumber(onSuccess, onError, '+13367720649', true);
 	}
 });
 
