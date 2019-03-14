@@ -166,8 +166,8 @@ ul.center {
 }
 
 .buttonDeco {
+  font-family:'Broadway';
   font-size: 2em;
-  font-family: 'Algerian';
   background-color: lightblue;
   /*border: none;*/
   border-color: grey;
