@@ -107,7 +107,36 @@ h1.center {
   outline: none;
   border-radius: auto;
 }
-
+.GCSPOPButton{
+  background:auto;
+  width: 8em;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  height: 3em;
+  padding: 0px 23px;
+  background-size: 100%;
+  background-position: center;
+  border-radius: 2em;
+  outline: none;
+  font-size: 2em;
+  border-width: 5px;
+  background-color: lightblue;
+  border-color: grey;
+}
+.hotdialButtons{
+  width: 100%;
+  height: 30%;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  /*box-shadow: 0px 3px 5px;*/
+  position: relative;
+}
 .AHEC {
   background-image: url('/images/GreensboroAHEC.jpg');
   background-repeat: no-repeat;
@@ -147,10 +176,10 @@ h1.center {
   position: relative;
   width: 100%;
   height: auto;
-  margin-top: 20%;
-  margin-bottom: 3.5%;
-  border-radius: 2em;
+  margin-top: auto;
+  padding: 20px;
   /*box-shadow: 0px 3px 5px;*/
+  background-color: yellow;
 }
 
 h3.center {
@@ -166,7 +195,7 @@ ul.center {
 }
 
 .buttonDeco {
-  font-family:'Broadway';
+  font-family:"Algerian";
   font-size: 2em;
   background-color: lightblue;
   /*border: none;*/
@@ -181,4 +210,9 @@ ul.center {
   padding: 15px 32px;
   box-shadow: 0px 3px 5px;
   outline: none;
+}
+
+.dynamic {
+  width: 100%;
+  height: 100%;
 }
