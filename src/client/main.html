@@ -1,28 +1,13 @@
 <head>
-  <title>hello-world</title>
+  <title>CURE App</title>
 </head>
 
 <body>
   <div class="Wrapper">
-    <div class="AHEC">
-      <!--<img src="/images/GreensboroAHEC.jpg" class="AHEC" alt="AHECIcon" style="width:30%">-->
+    <div id="dynTemp" class="dynamic">
+      {{> dynamicTemplate}}
     </div>
-    <div class="CURE">
-        <!--<img src="/images/CURESymbol.jpg" class="CENTER" alt="CURElogo" style="width:100%">-->
-    </div>
-    <div class="CENTER">
-      {{> todosList}}
-    </div>
-    <nav class="navbar">
-      <div class="TouchBar">
-        <a href="newpage.html" class="LocButton"></a>
-        <button class="CalButton"></button>
-        <button class="HomeButton"></button>
-        <button class="GTButton"></button>
-        <button class="EduButton"></button>
-        <button class="SettingsButton"></button>
-      </div>
-    </nav>
+      {{> buttons}}
   </div>
 </body> 
 
@@ -32,4 +17,29 @@
 
 <template name="todo">
   <li><input type="checkbox" />{{label}}</li>
+</template>
+
+<template name="MainPage">
+    <div class="AHEC">
+    </div>
+    <div class="CURE">
+    </div>
+    <div class="CENTER">
+      {{> todosList}}
+    </div>
+</template>
+
+<template name="dynamicTemplate">
+    {{> Template.dynamic template=page}}
+  </template>
+
+<template name="buttons">
+    <div class="TouchBar">
+        <button id="location" class="LocButton"></button>
+        <button id="calendar" class="CalButton"></button>
+        <button class="HomeButton"></button>
+        <button class="GTButton"></button>
+        <button class="EduButton"></button>
+        <button class="SettingsButton"></button>
+      </div>
 </template>
