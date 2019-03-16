@@ -5,12 +5,17 @@ import { Session } from 'meteor/session';
 
 import Controller from './Controller.js';
 import './main.html';
-import './newpage.html';
+import './hotdial.html';
+import './settings.html';
+import './education.html';
+import './map.html';
+import './calendar.html';
+import './goaltracker.html';
 import { Destination } from './Events/Destination.js';
 
 var controller = new Controller();
 console.log(Destination['GOALTRACKER']);
-Todos = new Mongo.Collection("todos");
+//Todos = new Mongo.Collection("todos");
 currPage = "MainPage";
 	
 //For changing the current page
@@ -22,33 +27,44 @@ Template.dynamicTemplate.helpers({
 	}
 });
 
+Template.OneDial.events({
+	"click #onedial": function () {
+		console.log("Stuff");
+		currPage = "HotDial";
+		Session.set("myTemplate", currPage);
+	}
+});
+
 Template.buttons.events({
 	"click #location": function () {
-		currPage = "something";
+		currPage = "Map";
 		Session.set("myTemplate", currPage);
 	},
 	"click #calendar": function () {
-		currPage = "something";//Change to name of template
+		currPage = "Calendar";//Change to name of template
 		Session.set("myTemplate", currPage);
 	},
-	"click #location": function () {
-		currPage = "something";
+	"click #home": function () {
+		currPage = "MainPage";
 		Session.set("myTemplate", currPage);
 	},
-	"click #location": function () {
-		currPage = "something";
+	"click #goalTracker": function () {
+		currPage = "Goaltracker";
+		Session.set("myTemplate", currPage);
+	},
+	"click #education": function () {
+		currPage = "Education";
+		Session.set("myTemplate", currPage);
+	},
+	"click #settings": function () {
+		currPage = "Settings";
 		Session.set("myTemplate", currPage);
 	}
+
 });
 
-Template.todosList.helpers({
-	todos: function () {
-		return Todos.find();
-	}
-});
-
-Template.todosList.events({
-	"click #onedial": function () {
+/* Code to make phone call
+"click #onedial": function () {
 		function onSuccess(result) {
 			console.log("Success:"+result);
 		}
@@ -58,11 +74,4 @@ Template.todosList.events({
 		}
 		window.plugins.CallNumber.callNumber(onSuccess, onError, '+13367720649', true);
 	}
-});
-
-Template.todo.events({
-	"click input": function () {
-		var isDone=Todos.findOne({_id: this._id}).done;
-		Todos.update({_id: this._id}, {$set: {done: !isDone}});
-	}
-})
+*/
