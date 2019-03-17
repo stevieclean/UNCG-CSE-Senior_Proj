@@ -29,7 +29,6 @@ Template.dynamicTemplate.helpers({
 
 Template.OneDial.events({
 	"click #onedial": function () {
-		console.log("Stuff");
 		currPage = "HotDial";
 		Session.set("myTemplate", currPage);
 	}
