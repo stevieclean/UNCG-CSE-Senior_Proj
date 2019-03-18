@@ -223,6 +223,25 @@ html, body {
   position: relative;
 }
 
+.ADDHDButton{
+  background:None;
+  width: 10em;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  height: 3em;
+  padding: 0px 23px;
+  background-size: 100%;
+  background-position: center;
+  border-radius: 2em;
+  outline: none;
+  font-size: 1.25em;
+  border-width: 0px;
+  background-color: white;
+  border-color: grey;
+  text-align: left;
+}
+
 /* Every button inside of hotdial.html */
 .GCSTOPButton{
   background:auto;
@@ -262,17 +281,17 @@ html, body {
 
 .CONEButton{
   background:auto;
-  width: 8em;
+  width: 12.5em;
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  height: 3em;
+  height: 4.7em;
   padding: 0px 23px;
   background-size: 100%;
   background-position: center;
   border-radius: 2em;
   outline: none;
-  font-size: 2em;
+  font-size: 1.25em;
   border-width: 5px;
   background-color: lightblue;
   border-color: grey;
