@@ -7,6 +7,15 @@ export default class HotDial {
     constructor() {
 		this._listeners = new EventListener;
 		this.template = Template.HotDial.events({
+			"click #addhdbutton": function() {
+				function onSuccess(result) {
+					console.log("Success:"+result);
+				}	
+				function onError(result) {
+					console.log("Error:"+result);
+				}
+			},		
+			
 			"click #gcstopbutton": function() {
 				function onSuccess(result) {
 					console.log("Success:"+result);
