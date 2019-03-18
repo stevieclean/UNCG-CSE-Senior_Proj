@@ -13,8 +13,6 @@ import './calendar.html';
 import './goaltracker.html';
 import { Destination } from './Events/Destination.js';
 
-var controller = new Controller();
-controller.printCalenderInfo();
   // prep some variables
   var startDate = new Date(2015,2,15,18,30,0,0,0); // beware: month 0 = january, 11 = december
   var endDate = new Date(2015,2,15,19,30,0,0,0);
@@ -128,6 +126,8 @@ Template.buttons.events({
 
 });
 
+var controller = new Controller();
+controller.printCalenderInfo();
 /* Code to make phone call
 "click #onedial": function () {
 		function onSuccess(result) {
