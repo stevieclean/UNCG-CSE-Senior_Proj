@@ -1,34 +1,110 @@
+/* MAIN PAGE */
+/*---------------------------------------------------------------------------*/
+
 html, body {
+  font-family: Verdana, Geneva, sans-serif;
   margin: 0;
   padding: 0;
   border: none;
-  font-family: sans-serif;
   background-color: rgb(37, 218, 178);
   height: 100%;
   width: 100%;
 }
 
-h1.center {
-  text-align: center;
-}
-
+/* Container for all pages and the button bar */
 .Wrapper {
   display: flex;
   flex-direction: column;
   height: 100%;
   width: 100%;
+  position: absolute;
   /*box-shadow: 0px 3px 5px;*/
 }
 
-.TouchBarButton {
-  width: 4em;
-  height: 4em;
-  padding: 0px;
-  
+/* The invisible container which holds all pages that users can choose */
+.dynamic {
+  width: 100%;
+  height: 100%;
+}
+
+/* Greensboro AHEC Logo to be displayed on main page */
+.AHEC {
+  background-image: url('/images/GreensboroAHEC.jpg');
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size: 30% 100%;
+  position: relative;
+  width: 100%;
+  height: 15%;
+}
+
+/* CURE Logo to be displayed on main page */
+.CURE {
+  background-image: url('/images/CURESymbol.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 35%;
+}
+
+/* Description of CURE */
+.mainpagedesc {
+  text-align: center;
+  background-color: white;
+  /*box-shadow: 0px 3px 5px;*/
+  position: relative;
+
+}
+
+/* Holds the hot dial button */
+.CENTER {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+  margin-bottom: auto;
+  height: 50%;
+
+  /*box-shadow: 0px 3px 5px;*/
+  position: relative;
+}
+
+/* Actual hot dial button */
+.hotDialButtonClass {
+  font-size: 2em;
+  background-color: lightblue;
+  /*border: none;*/
+  border-color: grey;
+  border-width: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 4.5em;
+  height: 4.5em;
+  border-radius: 80%;
+  padding: 15px 32px;
   box-shadow: 0px 3px 5px;
-  border-radius: 2em;
   outline: none;
 }
+
+/* The invisible container holding every button the button bar */
+.TouchBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: auto;
+  padding: 20px;
+  /*box-shadow: 0px 3px 5px;*/
+  background-color: yellow;
+  border-top: 2px solid;
+}
+
+/* Every button on the button bar in main.html */
 .LocButton{
   width: 4em;
   height: 4em;
@@ -42,6 +118,7 @@ h1.center {
   border:none;
   outline: none;
 }
+
 .CalButton{
   background:transparent;
   width: 4em;
@@ -108,77 +185,167 @@ h1.center {
   border-radius: auto;
 }
 
-.AHEC {
-  background-image: url('/images/GreensboroAHEC.jpg');
-  background-repeat: no-repeat;
-  background-color: white;
-  background-size: 30% 100%;
-  position: relative;
-  width: 100%;
-  height: 10%;
+/*----------------------------------------------------------------------------*/
+
+/* HOTDIAL PAGE */
+
+/*----------------------------------------------------------------------------*/
+
+/* Title bar */
+
+.hotdialtitle{
+  font-size: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 
-.CURE {
-  background-image: url('/images/CURESymbol.jpg');
-  background-size: 100% 50%;
-  background-repeat: no-repeat;
-  position: relative;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 45%;
+.hotdialdesc{
+  font-size: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 
-.CENTER {
+/* Hotdial container for all buttons */
+.hotdialButtons{
+  width: 100%;
+  height: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-  /*box-shadow: 0px 3px 5px;*/
-  position: relative;
-}
-
-.TouchBar {
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
+
+  /*box-shadow: 0px 3px 5px;*/
+  position: relative;
+}
+
+/* Every button inside of hotdial.html */
+.GCSTOPButton{
+  background:auto;
+  width: 8em;
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  width: 100%;
-  height: auto;
-  margin-top: 20%;
-  margin-bottom: 3.5%;
+  height: 3em;
+  padding: 0px 23px;
+  background-size: 100%;
+  background-position: center;
   border-radius: 2em;
-  /*box-shadow: 0px 3px 5px;*/
-}
-
-h3.center {
-  text-align: center;
-}
-
-ul.center {
-  text-align: center;
-}
-
-.done {
-	text-decoration: line-through;
-}
-
-.buttonDeco {
-  font-family:'Broadway';
+  outline: none;
   font-size: 2em;
-  background-color: lightblue;
-  /*border: none;*/
-  border-color: grey;
   border-width: 5px;
+  background-color: lightblue;
+  border-color: grey;
+}
+
+.NCHRCButton{
+  background:auto;
+  width: 8em;
   margin-left: auto;
   margin-right: auto;
-  display: block;
-  width: 4.5em;
-  height: 4.5em;
-  border-radius: 80%;
-  padding: 15px 32px;
-  box-shadow: 0px 3px 5px;
+  position: relative;
+  height: 3em;
+  padding: 0px 23px;
+  background-size: 100%;
+  background-position: center;
+  border-radius: 2em;
   outline: none;
+  font-size: 2em;
+  border-width: 5px;
+  background-color: lightblue;
+  border-color: grey;
 }
+
+.CONEButton{
+  background:auto;
+  width: 8em;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  height: 3em;
+  padding: 0px 23px;
+  background-size: 100%;
+  background-position: center;
+  border-radius: 2em;
+  outline: none;
+  font-size: 2em;
+  border-width: 5px;
+  background-color: lightblue;
+  border-color: grey;
+}
+/*---------------------------------------------------------------------------*/
+
+/* MAP/LOCATIONS PAGE */
+
+/*---------------------------------------------------------------------------*/
+
+/* Main container for map page */
+.map {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*---------------------------------------------------------------------------*/
+
+/* CALENDER PAGE */
+
+
+/*---------------------------------------------------------------------------*/
+
+/* Main container for calendar page */
+.calendar {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*---------------------------------------------------------------------------*/
+
+/* GOALTRACKER PAGE */
+
+/*---------------------------------------------------------------------------*/
+
+/* Main container for goaltracker page */
+.goaltracker {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*---------------------------------------------------------------------------*/
+
+/* EDUCATION PAGE */
+
+/*---------------------------------------------------------------------------*/
+
+/* Main container for education page */
+.education {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*---------------------------------------------------------------------------*/
+
+/* SETTINGS PAGE */
+
+/*---------------------------------------------------------------------------*/
+
+/* Main container for settings page */
+.settings {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*---------------------------------------------------------------------------*/

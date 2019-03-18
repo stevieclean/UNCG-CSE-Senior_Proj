@@ -1,35 +1,45 @@
 <head>
-  <title>hello-world</title>
+  <title>CURE App</title>
 </head>
 
 <body>
   <div class="Wrapper">
-    <div class="AHEC">
-      <!--<img src="/images/GreensboroAHEC.jpg" class="AHEC" alt="AHECIcon" style="width:30%">-->
-    </div>
-    <div class="CURE">
-        <!--<img src="/images/CURESymbol.jpg" class="CENTER" alt="CURElogo" style="width:100%">-->
-    </div>
-    <div class="CENTER">
-      {{> todosList}}
-    </div>
-    <nav class="navbar">
-      <div class="TouchBar">
-        <a href="newpage.html" class="LocButton"></a>
-        <button class="CalButton"></button>
-        <button class="HomeButton"></button>
-        <button class="GTButton"></button>
-        <button class="EduButton"></button>
-        <button class="SettingsButton"></button>
-      </div>
-    </nav>
+      {{> dynamicTemplate}}
+      {{> buttons}}
   </div>
-</body> 
+</body>
 
-<template name="todosList">
-  <button id="onedial" class="buttonDeco">One Dial</button>
+<template name="OneDial">
+  <button id="onedial" class="hotDialButtonClass">Hot Line</button>
 </template>
 
-<template name="todo">
-  <li><input type="checkbox" />{{label}}</li>
+<template name="MainPage">
+    <div class="AHEC">
+    </div>
+    <div class="CURE">
+    </div>
+    <div class="mainpagedesc">
+        Community United in Response to an Epidemic (CURE) was designed to serve as a connector of resources,
+        services and education for our community in response to
+        the opioid crisis in central NC including Alamance, Caswell,
+        Chatham, Guilford, Montgomery, Orange, Randolph, and Rockingham counties.
+    </div>
+      <div class="CENTER">
+        {{> OneDial}}
+      </div>
+</template>
+
+<template name="dynamicTemplate">
+    {{> Template.dynamic template=page}}
+  </template>
+
+<template name="buttons">
+    <div class="TouchBar">
+        <button id="location" class="LocButton"></button>
+        <button id="calendar" class="CalButton"></button>
+        <button id="home" class="HomeButton"></button>
+        <button id="goalTracker" class="GTButton"></button>
+        <button id="education" class="EduButton"></button>
+        <button id="settings" class="SettingsButton"></button>
+      </div>
 </template>
