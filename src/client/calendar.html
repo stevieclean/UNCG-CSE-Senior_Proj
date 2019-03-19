@@ -1,12 +1,12 @@
 <template name="Calendar">
     <div class="calendar">
         Make Calendar Event
-        <form name="calMessage" class="calMessageForm">
+        <form name="calTitle" class="calTitleForm">
             <label for="titlearea">Title:</label>
             <textarea id="titletextarea" cols="20" rows="1" name="calMessageTitleArea"></textarea>
         </form>
-        <label for="startdateselect">Select Start Date:</label>
-        <select id="strtmonthdrop" name="startmonthselect">
+        <label for="startdateselect" class="startdateselector">Select Start Date:</label>
+        <select id="strtmonthdrop" name="startmonthselect" class="startmonth">
             <option value="Jan">January</option>
             <option value="Feb">February</option>
             <option value="Mar">March</option>
@@ -20,7 +20,7 @@
             <option value="Nov">November</option>
             <option value="Dec">December</option>
         </select>
-        <select id="strtdaydrop" name="startdayselect">
+        <select id="strtdaydrop" name="startdayselect" class="startday">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -53,12 +53,12 @@
             <option value="30">30</option>
             <option value="31">31</option>
         </select>
-        <select id="strtyeardrop" name="startyearselect">
+        <select id="strtyeardrop" name="startyearselect" class="startyear">
             <option value="2019">2019</option>
             <option value="2020">2020</option>
         </select>
             <label for="enddateselect">Select End Date:</label>
-        <select id="endmonthdrop" name="endmonthselect">
+        <select id="endmonthdrop" name="endmonthselect" class="endmonth">
             <option value="Jan">January</option>
             <option value="Feb">February</option>
             <option value="Mar">March</option>
@@ -72,7 +72,7 @@
             <option value="Nov">November</option>
             <option value="Dec">December</option>
         </select>
-        <select id="enddaydrop" name="enddayselect">
+        <select id="enddaydrop" name="enddayselect" class="endday">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -105,12 +105,14 @@
             <option value="30">30</option>
             <option value="31">31</option>
         </select>
-        <select id="endyeardrop" name="endyearselect">
+        <select id="endyeardrop" name="endyearselect" class="endyear">
             <option value="2019">2019</option>
             <option value="2020">2020</option>
         </select>
-        <label for="textarea">Calendar Message:</label>
-        <textarea id="messagetextarea" cols="20" rows="1" name="calMessageTextArea"></textarea>
-        <button id="sendevent" class="calendarButtonStyle">Add Event</button>
+        <form name="calMessage" class="calMessageForm">
+            <label for="textarea">Calendar Message:</label>
+            <textarea id="messagetextarea" cols="20" rows="1" name="calMessageTextArea"></textarea>
+            <button id="sendevent" class="calendarButtonStyle">Add Event</button>
+        </form>
     </div>
 </template>
