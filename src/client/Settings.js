@@ -1,23 +1,19 @@
 import EventListener from "./Events/EventListener.js";
 import { Destination } from "./Events/Destination.js";
 
-export default class Map {
+export default class Settings {
 	constructor() {
 		this.events = "Bodulus";
 		this._listeners = new EventListener;
 	}
 
 	get listeners() {
-		console.log("added map listener");
+		console.log("added settings listener");
 		return this._listeners;
 	}
 
-	printEvents() {
-		return this.events;
-	}
-
 	handleMessage(message) {
-		if (message.dest == Destination["MAP"]) {
+		if (message.dest == Destination["SETTINGS"]) {
 			// if is true the map handle the message
 			
 			

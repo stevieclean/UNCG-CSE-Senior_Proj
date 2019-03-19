@@ -6,7 +6,7 @@ html, body {
   margin: 0;
   padding: 0;
   border: none;
-  background-color: rgb(37, 218, 178);
+  background-color: rgba(39, 191, 202, 0.815);
   height: 100%;
   width: 100%;
 }
@@ -35,7 +35,7 @@ html, body {
   background-size: 30% 100%;
   position: relative;
   width: 100%;
-  height: 10%;
+  height: 15%;
 }
 
 /* CURE Logo to be displayed on main page */
@@ -45,7 +45,7 @@ html, body {
   background-repeat: no-repeat;
   position: relative;
   width: 100%;
-  height: 20%;
+  height: 35%;
 }
 
 /* Description of CURE */
@@ -61,8 +61,10 @@ html, body {
 .CENTER {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30%;
+  margin-top: 20%;
   margin-bottom: auto;
+  height: 50%;
+
   /*box-shadow: 0px 3px 5px;*/
   position: relative;
 }
@@ -85,20 +87,25 @@ html, body {
   outline: none;
 }
 
-/* The invisible container holding every button the button bar */
+/* The invisible container holding every button and the button bar to keep the bar staticly the same */
+.TouchBarContainer {
+  width: 100%;
+}
+
+/* The bar actually holding the buttons */
 .TouchBar {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   justify-content: space-between;
+  flex-direction: row;
+  position: fixed;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
+  bottom: 0;
+  padding: 10px;
   width: 100%;
-  height: auto;
-  margin-top: auto;
-  padding: 20px;
   /*box-shadow: 0px 3px 5px;*/
-  background-color: yellow;
+  background-color: rgb(3, 197, 3);
   border-top: 2px solid;
 }
 
@@ -162,7 +169,7 @@ html, body {
   height: 4em;
   padding: 0px;
   background-image: url('/images/education.png');
-  background-size: 100%;
+  background-size: 95%;
   background-repeat: no-repeat;
   background-position: center;
   border:none;
@@ -221,6 +228,25 @@ html, body {
   position: relative;
 }
 
+.ADDHDButton{
+  background:None;
+  width: 10em;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  height: 3em;
+  padding: 0px 23px;
+  background-size: 100%;
+  background-position: center;
+  border-radius: 2em;
+  outline: none;
+  font-size: 1.25em;
+  border-width: 0px;
+  background-color: white;
+  border-color: grey;
+  text-align: left;
+}
+
 /* Every button inside of hotdial.html */
 .GCSTOPButton{
   background:auto;
@@ -260,17 +286,17 @@ html, body {
 
 .CONEButton{
   background:auto;
-  width: 8em;
+  width: 12.5em;
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  height: 3em;
+  height: 4.7em;
   padding: 0px 23px;
   background-size: 100%;
   background-position: center;
   border-radius: 2em;
   outline: none;
-  font-size: 2em;
+  font-size: 1.25em;
   border-width: 5px;
   background-color: lightblue;
   border-color: grey;
@@ -298,10 +324,80 @@ html, body {
 
 /* Main container for calendar page */
 .calendar {
-  margin-top: auto;
-  margin-bottom: auto;
+  text-align: center;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 5%;
+  bottom: 0;
+  border-width: 15px;
+  z-index: 1;
+}
+
+.calTitleForm {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.startmonth {
+  position: relative;
+}
+
+.startday {
+  position: relative;
+}
+
+.startyear {
+  position: relative;
+}
+
+.endmonth {
+  position: relative;
+}
+
+.endday {
+  position: relative;
+}
+
+.endyear {
+  position: relative;
+}
+
+.startdateselector {
+  position: relative;
+}
+
+.enddateselector {
+  position: relative;
+}
+
+.calMessageForm {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.calendarButtonStyle {
+  text-align: center;
+  background: auto;
+  width: 8em;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  top: 40px;
+  height: 1.8em;
+  padding: 0px 23px;
+  background-size: 100%;
+  background-position: center;
+  border-radius: 2em;
+  outline: none;
+  font-size: 2em;
+  border-width: 5px;
+  background-color: lightblue;
+  border-color: grey;
 }
 
 /*---------------------------------------------------------------------------*/
@@ -339,11 +435,43 @@ html, body {
 /*---------------------------------------------------------------------------*/
 
 /* Main container for settings page */
-.settings {
-  margin-top: auto;
-  margin-bottom: auto;
+.settingstitle{
+  
+  
+  font-size: 2.2em;
   margin-left: auto;
   margin-right: auto;
+  margin-top:10px;
+  margin-bottom:200px;
+  justify-content: start;
+  color:rgb(70, 67, 67);
+  
+}
+.settingsdesc{
+  font-size: .4em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:white;
+  color:rgb(59, 58, 58);
 }
 
+/* Settings container for all buttons */
+.settingsButtons{
+  box-align: start;
+  font-size: .5em;
+  width: 100%;
+  height: 100%;
+  margin-top: 10%;
+  margin-bottom: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  
+  
+
+  /*box-shadow: 0px 3px 5px;*/
+  position: relative;
+}
 /*---------------------------------------------------------------------------*/
