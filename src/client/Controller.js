@@ -7,7 +7,7 @@ import Settings from './Settings.js';
 
 export default class Controller {
   constructor() {
-   this.calendar = new Calendar(30, 12);
+   this.calendar = new Calendar();
    this.map = new Map();
    this.hotdial = new HotDial();
    this.listeners = new EventListener();

@@ -16,9 +16,9 @@ import { Destination } from './Events/Destination.js';
   // prep some variables
   var startDate = new Date(2015,2,15,18,30,0,0,0); // beware: month 0 = january, 11 = december
   var endDate = new Date(2015,2,15,19,30,0,0,0);
-  var title = "My nice event";
+  var title = "CURE Event";
   var eventLocation = "Home";
-  var notes = "Some notes about this event.";
+  var notes = "";
   var success = function(message) { alert("Success: " + JSON.stringify(message)); };
   var error = function(message) { alert("Error: " + message); };
 /*
@@ -127,7 +127,6 @@ Template.buttons.events({
 });
 
 var controller = new Controller();
-controller.printCalenderInfo();
 /* Code to make phone call
 "click #onedial": function () {
 		function onSuccess(result) {
