@@ -98,13 +98,14 @@ html, body {
   justify-content: center;
   justify-content: space-between;
   flex-direction: row;
-  position: relative;
+  position: fixed;
   margin-left: auto;
   margin-right: auto;
+  bottom: 0;
   padding: 10px;
   width: 100%;
   /*box-shadow: 0px 3px 5px;*/
-  background-color: rgb(165, 165, 165);
+  background-color: rgb(3, 197, 3);
   border-top: 2px solid;
 }
 
@@ -324,28 +325,69 @@ html, body {
 /* Main container for calendar page */
 .calendar {
   text-align: center;
-  top: 0;
-  height: 100%;
+  height: 60%;
   display: flex;
   flex-direction: column;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: auto;
-  margin-right: auto;
+  position: relative;
+  top: 5%;
+  bottom: 0;
+  border-width: 15px;
+  z-index: 1;
+}
+
+.calTitleForm {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.startmonth {
+  position: relative;
+}
+
+.startday {
+  position: relative;
+}
+
+.startyear {
+  position: relative;
+}
+
+.endmonth {
+  position: relative;
+}
+
+.endday {
+  position: relative;
+}
+
+.endyear {
+  position: relative;
+}
+
+.startdateselector {
+  position: relative;
+}
+
+.enddateselector {
+  position: relative;
 }
 
 .calMessageForm {
+  font-size: 16px;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .calendarButtonStyle {
   text-align: center;
-  background:auto;
+  background: auto;
   width: 8em;
   margin-left: auto;
   margin-right: auto;
   position: relative;
+  top: 40px;
   height: 1.8em;
   padding: 0px 23px;
   background-size: 100%;
