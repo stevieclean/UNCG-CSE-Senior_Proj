@@ -1,4 +1,4 @@
-import EventListener from "./Events/EventListener";
+import EventListener from "./Events/EventListener.js";
 import { Destination } from "./Events/Destination.js";
 import './hotdial.html';
 import { Template } from "meteor/templating";
