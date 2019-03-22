@@ -25,6 +25,18 @@ export default class Education {
                     "click #creditstat": function () {
                         currPage = "CreditStat";
                         Session.set("myTemplate", currPage);
+                    },
+                    "click #handouts": function () {
+                        currPage = "Handouts";
+                        Session.set("myTemplate", currPage);
+                    },
+                    "click #refresher": function () {
+                        currPage = "Refresher";
+                        Session.set("myTemplate", currPage);
+                    },
+                    "click #course": function () {
+                        currPage = "Course";
+                        Session.set("myTemplate", currPage);
                     }
 
                 });
