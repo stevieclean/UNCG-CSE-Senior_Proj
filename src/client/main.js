@@ -2,6 +2,8 @@ import { Template } from 'meteor/templating';
 import { Meteor } from 'meteor/meteor';
 import { ReactiveVar } from 'meteor/reactive-var';
 import { Session } from 'meteor/session';
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Controller from './Controller.js';
 import './main.html';
