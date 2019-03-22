@@ -2,12 +2,16 @@ import EventListener from "./Events/EventListener.js";
 import { Destination } from "./Events/Destination.js";
 import { Session } from 'meteor/session';
 import './education.html';
+import './conference.html';
 import { Template } from "meteor/templating";
 import { currPage } from "./main.js";
 
 import './onlinecourse.html';
 import './conference.html';
 import './creditstat.html';
+import './handouts.html';
+import './refresher.html';
+import './course.html';
 
 export default class Education {
     constructor() {
@@ -19,7 +23,7 @@ export default class Education {
                         Session.set("myTemplate", currPage);
                     },
                     "click #conference": function () {
-                        currPage = "Conference";//Change to name of template
+                        currPage = "Conference";
                         Session.set("myTemplate", currPage);
                     },
                     "click #creditstat": function () {
@@ -43,7 +47,7 @@ export default class Education {
 
         }
         get listeners() {
-            console.log("added calendar listener.");
+            console.log("added education listener.");
             return this._listeners;
         }    
 }

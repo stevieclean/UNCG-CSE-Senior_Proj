@@ -17,6 +17,9 @@ import './goaltracker.html';
 import './onlinecourse.html';
 import './conference.html';
 import './creditstat.html';
+import './handouts.html';
+import './refresher.html';
+import './course.html';
 import { Destination } from './Events/Destination.js';
 
   // prep some variables
