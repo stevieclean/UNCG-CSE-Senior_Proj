@@ -472,7 +472,6 @@ html, body {
   width: 100%;
   height: 50%;
   position: fixed;
-
 }
 .onlinecourse{
   margin-top: auto;
@@ -500,6 +499,32 @@ html, body {
   z-index: 1;
 
 }
+.conference{
+  background-image: url('/images/ed-head.png');
+  background-size: 100% 100%;
+  width: 100%;
+  height: 50%;
+  position: fixed;
+}
+.handouts{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto
+}
+.refresher{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto
+}
+.course{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto
+}
+
 .educationButtons{
   width: 100%;
   height: 50%;
