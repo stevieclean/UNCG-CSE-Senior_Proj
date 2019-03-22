@@ -1,26 +1,27 @@
 <template name="Calendar">
-    <div class="container d-inline-block border">
-        <div class="col border">
-            <div class="d-flex justify-content-center border"> 
-                    <h2>Make Calendar Event</h2>
+    <div class="container d-inline-block border bg-dark fill">
+        <div class="col top-buffer bg-info rounded">
+            <div class="d-flex justify-content-center"> 
+                    <h3>Add Calendar Event</h3>
             </div>
-            <div class="d-flex justify-content-center border">
+            <div class="d-flex justify-content-center">
                     <label for="textarea">Title</label>
             </div>
-            <div class="d-flex justify-content-center border">
+            <div class="d-flex justify-content-center">
                 <form name="calTitle">
                     <textarea id="titletextarea" cols="20" rows="1" name="calMessageTitleArea"></textarea>
                 </form>
             </div>
-            <div class="d-flex justify-content-center border">
+            <div class="d-flex justify-content-center">
                 <label for="textarea">Calendar Message</label>
             </div>
-            <div class="d-flex justify-content-center border">
+            <div class="d-flex justify-content-center">
                 <textarea id="messagetextarea" name="calMessageTextArea"></textarea>
             </div>
-            <!--
-            <div class="col-5 align-self-center">
+            <div class="d-flex justify-content-center">
                 <label for="startdateselect">Select Start Date:</label>
+            </div>
+            <div class="d-flex justify-content-center">
                 <select id="strtmonthdrop" name="startmonthselect">
                     <option value="Jan">January</option>
                     <option value="Feb">February</option>
@@ -73,8 +74,10 @@
                     <option value="2020">2020</option>
                 </select>
             </div>
-            <div class="col-5 align-self-center">
+            <div class="d-flex justify-content-center">
                 <label for="enddateselect">Select End Date:</label>
+            </div>
+            <div class="d-flex justify-content-center">
                 <select id="endmonthdrop" name="endmonthselect">
                     <option value="Jan">January</option>
                     <option value="Feb">February</option>
@@ -127,11 +130,11 @@
                     <option value="2020">2020</option>
                 </select>
             </div>
-            <div class="row justify-content-left">
-                <div class="col-5">
-                    <button id="sendevent" type="button" class="btn btn-secondary">Add Event</button>
-                </div>
-            </div> -->
+            <div class="d-block top text-center top-buffer2">
+                    <button id="sendevent" type="button" class="btn btn-secondary btn-sm">
+                        <span class="fas fa-plus"></span> Add Event
+                    </button>
+            </div>
         </div>
     </div>
 </template>

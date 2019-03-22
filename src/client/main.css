@@ -11,6 +11,14 @@ html, body {
   width: 100%;
 }
 
+.bg-purple {
+  background-color: purple;
+}
+
+.bg-bluecoral {
+  background-color: rgb(113, 226, 207);
+}
+
 /* Container for all pages and the button bar */
 .Wrapper {
   display: flex;
@@ -19,6 +27,20 @@ html, body {
   width: 100%;
   position: absolute;
   /*box-shadow: 0px 3px 5px;*/
+}
+
+.top-buffer {
+  margin-top: 30px;
+}
+
+.top-buffer2 {
+  margin-top: 30px;
+  padding-bottom: 1em;
+}
+
+.fill {
+  min-height: 100%;
+  height: 100%;
 }
 
 /* The invisible container which holds all pages that users can choose */
@@ -110,6 +132,16 @@ html, body {
 }
 
 /* Every button on the button bar in main.html */
+.fa-map-marker-alt {
+  color: lightblue;
+  
+}
+
+.btn-outline-info {
+  outline: none;
+  border: none;
+}
+
 .LocButton{
   width: 4em;
   height: 4em;
@@ -122,6 +154,10 @@ html, body {
   border-radius: auto;
   border:none;
   outline: none;
+}
+
+.fa-calendar-alt {
+  color: lightblue;
 }
 
 .CalButton{
@@ -137,6 +173,11 @@ html, body {
   outline: none;
   border-radius: auto;
 }
+
+.fa-home {
+  color: lightblue;
+}
+
 .HomeButton{
   background:transparent;
   width: 4em;
@@ -150,6 +191,11 @@ html, body {
   border:none;
   border-radius: auto;
 }
+
+.fa-tasks {
+  color: lightblue;
+}
+
 .GTButton{
   background:transparent;
   width: 4em;
@@ -163,6 +209,11 @@ html, body {
   outline: none;
   border-radius: auto;
 }
+
+.fa-book {
+  color: lightblue;
+}
+
 .EduButton{
   background:transparent;
   width: 4em;
