@@ -14,6 +14,9 @@ import './education.html';
 import './map.html';
 import './calendar.html';
 import './goaltracker.html';
+import './onlinecourse.html';
+import './conference.html';
+import './creditstat.html';
 import { Destination } from './Events/Destination.js';
 
   // prep some variables
@@ -83,7 +86,7 @@ import { Destination } from './Events/Destination.js';
 */
 console.log(Destination['GOALTRACKER']);
 //Todos = new Mongo.Collection("todos");
-currPage = "MainPage";
+export var currPage = "MainPage";
 	
 //For changing the current page
 Session.set({"myTemplate" : currPage});
