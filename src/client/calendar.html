@@ -1,118 +1,137 @@
 <template name="Calendar">
-    <div class="calendar">
-        Make Calendar Event
-        <form name="calTitle" class="calTitleForm">
-            <label for="titlearea">Title:</label>
-            <textarea id="titletextarea" cols="20" rows="1" name="calMessageTitleArea"></textarea>
-        </form>
-        <label for="startdateselect" class="startdateselector">Select Start Date:</label>
-        <select id="strtmonthdrop" name="startmonthselect" class="startmonth">
-            <option value="Jan">January</option>
-            <option value="Feb">February</option>
-            <option value="Mar">March</option>
-            <option value="Apr">April</option>
-            <option value="May">May</option>
-            <option value="June">June</option>
-            <option value="July">July</option>
-            <option value="Aug">August</option>
-            <option value="Sept">September</option>
-            <option value="Oct">October</option>
-            <option value="Nov">November</option>
-            <option value="Dec">December</option>
-        </select>
-        <select id="strtdaydrop" name="startdayselect" class="startday">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-            <option value="13">13</option>
-            <option value="14">14</option>
-            <option value="15">15</option>
-            <option value="16">16</option>
-            <option value="17">17</option>
-            <option value="18">18</option>
-            <option value="19">19</option>
-            <option value="20">20</option>
-            <option value="21">21</option>
-            <option value="22">22</option>
-            <option value="23">23</option>
-            <option value="24">24</option>
-            <option value="25">25</option>
-            <option value="26">26</option>
-            <option value="27">27</option>
-            <option value="28">28</option>
-            <option value="29">29</option>
-            <option value="30">30</option>
-            <option value="31">31</option>
-        </select>
-        <select id="strtyeardrop" name="startyearselect" class="startyear">
-            <option value="2019">2019</option>
-            <option value="2020">2020</option>
-        </select>
-            <label for="enddateselect">Select End Date:</label>
-        <select id="endmonthdrop" name="endmonthselect" class="endmonth">
-            <option value="Jan">January</option>
-            <option value="Feb">February</option>
-            <option value="Mar">March</option>
-            <option value="Apr">April</option>
-            <option value="May">May</option>
-            <option value="June">June</option>
-            <option value="July">July</option>
-            <option value="Aug">August</option>
-            <option value="Sept">September</option>
-            <option value="Oct">October</option>
-            <option value="Nov">November</option>
-            <option value="Dec">December</option>
-        </select>
-        <select id="enddaydrop" name="enddayselect" class="endday">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-            <option value="13">13</option>
-            <option value="14">14</option>
-            <option value="15">15</option>
-            <option value="16">16</option>
-            <option value="17">17</option>
-            <option value="18">18</option>
-            <option value="19">19</option>
-            <option value="20">20</option>
-            <option value="21">21</option>
-            <option value="22">22</option>
-            <option value="23">23</option>
-            <option value="24">24</option>
-            <option value="25">25</option>
-            <option value="26">26</option>
-            <option value="27">27</option>
-            <option value="28">28</option>
-            <option value="29">29</option>
-            <option value="30">30</option>
-            <option value="31">31</option>
-        </select>
-        <select id="endyeardrop" name="endyearselect" class="endyear">
-            <option value="2019">2019</option>
-            <option value="2020">2020</option>
-        </select>
-        <form name="calMessage" class="calMessageForm">
-            <label for="textarea">Calendar Message:</label>
-            <textarea id="messagetextarea" cols="20" rows="1" name="calMessageTextArea"></textarea>
-            <button id="sendevent" class="calendarButtonStyle">Add Event</button>
-        </form>
+    <div class="container d-inline-block border">
+        <div class="col border">
+            <div class="d-flex justify-content-center border"> 
+                    <h2>Make Calendar Event</h2>
+            </div>
+            <div class="d-flex justify-content-center border">
+                    <label for="textarea">Title</label>
+            </div>
+            <div class="d-flex justify-content-center border">
+                <form name="calTitle">
+                    <textarea id="titletextarea" cols="20" rows="1" name="calMessageTitleArea"></textarea>
+                </form>
+            </div>
+            <div class="d-flex justify-content-center border">
+                <label for="textarea">Calendar Message</label>
+            </div>
+            <div class="d-flex justify-content-center border">
+                <textarea id="messagetextarea" name="calMessageTextArea"></textarea>
+            </div>
+            <!--
+            <div class="col-5 align-self-center">
+                <label for="startdateselect">Select Start Date:</label>
+                <select id="strtmonthdrop" name="startmonthselect">
+                    <option value="Jan">January</option>
+                    <option value="Feb">February</option>
+                    <option value="Mar">March</option>
+                    <option value="Apr">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="Aug">August</option>
+                    <option value="Sept">September</option>
+                    <option value="Oct">October</option>
+                    <option value="Nov">November</option>
+                    <option value="Dec">December</option>
+                </select>
+                <select id="strtdaydrop" name="startdayselect">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+                <select id="strtyeardrop" name="startyearselect">
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                </select>
+            </div>
+            <div class="col-5 align-self-center">
+                <label for="enddateselect">Select End Date:</label>
+                <select id="endmonthdrop" name="endmonthselect">
+                    <option value="Jan">January</option>
+                    <option value="Feb">February</option>
+                    <option value="Mar">March</option>
+                    <option value="Apr">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="Aug">August</option>
+                    <option value="Sept">September</option>
+                    <option value="Oct">October</option>
+                    <option value="Nov">November</option>
+                    <option value="Dec">December</option>
+                </select>
+                <select id="enddaydrop" name="enddayselect">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+                <select id="endyeardrop" name="endyearselect">
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                </select>
+            </div>
+            <div class="row justify-content-left">
+                <div class="col-5">
+                    <button id="sendevent" type="button" class="btn btn-secondary">Add Event</button>
+                </div>
+            </div> -->
+        </div>
     </div>
 </template>
