@@ -6,9 +6,16 @@ html, body {
   margin: 0;
   padding: 0;
   border: none;
-  background-color: rgba(39, 191, 202, 0.815);
   height: 100%;
   width: 100%;
+}
+
+.bg-purple {
+  background-color: purple;
+}
+
+.bg-bluecoral {
+  background-color: rgb(113, 226, 207);
 }
 
 /* Container for all pages and the button bar */
@@ -19,6 +26,20 @@ html, body {
   width: 100%;
   position: absolute;
   /*box-shadow: 0px 3px 5px;*/
+}
+
+.top-buffer {
+  margin-top: 70px;
+}
+
+.top-buffer2 {
+  margin-top: 30px;
+  padding-bottom: 1em;
+}
+
+.fill {
+  min-height: 100%;
+  height: 100%;
 }
 
 /* The invisible container which holds all pages that users can choose */
@@ -38,14 +59,15 @@ html, body {
   height: 15%;
 }
 
-/* CURE Logo to be displayed on main page */
+/* CURE background image to be displayed on main page */
 .CURE {
-  background-image: url('/images/CURESymbol.jpg');
+  background-image: url('/graphics/home.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  position: relative;
+  position: fixed;
+  top: 5%;
   width: 100%;
-  height: 35%;
+  height: 100%;
 }
 
 /* Description of CURE */
@@ -54,19 +76,13 @@ html, body {
   background-color: white;
   /*box-shadow: 0px 3px 5px;*/
   position: relative;
-
 }
 
 /* Holds the hot dial button */
-.CENTER {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20%;
-  margin-bottom: auto;
-  height: 50%;
-
-  /*box-shadow: 0px 3px 5px;*/
+.HotDial {
+  z-index: 5;
   position: relative;
+  top: 40%;  
 }
 
 /* Actual hot dial button */
@@ -110,6 +126,16 @@ html, body {
 }
 
 /* Every button on the button bar in main.html */
+.fa-map-marker-alt {
+  color: lightblue;
+  
+}
+
+.btn-outline-info {
+  outline: none;
+  border: none;
+}
+
 .LocButton{
   width: 4em;
   height: 4em;
@@ -122,6 +148,10 @@ html, body {
   border-radius: auto;
   border:none;
   outline: none;
+}
+
+.fa-calendar-alt {
+  color: lightblue;
 }
 
 .CalButton{
@@ -137,6 +167,11 @@ html, body {
   outline: none;
   border-radius: auto;
 }
+
+.fa-home {
+  color: lightblue;
+}
+
 .HomeButton{
   background:transparent;
   width: 4em;
@@ -150,6 +185,11 @@ html, body {
   border:none;
   border-radius: auto;
 }
+
+.fa-tasks {
+  color: lightblue;
+}
+
 .GTButton{
   background:transparent;
   width: 4em;
@@ -163,6 +203,11 @@ html, body {
   outline: none;
   border-radius: auto;
 }
+
+.fa-book {
+  color: lightblue;
+}
+
 .EduButton{
   background:transparent;
   width: 4em;
