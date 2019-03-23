@@ -2,7 +2,6 @@ import EventListener from "./Events/EventListener.js";
 import { Destination } from "./Events/Destination.js";
 import { Session } from 'meteor/session';
 import './education.html';
-import './conference.html';
 import { Template } from "meteor/templating";
 import { currPage } from "./main.js";
 

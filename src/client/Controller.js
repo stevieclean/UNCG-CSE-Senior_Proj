@@ -5,6 +5,7 @@ import EventListener from './Events/EventListener.js';
 import EventMessage from './Events/EventMessage.js';
 import Settings from './Settings.js';
 import Education from './Education.js';
+import Conference from './Conference.js';
 
 export default class Controller {
   constructor() {
@@ -14,6 +15,7 @@ export default class Controller {
    this.listeners = new EventListener();
    this.education = new Education();
    this.settings = new Settings();
+   this.conference = new Conference();
 
    //Attach each module as a listener to this Controller
    this.listeners.appendListener(this.calendar);
@@ -21,12 +23,14 @@ export default class Controller {
    this.listeners.appendListener(this.hotdial);
    this.listeners.appendListener(this.settings);
    this.listeners.appendListener(this.education);
+   this.listeners.appendListener(this.conference);
    //Append this Controller as a listener to each of the modules
    this.calendar.listeners.appendListener(this);
    this.map.listeners.appendListener(this);
    this.hotdial.listeners.appendListener(this);
    this.settings.listeners.appendListener(this);
    this.education.listeners.appendListener(this);
+   this.conference.listeners.appendListener(this);
   }
 
   printCalenderInfo() {
