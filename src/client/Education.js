@@ -9,6 +9,7 @@ import { currPage } from "./main.js";
 import './onlinecourse.html';
 import './conference.html';
 import './creditstat.html';
+import './spotlight.html';
 import './handouts.html';
 import './refresher.html';
 import './course.html';
@@ -28,6 +29,10 @@ export default class Education {
                     },
                     "click #creditstat": function () {
                         currPage = "CreditStat";
+                        Session.set("myTemplate", currPage);
+                    },
+                    "click #spotlight": function () {
+                        currPage = "Spotlight";
                         Session.set("myTemplate", currPage);
                     },
                     "click #handouts": function () {

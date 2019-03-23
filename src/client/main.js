@@ -17,6 +17,7 @@ import './goaltracker.html';
 import './onlinecourse.html';
 import './conference.html';
 import './creditstat.html';
+import './spotlight.html';
 import './handouts.html';
 import './refresher.html';
 import './course.html';

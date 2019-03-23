@@ -491,6 +491,12 @@ html, body {
   margin-left: auto;
   margin-right: auto
 }
+.spotlight{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto
+}
 
 .center-of-page{
   top: 60%;
