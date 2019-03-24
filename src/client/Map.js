@@ -1,9 +1,9 @@
 import EventListener from "./Events/EventListener.js";
-import Destination from "./Events/Destination.js";
+import { Destination } from "./Events/Destination.js";
 
 export default class Map {
-	constructor(events) {
-		this.events = events;
+	constructor() {
+		this.events = "Bodulus";
 		this._listeners = new EventListener;
 	}
 
@@ -17,7 +17,7 @@ export default class Map {
 	}
 
 	handleMessage(message) {
-		if (message.dest == Destination.MAP) {
+		if (message.dest == Destination["MAP"]) {
 			// if is true the map handle the message
 			
 			
