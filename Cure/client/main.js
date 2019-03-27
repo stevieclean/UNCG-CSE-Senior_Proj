@@ -7,6 +7,9 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Controller from './Controller.js';
+//Goal Tracker import
+import '../imports/ui/body.js';
+//End goal tracker import
 import './main.html';
 import './hotdial.html';
 import './settings.html';
@@ -23,14 +26,14 @@ import './refresher.html';
 import './course.html';
 import { Destination } from './Events/Destination.js';
 
-  // prep some variables
-  var startDate = new Date(2015,2,15,18,30,0,0,0); // beware: month 0 = january, 11 = december
-  var endDate = new Date(2015,2,15,19,30,0,0,0);
-  var title = "CURE Event";
-  var eventLocation = "Home";
-  var notes = "";
-  var success = function(message) { alert("Success: " + JSON.stringify(message)); };
-  var error = function(message) { alert("Error: " + message); };
+// prep some variables
+var startDate = new Date(2015, 2, 15, 18, 30, 0, 0, 0); // beware: month 0 = january, 11 = december
+var endDate = new Date(2015, 2, 15, 19, 30, 0, 0, 0);
+var title = "CURE Event";
+var eventLocation = "Home";
+var notes = "";
+var success = function(message) { alert("Success: " + JSON.stringify(message)); };
+var error = function(message) { alert("Error: " + message); };
 /*
   // create an event silently (on Android < 4 an interactive dialog is shown)
   window.plugins.calendar.createEvent(title,eventLocation,notes,startDate,endDate,success,error);
@@ -91,48 +94,48 @@ import { Destination } from './Events/Destination.js';
 console.log(Destination['GOALTRACKER']);
 //Todos = new Mongo.Collection("todos");
 export var currPage = "MainPage";
-	
+
 //For changing the current page
-Session.set({"myTemplate" : currPage});
+Session.set({ "myTemplate": currPage });
 
 Template.dynamicTemplate.helpers({
-	page: function () {
-		return Session.get("myTemplate");
-	}
+    page: function() {
+        return Session.get("myTemplate");
+    }
 });
 
 Template.OneDial.events({
-	"click #onedial": function () {
-		currPage = "HotDial";
-		Session.set("myTemplate", currPage);
-	}
+    "click #onedial": function() {
+        currPage = "HotDial";
+        Session.set("myTemplate", currPage);
+    }
 });
 
 Template.buttons.events({
-	"click #location": function () {
-		currPage = "Map";
-		Session.set("myTemplate", currPage);
-	},
-	"click #calendar": function () {
-		currPage = "Calendar";//Change to name of template
-		Session.set("myTemplate", currPage);
-	},
-	"click #home": function () {
-		currPage = "MainPage";
-		Session.set("myTemplate", currPage);
-	},
-	"click #goalTracker": function () {
-		currPage = "Goaltracker";
-		Session.set("myTemplate", currPage);
-	},
-	"click #education": function () {
-		currPage = "Education";
-		Session.set("myTemplate", currPage);
-	},
-	"click #settings": function () {
-		currPage = "Settings";
-		Session.set("myTemplate", currPage);
-	}
+    "click #location": function() {
+        currPage = "Map";
+        Session.set("myTemplate", currPage);
+    },
+    "click #calendar": function() {
+        currPage = "Calendar"; //Change to name of template
+        Session.set("myTemplate", currPage);
+    },
+    "click #home": function() {
+        currPage = "MainPage";
+        Session.set("myTemplate", currPage);
+    },
+    "click #goalTracker": function() {
+        currPage = "Goaltracker";
+        Session.set("myTemplate", currPage);
+    },
+    "click #education": function() {
+        currPage = "Education";
+        Session.set("myTemplate", currPage);
+    },
+    "click #settings": function() {
+        currPage = "Settings";
+        Session.set("myTemplate", currPage);
+    }
 
 });
 
