@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.idr77hatc1x0aq.ucwxncr7mqhk" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="LocalStorage">
+        <param name="ios-package" value="CDVLocalStorage" />
+    </feature>
+    <feature name="Console">
+        <param name="ios-package" value="CDVLogger" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="HandleOpenUrl">
+        <param name="ios-package" value="CDVHandleOpenURL" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="IntentAndNavigationFilter">
+        <param name="ios-package" value="CDVIntentAndNavigationFilter" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="GestureHandler">
+        <param name="ios-package" value="CDVGestureHandler" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Calendar">
+        <param name="ios-package" value="Calendar" />
+    </feature>
+    <feature name="CallNumber">
+        <param name="ios-package" value="CFCallNumber" />
+    </feature>
+    <feature name="WebAppLocalServer">
+        <param name="ios-package" value="METWebAppLocalServer" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="ios-package" value="CDVSplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="StatusBar">
+        <param name="ios-package" value="CDVStatusBar" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="CDVWKWebViewEngine">
+        <param name="ios-package" value="CDVWKWebViewEngine" />
+    </feature>
+    <name>src</name>
+    <description>New Meteor Mobile App</description>
+    <author email="n/a" href="n/a">A Meteor Developer</author>
+    <content src="http://localhost:12952/" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="market:*" />
+    <allow-intent href="itms:*" />
+    <allow-intent href="itms-apps:*" />
+    <allow-navigation href="http://localhost" />
+    <access origin="*://localhost" />
+    <access origin="*://10.0.2.2" />
+    <icon height="120" src="resources/iphone_2x_icon.png" width="120" />
+    <icon height="180" src="resources/iphone_3x_icon.png" width="180" />
+    <icon height="152" src="resources/ipad_2x_icon.png" width="152" />
+    <icon height="167" src="resources/ipad_pro_icon.png" width="167" />
+    <icon height="58" src="resources/ios_settings_2x_icon.png" width="58" />
+    <icon height="80" src="resources/ios_spotlight_2x_icon.png" width="80" />
+    <icon height="120" src="resources/ios_spotlight_3x_icon.png" width="120" />
+    <icon height="40" src="resources/ios_notification_2x_icon.png" width="40" />
+    <icon height="60" src="resources/ios_notification_3x_icon.png" width="60" />
+    <icon height="76" src="resources/ipad_icon.png" width="76" />
+    <icon height="29" src="resources/ios_settings_icon.png" width="29" />
+    <icon height="40" src="resources/ios_spotlight_icon.png" width="40" />
+    <icon height="72" src="resources/ipad_app_legacy_icon.png" width="72" />
+    <icon height="144" src="resources/ipad_app_legacy_2x_icon.png" width="144" />
+    <splash height="1136" src="resources/iphone5_splash.png" width="640" />
+    <splash height="1334" src="resources/iphone6_splash.png" width="750" />
+    <splash height="2208" src="resources/iphone6p_portrait_splash.png" width="1242" />
+    <splash height="1242" src="resources/iphone6p_landscape_splash.png" width="2208" />
+    <splash height="2048" src="resources/ipad_portrait_2x_splash.png" width="1536" />
+    <splash height="1536" src="resources/ipad_landscape_2x_splash.png" width="2048" />
+    <splash height="480" src="resources/iphone_splash.png" width="320" />
+    <splash height="960" src="resources/iphone_2x_splash.png" width="640" />
+    <splash height="1024" src="resources/ipad_portrait_splash.png" width="768" />
+    <splash height="768" src="resources/ipad_landscape_splash.png" width="1024" />
+    <preference name="AllowInlineMediaPlayback" value="false" />
+    <preference name="BackupWebStorage" value="cloud" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="EnableViewportScale" value="false" />
+    <preference name="KeyboardDisplayRequiresUserAction" value="true" />
+    <preference name="MediaPlaybackRequiresUserAction" value="false" />
+    <preference name="SuppressesIncrementalRendering" value="false" />
+    <preference name="SuppressesLongPressGesture" value="false" />
+    <preference name="Suppresses3DTouchGesture" value="false" />
+    <preference name="GapBetweenPages" value="0" />
+    <preference name="PageLength" value="0" />
+    <preference name="PaginationBreakingMode" value="page" />
+    <preference name="PaginationMode" value="unpaginated" />
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="StatusBarStyle" value="default" />
+    <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="AutoHideSplashScreen" value="false" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="SplashScreenDelay" value="5000" />
+    <preference name="FadeSplashScreenDuration" value="250" />
+    <preference name="ShowSplashScreenSpinner" value="false" />
+</widget>
