@@ -31,4 +31,21 @@ Template.GoalTracker.events({
         // Clear form
         target.text.value = '';
     },
+    "click #addgoal": function() {
+        // Prevent default browser form submit
+        console.log("adding a new goal")
+
+        var goalText = document.getElementById("text").value;
+
+
+        //Create a new gooal and put it into the collection
+        Goals.insert({
+            goalText,
+            createdAt: new Date(), // current time
+        });
+
+        // Clear form
+        target.text.value = '';
+
+    },
 });
