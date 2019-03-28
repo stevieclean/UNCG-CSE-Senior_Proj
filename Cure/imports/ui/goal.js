@@ -6,7 +6,7 @@ Template.goal.events({
     //Decide what checking the box does.
   'click .toggle-checked'() {
       //update the item for removal
-    Goals .update(this._id, {
+    Goals.update(this._id, {
       $set: { checked: ! this.checked },
     });
   },
