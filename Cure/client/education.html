@@ -1,23 +1,108 @@
-
-
 <template name="Education">
-    
-<div class="education depth1 border" >
-<div class="container-fluid position-fixed depth1 border"></div>
-    <div class="col d-block center-of-page position-fixed"> 
-        
-<div class="d-flex justify-content-center">
-<button id="onlinecourse" class="bg-dark btn btn-secondary">Online Course Development</button>
-</div>
-<div class="d-flex justify-content-center">
-<button id="conference" class="bg-dark btn btn-secondary">Conference Management</button>
-</div>
-<div class="d-flex justify-content-center">
-<button id="creditstat" class="bg-dark btn btn-secondary">Credit Statements</button>
-</div>
-<div class="d-flex justify-content-center">
-<button id="spotlight" class="bg-dark btn btn-secondary">Spotlight & Stories</button>
-</div>
-</div>
-</div>
+
+    <div class="education position-relative depth1 border"></div>
+    <div class="col container position-relative depth1">
+
+        <div class="row">
+
+            <div class="col border">
+                <button class="btn-dark btn btn-secondary btn-block" data-toggle="collapse" data-target="#dropdownTogglerMenu"
+                    aria-controls="navbarTogglerMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    CONTINUING DEVELOPMENT &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="fa fa-bars"></span>
+                </button>
+                    <div class="collapse navbar-collapse" id="dropdownTogglerMenu">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li class="nav-item">
+                                <button id="conference" class="dropdown-item">Conference Management</button>
+                            </li>
+                            <li class="nav-item">
+                                <button id="handouts" class="dropdown-item">Handouts & Certificates</button>
+                            </li>
+                            <li class="nav-item">
+                                <button id="creditstat" class="dropdown-item">Credit Statements</button>
+                            </li>
+                            <li class="nav-item">
+                                <button id="refresher" class="dropdown-item">NC AHEC RN Refresher Program</button>
+                            </li>
+                            <li class="nav-item">
+                                <button id="course" class="dropdown-item">Course Canlendar/Registration Form</button>
+                            </li>
+                        </ul>
+
+                    </div>
+                
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col border">
+                <button class="btn-dark btn btn-secondary btn-block" data-toggle="collapse" data-target="#dropdownTogglerMenu"
+                    aria-controls="navbarTogglerMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    RESIDENCY & STUDENT INFO &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="dropdownTogglerMenu">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <button id="residency" class="dropdown-item">Residency Training</button>
+                        </li>
+                        <li class="nav-item">
+                            <button id="clinical" class="dropdown-item">Clinical Students & Preceptors</button>
+                        </li>
+                        <li class="nav-item">
+                            <button id="student" class="dropdown-item">Student Housing/ORPCE</button>
+                        </li>
+                        <li class="nav-item">
+                            <button id="pharmacy" class="dropdown-item">Pharmacy Students</button>
+                        </li>
+                        <li class="nav-item">
+                            <button id="thereach" class="dropdown-item">The REACH Program</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col border">
+                <button class="btn-dark btn btn-secondary btn-block" data-toggle="collapse" data-target="#dropdownTogglerMenu"
+                    aria-controls="navbarTogglerMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    TECHNOLOGY SERVICE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="dropdownTogglerMenu">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <button id="multi" class="dropdown-item">Multimedia Service</button>
+                        </li>
+                        <li class="nav-item">
+                            <button id="onlinecourse" class="dropdown-item">Online Course Development</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col border">
+                <button class="btn-dark btn btn-secondary btn-block" data-toggle="collapse" data-target="#dropdownTogglerMenu"
+                    aria-controls="navbarTogglerMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    PRACTICE SUPPORT &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="dropdownTogglerMenu">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <button id="contact" class="dropdown-item">Contact Information & Resources</button>
+                        </li>
+                        <li class="nav-item">
+                            <button id="library" class="dropdown-item">Library Services</button>
+                        </li>
+                        <li class="nav-item">
+                            <button id="cone" class="dropdown-item">Cone Health Medical Library</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </template>
