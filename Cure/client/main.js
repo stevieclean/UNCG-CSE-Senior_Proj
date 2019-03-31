@@ -134,13 +134,15 @@ Template.buttons.events({
     "click #education": function() {
         currPage = "Education";
         Session.set("myTemplate", currPage);
-    },
+    }
+});
+
+Template.dropdownmenu.events({
     "click #settings": function() {
         currPage = "Settings";
         Session.set("myTemplate", currPage);
     }
-
-});
+})
 
 var controller = new Controller();
 /* Code to make phone call
