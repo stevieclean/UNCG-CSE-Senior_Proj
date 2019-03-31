@@ -3,7 +3,7 @@ App.info({
 //  id: 'com.example.matt.uber',
 //  name: 'über',
 //  description: 'Get über power in one button click',
-//  author: 'Matt Development Group',
+//  author: 'Team WIP',
 //  email: 'contact@example.com',
 //  website: 'http://example.com'
 });
