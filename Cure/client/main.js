@@ -11,6 +11,10 @@ import Controller from './Controller.js';
 import './main.html';
 import './hotdial.html';
 import './settings.html';
+import './clock.html';
+import './profile.html';
+import './password.html';
+import './notes.html';
 import './education.html';
 import './map.html';
 import './calendar.html';
@@ -132,13 +136,19 @@ Template.buttons.events({
 	"click #education": function () {
 		currPage = "Education";
 		Session.set("myTemplate", currPage);
-	},
-	"click #settings": function () {
+	}
+	//"click #settings": function () {
+	//	currPage = "Settings";
+	//	Session.set("myTemplate", currPage);
+	//}
+
+});
+Template.dropdownmenu.events({
+  "click #settings": function () {
 		currPage = "Settings";
 		Session.set("myTemplate", currPage);
 	}
-
-});
+})
 
 var controller = new Controller();
 /* Code to make phone call
