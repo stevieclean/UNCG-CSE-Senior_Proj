@@ -1,0 +1,38 @@
+<template name="Calendar">
+    <div class="container CURE d-inline-block fill">
+        <div class="col top-buffer-lg bg-dark rounded">
+            <div class="d-flex justify-content-center"> 
+                    <h3 class="text-white-50">Add Calendar Event</h3>
+            </div>
+            <div class="d-flex justify-content-center">
+                    <label class="text-white-50" for="textarea">Title</label>
+            </div>
+            <div class="d-flex justify-content-center">
+                <textarea id="titletextarea" cols="20" rows="1" name="calMessageTitleArea"></textarea>
+            </div>
+            <div class="d-flex justify-content-center">
+                <label class="text-white-50" for="textarea">Calendar Message</label>
+            </div>
+            <div class="d-flex justify-content-center">
+                <textarea id="messagetextarea" name="calMessageTextArea"></textarea>
+            </div>
+            <div class="d-flex top-buffer-sm justify-content-center">
+                <label class="text-white-50" for="startdateselect">Select Start Date:</label>
+            </div>
+            <div class="d-flex justify-content-center">
+                    <input id="datepicker" width="276" />
+            </div>
+            <div class="d-flex justify-content-center">
+                <label class="text-white-50" for="enddateselect">Select End Date:</label>
+            </div>
+            <div class="d-flex justify-content-center">
+                <input id="datepicker2" class="" width="276" />
+            </div>
+            <div class="d-block text-center top-buffer2">
+                    <button id="sendevent" type="button" class="btn btn-secondary btn-sm">
+                        <span class="fas fa-plus"></span> Add Event
+                    </button>
+            </div>
+        </div>
+    </div>
+</template>
