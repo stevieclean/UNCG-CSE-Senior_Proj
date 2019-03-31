@@ -12,6 +12,7 @@
     "@fortawesome/fontawesome": "^1.1.8",
     "bootstrap": "^4.3.1",
     "call-number": "^1.0.1",
+    "datepicker-bootstrap": "^1.9.13",
     "jquery": "^3.3.1",
     "meteor-node-stubs": "^0.4.1",
     "popper.js": "^1.14.7"
