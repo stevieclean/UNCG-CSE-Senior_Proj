@@ -6,6 +6,7 @@ import '@fortawesome/fontawesome-free/js/all.js';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 import Controller from './Controller.js';
 import './main.html';
 import './hotdial.html';
@@ -31,6 +32,9 @@ import { Destination } from './Events/Destination.js';
   var notes = "";
   var success = function(message) { alert("Success: " + JSON.stringify(message)); };
   var error = function(message) { alert("Error: " + message); };
+  $('.dropdown-toggle').dropdown();
+  
+
 /*
   // create an event silently (on Android < 4 an interactive dialog is shown)
   window.plugins.calendar.createEvent(title,eventLocation,notes,startDate,endDate,success,error);
