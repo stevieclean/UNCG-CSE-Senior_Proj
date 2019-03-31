@@ -24,6 +24,8 @@ import './spotlight.html';
 import './handouts.html';
 import './refresher.html';
 import './course.html';
+import '../imports/ui/body.html'
+import '../imports/ui/goal.html'
 import { Destination } from './Events/Destination.js';
 
 // prep some variables
