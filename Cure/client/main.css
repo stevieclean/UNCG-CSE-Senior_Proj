@@ -92,6 +92,7 @@ body {
   position: relative;
 }
 .dropdown-menu{
+  position: relative;
   background: #343a40;
 }
 .dropdown-toggle{
@@ -254,6 +255,7 @@ body {
 }
 
 .fa-book {
+<<<<<<< HEAD
     color: lightblue;
 }
 
@@ -283,6 +285,36 @@ body {
     border: none;
     outline: none;
     border-radius: auto;
+=======
+  color: lightblue;
+}
+
+.EduButton{
+  background:transparent;
+  width: 4em;
+  height: 4em;
+  padding: 0px;
+  background-image: url('/images/education.png');
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border:none;
+  outline: none;
+  border-radius: auto;
+}
+.SettingsButton{
+  background:transparent;
+  width: 4em;
+  height: 4em;
+  padding: 0px;
+  background-image: url('/imagessettings.png');
+  background-size: 250%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border:none;
+  outline: none;
+  border-radius: auto;
+>>>>>>> parent of bfc1e52... Revert "Added template got settings page working"
 }
 
 
@@ -550,6 +582,7 @@ h1 {
     margin-right: 1em;
 }
 
+<<<<<<< HEAD
 form {
     margin-top: 10px;
     margin-bottom: -10px;
@@ -565,6 +598,81 @@ form {
     width: 100%;
     padding-right: 80px;
     font-size: 1em;
+=======
+/* Main container for education page */
+.education{
+  background-image: url('/images/ed-head.png');
+  background-size:100% 100%;
+  width: 100%;
+  height: 50%;
+  position: fixed;
+}
+.onlinecourse{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto
+}
+.creditstat{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto
+}
+.spotlight{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.center-of-page{
+  top: 60%;
+}
+.depth1{
+  z-index: 1;
+
+}
+.conference{
+  background-image: url('/images/header-image2.jpg');
+  background-size: 100% 100%;
+  width: 100%;
+  height: 50%;
+  position: fixed;
+}
+.handouts{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto
+}
+.refresher{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto
+}
+.course{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.educationButtons{
+  width: 100%;
+  height: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /*box-shadow: 0px 3px 5px;*/
+  position: relative;
+>>>>>>> parent of bfc1e52... Revert "Added template got settings page working"
 }
 
 .new-task input:focus {
@@ -788,6 +896,7 @@ header .hide-completed {
 
 /* Main container for settings page */
 
+<<<<<<< HEAD
 .settingstitle {
     font-size: 2.2em;
     margin-left: auto;
@@ -796,6 +905,60 @@ header .hide-completed {
     margin-bottom: 200px;
     justify-content: start;
     color: rgb(70, 67, 67);
+=======
+.settings{
+  background-image: url('/images/head-settings.png');
+  background-size: 100%, 80%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 30%;
+  position: fixed;
+  
+  
+}
+.settingsdesc{
+  margin-top:auto;
+  margin-bottom:auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.clock{
+  
+  margin-top:auto;
+  margin-bottom:auto;
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed;
+  
+  
+}
+.profile{
+  
+  margin-top:auto;
+  margin-bottom:auto;
+  margin-left: auto;
+  margin-right: auto;
+  
+  
+}
+.password{
+  
+  margin-top:auto;
+  margin-bottom:auto;
+  margin-left: auto;
+  margin-right: auto;
+  
+  
+}
+.notes{
+  
+  margin-top:auto;
+  margin-bottom:auto;
+  margin-left: auto;
+  margin-right: auto;
+  
+  
+>>>>>>> parent of bfc1e52... Revert "Added template got settings page working"
 }
 
 .settingsdesc {
@@ -808,6 +971,7 @@ header .hide-completed {
 
 
 /* Settings container for all buttons */
+<<<<<<< HEAD
 
 .settingsButtons {
     box-align: start;
@@ -823,6 +987,25 @@ header .hide-completed {
     justify-content: start;
     /*box-shadow: 0px 3px 5px;*/
     position: relative;
+=======
+.settingsButtons{
+  box-align: start;
+  font-size: .5em;
+  width: 100%;
+  height: 100%;
+  margin-top: 40%;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  
+  
+
+  /*box-shadow: 0px 3px 5px;*/
+  position: relative;
+>>>>>>> parent of bfc1e52... Revert "Added template got settings page working"
 }
 
 
