@@ -12,6 +12,12 @@ body {
     height: 100%;
     width: 100%;
 }
+.small-font {
+    font-size: 7px;
+}
+.btn-nowrap {
+    white-space: nowrap;
+}
 
 .bg-purple {
     background-color: purple;
@@ -382,14 +388,14 @@ body {
 /* MAP/LOCATIONS PAGE */
 
 
-body {
+/*body {
     padding: 0;
     margin: 0;
 }
-html, body, #map {
+html, body, #mapid {
     height: 100%;
     width: 100vw;
-}
+} */
 
 
 /* .exampleButtons {
@@ -680,7 +686,7 @@ header .hide-completed {
     background-image: url('/images/ed-head.png');
     background-size: 100% 100%;
     width: 100%;
-    height: 50%;
+    height: 30%;
     position: fixed;
 }
 
@@ -717,7 +723,7 @@ header .hide-completed {
     background-image: url('/images/header-image2.jpg');
     background-size: 100% 100%;
     width: 100%;
-    height: 50%;
+    height: 30%;
     position: fixed;
 }
 
@@ -731,7 +737,7 @@ header .hide-completed {
 .refresher {
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: auto;
+    margin-left: 50%;
     margin-right: auto
 }
 
@@ -755,7 +761,60 @@ header .hide-completed {
     /*box-shadow: 0px 3px 5px;*/
     position: relative;
 }
-
+.cone {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto
+}
+.library {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto
+}
+.contact{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto
+}
+.multi {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto
+}
+.thereach {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto
+}
+.pharmacy {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto
+}
+.student {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto
+}
+.clinical {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto
+}
+.residency {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto
+}
 
 /*---------------------------------------------------------------------------*/
 
