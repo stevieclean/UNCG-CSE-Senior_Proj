@@ -139,7 +139,6 @@ Template.buttons.events({
 
 Template.dropdownmenu.events({
     "click #settings": function() {
-        console.log("STUFF");
         currPage = "Settings";
         Session.set("myTemplate", currPage);
     }
