@@ -6,10 +6,11 @@ import { Template } from "meteor/templating";
 export default class Calendar {
 	constructor() {
 		this._listeners = new EventListener;
+		this.calOpen = false;
 		this.title = "";
 		this.eventLocation = "";
 		this.notes = "";
-		this.template = Template.Calendar.events({
+		this.templateHelper = Template.Calendar.events({
 			"click #sendevent": function() {
 				this.title = document.getElementById("titletextarea").value;
 				this.notes = document.getElementById("messagetextarea").value;
@@ -107,7 +108,24 @@ export default class Calendar {
 				var startDate = new Date(startYear, startMonth, startDay, 0, 0, 0, 0);
 				var endDate = new Date(endYear, endMonth, endDay, 0, 0, 0, 0);
 				window.plugins.calendar.createEventInteractively(this.title,this.eventLocation,this.notes,startDate,endDate,success,error);
+			},
+			"click #calendarButton": function() {
+				console.log("Called Calendar Button");
 			}
+		});
+		this.templateRender = Template.Calendar.onRendered(function() {
+			$('#datepicker').datepicker({
+				uiLibrary: 'bootstrap4',
+				icons: {
+					rightIcon: '<span class="fa fa-calendar"></span>'
+				}
+			});
+			$('#datepicker2').datepicker({
+				uiLibrary: 'bootstrap4',
+				icons: {
+             rightIcon: '<span class="fa fa-calendar"></span>'
+         }
+			});
 		})
 	}
 
@@ -115,8 +133,6 @@ export default class Calendar {
 		console.log("added calendar listener.");
 		return this._listeners;
 	}
-
-
 
 	handleMessage(message) {
 		if (message.dest == Destination["CALENDAR"]) {

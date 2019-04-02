@@ -3,15 +3,15 @@ App.info({
 //  id: 'com.example.matt.uber',
 //  name: 'über',
 //  description: 'Get über power in one button click',
-//  author: 'Matt Development Group',
+//  author: 'Team WIP',
 //  email: 'contact@example.com',
 //  website: 'http://example.com'
 });
 
 // Set up resources such as icons and launch screens.
 App.icons({
-  'iphone_2x': './public/images/Icon-App-60x60@2x.png',//iPhone 5, SE, 6, 6s, 7, 8
-  'iphone_3x': './public/images/Icon-App-60x60@3x.png',// iPhone 6 Plus, 6s Plus, 7 Plus, 8 Plus, X
+  'iphone_2x': './public/images/Icon-60@2x.png',//iPhone 5, SE, 6, 6s, 7, 8
+  'iphone_3x': './public/images/Icon-60@3x.png',// iPhone 6 Plus, 6s Plus, 7 Plus, 8 Plus, X
   'app_store':'./public/images/playstore-icon.png',//playstore icon
   'android_mdpi': './public/images/ic_launcher1x_mdpi.png',
   'android_hdpi': './public/images/ic_launcher1.5x_hdpi.png',
@@ -24,6 +24,7 @@ App.icons({
 App.launchScreens({
   'iphone_2x': './public/images/logo-splash.jpg',
   'iphone5': './public/images/logo-splash.jpg',
+  'android': './public/images/logo-splash.jpg',
   // More screen sizes and platforms...
 });
 

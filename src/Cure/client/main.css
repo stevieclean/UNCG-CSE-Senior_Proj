@@ -33,8 +33,20 @@ body {
     /*box-shadow: 0px 3px 5px;*/
 }
 
+.top-buffer-sm {
+    margin-top: 10px;
+}
+
 .top-buffer {
     margin-top: 70px;
+}
+
+.top-buffer-lg {
+    margin-top: 90px;
+}
+
+.top-bufferX2 {
+    margin-top: 140px;
 }
 
 .top-buffer2 {
@@ -418,33 +430,13 @@ body {
     z-index: 1;
 }
 
+.fa-calendar {
+    color: white;
+}
+
 .calTitleForm {
     display: flex;
     flex-direction: column;
-    position: relative;
-}
-
-.startmonth {
-    position: relative;
-}
-
-.startday {
-    position: relative;
-}
-
-.startyear {
-    position: relative;
-}
-
-.endmonth {
-    position: relative;
-}
-
-.endday {
-    position: relative;
-}
-
-.endyear {
     position: relative;
 }
 
