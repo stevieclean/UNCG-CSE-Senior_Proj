@@ -36,16 +36,14 @@ Template.GoalTracker.events({
         console.log("adding a new goal")
 
         var goalText = document.getElementById("text").value;
-
-
+        console.log(goalText);
         //Create a new gooal and put it into the collection
         Goals.insert({
-            goalText,
+            text: goalText,
             createdAt: new Date(), // current time
         });
-
+        document.getElementById("text").value = '';
         // Clear form
-        target.text.value = '';
 
     },
 });
