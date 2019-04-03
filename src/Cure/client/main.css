@@ -657,6 +657,9 @@ header .hide-completed {
     position: relative; 
     
 }
+.creditstattext{
+    position: relative; 
+}
 
 .handouts {
     margin-top: auto;
@@ -668,7 +671,7 @@ header .hide-completed {
 .refresher {
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: 50%;
+    margin-left: auto;
     margin-right: auto
 }
 
