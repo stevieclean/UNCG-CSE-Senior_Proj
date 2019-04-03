@@ -746,6 +746,11 @@ li.private {
     position: fixed;
 }
 
+.conferencetext{
+    position: relative; 
+    
+}
+
 .handouts {
     margin-top: auto;
     margin-bottom: auto;
