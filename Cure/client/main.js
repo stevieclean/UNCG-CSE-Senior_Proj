@@ -14,6 +14,10 @@ import '../imports/ui/body.js';
 import './main.html';
 import './hotdial.html';
 import './settings.html';
+import './clock.html';
+import './profile.html';
+import './password.html';
+import './notes.html';
 import './education.html';
 import './map.html';
 import './calendar.html';
@@ -115,27 +119,38 @@ Template.OneDial.events({
 });
 
 Template.buttons.events({
-    "click #location": function() {
-        currPage = "Map";
-        Session.set("myTemplate", currPage);
-    },
-    "click #calendar": function() {
-        currPage = "Calendar"; //Change to name of template
-        Session.set("myTemplate", currPage);
-    },
-    "click #home": function() {
-        currPage = "MainPage";
-        Session.set("myTemplate", currPage);
-    },
-    "click #goalTracker": function() {
-        currPage = "Goaltracker";
-        Session.set("myTemplate", currPage);
-    },
-    "click #education": function() {
-        currPage = "Education";
-        Session.set("myTemplate", currPage);
-    }
+	"click #location": function () {
+		currPage = "Map";
+		Session.set("myTemplate", currPage);
+	},
+	"click #calendar": function () {
+		currPage = "Calendar";//Change to name of template
+		Session.set("myTemplate", currPage);
+	},
+	"click #home": function () {
+		currPage = "MainPage";
+		Session.set("myTemplate", currPage);
+	},
+	"click #goalTracker": function () {
+		currPage = "Goaltracker";
+		Session.set("myTemplate", currPage);
+	},
+	"click #education": function () {
+		currPage = "Education";
+		Session.set("myTemplate", currPage);
+	}
+	//"click #settings": function () {
+	//	currPage = "Settings";
+	//	Session.set("myTemplate", currPage);
+	//}
+
 });
+Template.dropdownmenu.events({
+  "click #settings": function () {
+		currPage = "Settings";
+		Session.set("myTemplate", currPage);
+	}
+})
 
 Template.dropdownmenu.events({
     "click #settings": function() {
