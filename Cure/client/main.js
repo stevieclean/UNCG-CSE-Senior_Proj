@@ -119,28 +119,6 @@ Template.OneDial.events({
 });
 
 Template.buttons.events({
-<<<<<<< HEAD
-    "click #location": function() {
-        currPage = "Map";
-        Session.set("myTemplate", currPage);
-    },
-    "click #calendar": function() {
-        currPage = "Calendar"; //Change to name of template
-        Session.set("myTemplate", currPage);
-    },
-    "click #home": function() {
-        currPage = "MainPage";
-        Session.set("myTemplate", currPage);
-    },
-    "click #goalTracker": function() {
-        currPage = "Goaltracker";
-        Session.set("myTemplate", currPage);
-    },
-    "click #education": function() {
-        currPage = "Education";
-        Session.set("myTemplate", currPage);
-    }
-=======
 	"click #location": function () {
 		currPage = "Map";
 		Session.set("myTemplate", currPage);
@@ -166,7 +144,6 @@ Template.buttons.events({
 	//	Session.set("myTemplate", currPage);
 	//}
 
->>>>>>> parent of bfc1e52... Revert "Added template got settings page working"
 });
 Template.dropdownmenu.events({
   "click #settings": function () {

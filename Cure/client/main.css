@@ -255,37 +255,6 @@ body {
 }
 
 .fa-book {
-<<<<<<< HEAD
-    color: lightblue;
-}
-
-.EduButton {
-    background: transparent;
-    width: 4em;
-    height: 4em;
-    padding: 0px;
-    background-image: url('/images/education.png');
-    background-size: 95%;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: none;
-    outline: none;
-    border-radius: auto;
-}
-
-.SettingsButton {
-    background: transparent;
-    width: 4em;
-    height: 4em;
-    padding: 0px;
-    background-image: url('/images/settings.png');
-    background-size: 250%;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: none;
-    outline: none;
-    border-radius: auto;
-=======
   color: lightblue;
 }
 
@@ -314,7 +283,6 @@ body {
   border:none;
   outline: none;
   border-radius: auto;
->>>>>>> parent of bfc1e52... Revert "Added template got settings page working"
 }
 
 
@@ -582,23 +550,6 @@ h1 {
     margin-right: 1em;
 }
 
-<<<<<<< HEAD
-form {
-    margin-top: 10px;
-    margin-bottom: -10px;
-    position: relative;
-}
-
-.new-goal input {
-    text-align: left;
-    box-sizing: border-box;
-    padding: 10px 0;
-    background: transparent;
-    border: none;
-    width: 100%;
-    padding-right: 80px;
-    font-size: 1em;
-=======
 /* Main container for education page */
 .education{
   background-image: url('/images/ed-head.png');
@@ -672,7 +623,6 @@ form {
 
   /*box-shadow: 0px 3px 5px;*/
   position: relative;
->>>>>>> parent of bfc1e52... Revert "Added template got settings page working"
 }
 
 .new-task input:focus {
@@ -718,7 +668,7 @@ li.private {
     border-color: #ddd;
 }
 
-header .hide-completed {
+.goal_header .hide-completed {
     float: right;
 }
 
@@ -896,22 +846,12 @@ header .hide-completed {
 
 /* Main container for settings page */
 
-<<<<<<< HEAD
-.settingstitle {
-    font-size: 2.2em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 200px;
-    justify-content: start;
-    color: rgb(70, 67, 67);
-=======
 .settings{
   background-image: url('/images/head-settings.png');
   background-size: 100%, 80%;
   background-repeat: no-repeat;
   width: 100%;
-  height: 30%;
+  height: 40%;
   position: fixed;
   
   
@@ -921,6 +861,8 @@ header .hide-completed {
   margin-bottom:auto;
   margin-left: auto;
   margin-right: auto;
+  
+
 }
 .clock{
   
@@ -928,7 +870,7 @@ header .hide-completed {
   margin-bottom:auto;
   margin-left: auto;
   margin-right: auto;
-  position: fixed;
+  
   
   
 }
@@ -949,6 +891,7 @@ header .hide-completed {
   margin-right: auto;
   
   
+  
 }
 .notes{
   
@@ -958,7 +901,6 @@ header .hide-completed {
   margin-right: auto;
   
   
->>>>>>> parent of bfc1e52... Revert "Added template got settings page working"
 }
 
 .settingsdesc {
@@ -971,42 +913,27 @@ header .hide-completed {
 
 
 /* Settings container for all buttons */
-<<<<<<< HEAD
-
-.settingsButtons {
-    box-align: start;
-    font-size: .5em;
-    width: 100%;
-    height: 100%;
-    margin-top: 10%;
-    margin-bottom: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    /*box-shadow: 0px 3px 5px;*/
-    position: relative;
-=======
 .settingsButtons{
   box-align: start;
-  font-size: .5em;
-  width: 100%;
-  height: 100%;
-  margin-top: 40%;
+  font-size: .4em;
+  width: 60%;
+  height: 40%;
+  margin-top: 30%;
   margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: start;
-  
-  
-
+  border-spacing: 5px;
+  border: none;
   /*box-shadow: 0px 3px 5px;*/
   position: relative;
->>>>>>> parent of bfc1e52... Revert "Added template got settings page working"
 }
-
+.btn{
+    margin-left :15px;
+    margin-bottom: 2px;
+    
+}
 
 /*---------------------------------------------------------------------------*/

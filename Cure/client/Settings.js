@@ -19,11 +19,21 @@ export default class Settings {
 				currPage = "Clock";
                 Session.set("myTemplate", currPage);
 			},
+			
 			"click #profile": function() {
+				console.log(currPage);
+				currPage = "Profile";
+                Session.set("myTemplate", currPage);
 			},
 			"click #password": function() {
+				console.log(currPage);
+				currPage = "Password";
+                Session.set("myTemplate", currPage);
 			},
 			"click #notes": function() {
+				console.log(currPage);
+				currPage = "Notes";
+                Session.set("myTemplate", currPage);
 			}
 		})
 	}
