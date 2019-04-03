@@ -667,6 +667,11 @@ header .hide-completed {
     position: fixed;
 }
 
+.conferencetext{
+    position: relative; 
+    
+}
+
 .handouts {
     margin-top: auto;
     margin-bottom: auto;
