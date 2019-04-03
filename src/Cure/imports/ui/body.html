@@ -1,6 +1,6 @@
 <template name="GoalTracker">
   <div class="container top-buffer">
-    <header>
+    <header class = "goal_header">
       <h1>Goal Tracker</h1>
 <!--create a form for the new goals to go into. -->
 <form class="new-goal">
@@ -12,10 +12,20 @@
   </button>
 </div>
     </header>
-    <ul>
+    <ul class = "goal_list">
       {{#each goals}}
         {{> goal}}
       {{/each}}
     </ul>
   </div>
+</template>
+
+<template name="goal">
+  <li class="checkboxs {{#if checked}}checked{{/if}}">
+    <button class="delete">&times;</button>
+
+    <input type="checkbox" checked="{{checked}}" class="toggle-checked" />
+
+    <span class="text">{{text}}</span>
+  </li>
 </template>

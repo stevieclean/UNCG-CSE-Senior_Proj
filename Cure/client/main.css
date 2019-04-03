@@ -87,6 +87,19 @@ body {
     height: 100%;
 }
 
+/*Dropdown menu stuff */
+.dropdown{
+  position: relative;
+}
+.dropdown-menu{
+  background: #343a40;
+}
+.dropdown-toggle{
+  background-color: transparent;
+}
+.dropdown-content{
+  background-color: #343a40;
+}
 
 /* Description of CURE */
 
@@ -106,7 +119,15 @@ body {
     top: 40%;
 }
 
-
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.42;
+  border-radius: 15px;
+}
 /* Actual hot dial button */
 
 .hotDialButtonClass {
