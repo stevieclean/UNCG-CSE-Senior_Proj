@@ -1,6 +1,12 @@
 import EventListener from "./Events/EventListener.js";
 import { Destination } from "./Events/Destination.js";
 
+
+//MongoDB Section
+Events = new Mongo.Collections('Event');
+Locations = new Mongo.Collections('Location');
+
+
 export default class Map {
 	constructor() {
 		this.events = "Bodulus";
@@ -24,5 +30,9 @@ export default class Map {
 		}
 		//if not true the message dies off
 	}
+	
+	//var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+	
+	
 
 }
