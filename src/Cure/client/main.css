@@ -32,8 +32,18 @@ body {
     position: absolute;
     /*box-shadow: 0px 3px 5px;*/
 }
+/* Editing container sizes */
+
 
 /* Moving containers down from the top of the screen */
+
+.bottom-buffer-sm {
+    margin-bottom: 10px;
+}
+
+.bottom-buffer-sm-2 {
+    margin-bottom: 20px;
+}
 
 .top-buffer-sm {
     margin-top: 10px;
@@ -59,7 +69,11 @@ body {
 /* Button modification classes */
 
 .btn-width-m {
-    width: 80px;
+    width: 100px;
+}
+
+.btn-width-lrg {
+    width: 150px;
 }
 
 .btn-height-m {
