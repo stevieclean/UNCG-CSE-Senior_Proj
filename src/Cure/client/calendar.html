@@ -1,3 +1,6 @@
+<head>
+    <link rel="stylesheet" href="/client/tiny-date-picker.css">
+</head>
 <template name="Calendar">
     <div class="container CURE d-inline-block fill">
         <div class="col top-buffer-lg bg-dark rounded">
@@ -20,19 +23,32 @@
                 <label class="text-white-50" for="startdateselect">Select Start Date:</label>
             </div>
             <div class="d-flex justify-content-center">
-                    <input id="datepicker" width="276" />
+                    <!-- <input type="text" id="datepicker" width="276" /> -->
+                    <input type="text" class="startModal" width="100">
+                    <div class="d-flex perm-cal"></div>
             </div>
             <div class="d-flex justify-content-center">
                 <label class="text-white-50" for="enddateselect">Select End Date:</label>
             </div>
             <div class="d-flex justify-content-center">
-                <input id="datepicker2" class="" width="276" />
+                <input id="datepicker2" class="endModal" width="276" />
             </div>
-            <div class="d-block text-center top-buffer2">
-                    <button id="sendevent" type="button" class="btn btn-secondary btn-sm">
-                        <span class="fas fa-plus"></span> Add Event
+            <div class="row justify-content-center">
+                <div class="d-block text-center top-buffer2">
+                        <button id="sendevent" type="button" class="btn btn-secondary btn-sm">
+                            <span class="fas fa-plus"></span> Add Event
+                        </button>
+                </div>
+                <div class="d-block text-center top-buffer2">
+                    <button id="delevent" type="button" class="btn btn-secondary btn-sm">
+                        <span class="fas fa-times"></span> Delete Event
                     </button>
+                </div>
             </div>
         </div>
     </div>
+</template>
+
+<template name="bootstrapCalendar">
+    
 </template>

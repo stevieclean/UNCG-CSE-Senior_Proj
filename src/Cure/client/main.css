@@ -33,6 +33,8 @@ body {
     /*box-shadow: 0px 3px 5px;*/
 }
 
+/* Moving containers down from the top of the screen */
+
 .top-buffer-sm {
     margin-top: 10px;
 }
@@ -52,6 +54,16 @@ body {
 .top-buffer2 {
     margin-top: 30px;
     padding-bottom: 1em;
+}
+
+/* Button modification classes */
+
+.btn-width-m {
+    width: 80px;
+}
+
+.btn-height-m {
+    height: 40px;
 }
 
 .fill {
@@ -80,6 +92,20 @@ body {
     height: 15%;
 }
 
+/*Dropdown menu stuff */
+.dropdown{
+  position: relative;
+}
+.dropdown-menu{
+  position: relative;
+  background: #343a40;
+}
+.dropdown-toggle{
+  background-color: transparent;
+}
+.dropdown-content{
+  background-color: #343a40;
+}
 
 /* CURE background image to be displayed on main page */
 
@@ -575,7 +601,7 @@ li.private {
     border-color: #ddd;
 }
 
-header .hide-completed {
+.goal-header .hide-completed {
     float: right;
 }
 
@@ -612,7 +638,7 @@ header .hide-completed {
     background-image: url('/images/ed-head.png');
     background-size: 100% 100%;
     width: 100%;
-    height: 50%;
+    height: 30%;
     position: fixed;
 }
 
@@ -649,8 +675,16 @@ header .hide-completed {
     background-image: url('/images/header-image2.jpg');
     background-size: 100% 100%;
     width: 100%;
-    height: 50%;
+    height: 30%;
     position: fixed;
+}
+
+.conferencetext{
+    position: relative; 
+    
+}
+.creditstattext{
+    position: relative; 
 }
 
 .handouts {
@@ -687,7 +721,60 @@ header .hide-completed {
     /*box-shadow: 0px 3px 5px;*/
     position: relative;
 }
-
+.cone {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto
+}
+.library {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto
+}
+.contact{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto
+}
+.multi {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto
+}
+.thereach {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto
+}
+.pharmacy {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto
+}
+.student {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto
+}
+.clinical {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto
+}
+.residency {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto
+}
 
 /*---------------------------------------------------------------------------*/
 
@@ -700,14 +787,61 @@ header .hide-completed {
 
 /* Main container for settings page */
 
-.settingstitle {
-    font-size: 2.2em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 200px;
-    justify-content: start;
-    color: rgb(70, 67, 67);
+.settings{
+  background-image: url('/images/head-settings.png');
+  background-size: 100%, 80%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 40%;
+  position: fixed;
+  
+  
+}
+.settingsdesc{
+  margin-top:auto;
+  margin-bottom:auto;
+  margin-left: auto;
+  margin-right: auto;
+  
+
+}
+.clock{
+  
+  margin-top:auto;
+  margin-bottom:auto;
+  margin-left: auto;
+  margin-right: auto;
+  
+  
+  
+}
+.profile{
+  
+  margin-top:auto;
+  margin-bottom:auto;
+  margin-left: auto;
+  margin-right: auto;
+  
+  
+}
+.password{
+  
+  margin-top:auto;
+  margin-bottom:auto;
+  margin-left: auto;
+  margin-right: auto;
+  
+  
+  
+}
+.notes{
+  
+  margin-top:auto;
+  margin-bottom:auto;
+  margin-left: auto;
+  margin-right: auto;
+  
+  
 }
 
 .settingsdesc {
@@ -717,25 +851,29 @@ header .hide-completed {
     background-color: white;
     color: rgb(59, 58, 58);
 }
-
-
 /* Settings container for all buttons */
 
-.settingsButtons {
-    box-align: start;
-    font-size: .5em;
-    width: 100%;
-    height: 100%;
-    margin-top: 10%;
-    margin-bottom: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    /*box-shadow: 0px 3px 5px;*/
-    position: relative;
+.settingsButtons{
+  box-align: start;
+  font-size: .4em;
+  width: 60%;
+  height: 40%;
+  margin-top: 30%;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  border-spacing: 5px;
+  border: none;
+  /*box-shadow: 0px 3px 5px;*/
+  position: relative;
 }
-
+.btn{
+    margin-left :15px;
+    margin-bottom: 2px;
+    
+}
 
 /*---------------------------------------------------------------------------*/

@@ -1,11 +1,11 @@
 <head>
   <title>CURE App</title>
-  <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
     <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    -->
 </head>
 
 <body>
@@ -65,19 +65,13 @@
 </template>
 
 <template name="dropdownmenu">
-  <a class="navbar-brand" href="#">CURE</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerMenu" aria-controls="navbarTogglerMenu" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarTogglerMenu">
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Settings</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-      </ul>
+  <div class="dropdown ml-auto" >
+    <button class="btn btn-outline-secondary dropdown-toggle btn-sm" type="button" data-toggle="dropdown" data-target="#dropdown-menu" aria-hashpopup="true" aria-expanded="false">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="bg-dark dropdown-menu dropdown-menu-right" id="dropdown-menu" aria-labelledby="dropdown-menu">
+        <button class="btn btn-outline-secondary btn-sm" id="settings" type='button'>Settings</button>
+        <a class="dropdown-item btn-sm" href='#'>About</a>
     </div>
-
+  </div>
 </template>
