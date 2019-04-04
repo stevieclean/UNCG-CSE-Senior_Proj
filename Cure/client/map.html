@@ -41,7 +41,23 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/MapID/997/256/{z}/{x}/{y}.png?acces
 
 mymap.locate({setView: true, maxZoom: 16}); 
 
+//Adds a marker somewhere
 var marker = L.marker([51.5, -0.09]).addTo(mymap);
+
+//Sample, makes a pop up happen upon click
+marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
+
+//Added some sample click to test Map Clicks
+var popup = L.popup();
+
+function onMapClick(e) {
+    popup
+        .setLatLng(e.latlng)
+        .setContent("You clicked the map at " + e.latlng.toString())
+        .openOn(mymap);
+}
+
+mymap.on('click', onMapClick);
 
 </script>
 
