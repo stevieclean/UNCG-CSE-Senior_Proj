@@ -1,32 +1,45 @@
 import EventListener from "./Events/EventListener.js";
 import { Destination } from "./Events/Destination.js";
 import { Session } from 'meteor/session';
-import './settings.html';
 import { Template } from "meteor/templating";
 import { currPage } from "./main.js";
-
+import './settings.html';
+import './clock.html';
+import './profile.html';
+import './password.html';
+import './notes.html';
 
 export default class Settings {
 	constructor() {
-		this.events = "";
+		//this.events = "";
 		this._listeners = new EventListener;
 		this.template = Template.Settings.events({
-			"click #addclockbutton": function() {
+			"click #clock": function() {
 				console.log(currPage);
 				currPage = "Clock";
                 Session.set("myTemplate", currPage);
 			},
-			"click #addprofilebutton": function() {
+			
+			"click #profile": function() {
+				console.log(currPage);
+				currPage = "Profile";
+                Session.set("myTemplate", currPage);
 			},
-			"click #addpasswordbutton": function() {
+			"click #password": function() {
+				console.log(currPage);
+				currPage = "Password";
+                Session.set("myTemplate", currPage);
 			},
-			"click #addnotesbutton": function() {
+			"click #notes": function() {
+				console.log(currPage);
+				currPage = "Notes";
+                Session.set("myTemplate", currPage);
 			}
 		})
 	}
 
 	get listeners() {
-		console.log("added settings listener");
+		console.log("added settings listener.");
 		return this._listeners;
 	}
 
