@@ -1,28 +1,30 @@
 <template name="HotDial">
-    <div class= "hotdialtitle top-buffer"> 
-        Hot Line
-    </div>
-    <div class= "hotdialdesc">
-        Click a button to call one of the following facilities.
-    </div>
-    <div class="container border">
+    <div class="CURE d-inline-block fill align-content-center">
+    <div class="container bg-dark rounded">
+            <div class= "hotdialtitle text-white-50 top-buffer text-center"> 
+                    Hot Line
+                </div>
+                <div class= "hotdialdesc text-white-50 text-center">
+                    Click a button to call one of the following facilities.
+                </div>
         <div class="d-flex flex-column align-items-center">
             <div class="top-buffer-sm">
-                <button id="addhdbutton" class="btn btn-secondary btn-sm btn-width-m btn-height-m"><span class="fa fa-plus"></span>&nbsp;Add HotDial</button>
+                <button id="addhdbutton" class="btn btn-secondary btn-sm btn-width-lrg btn-height-m"><span class="fa fa-plus"></span>&nbsp;Add HotDial</button>
             </div>
             <div class="top-buffer-sm">
-                <button id="gcstopbutton" class="btn btn-secondary btn-sm btn-width-m btn-height-m">GCSTOP</button>
+                <button id="gcstopbutton" class="btn btn-secondary btn-sm btn-width-lrg btn-height-m">GCSTOP</button>
             </div>
             <div class="top-buffer-sm">
-                <button id="nchrcbutton" class="btn btn-secondary btn-sm btn-width-m btn-height-m">NCHRC</button>
+                <button id="nchrcbutton" class="btn btn-secondary btn-sm btn-width-lrg btn-height-m">NCHRC</button>
             </div>
-            <div class="top-buffer-sm">
-                <button id="conebutton" class="btn btn-secondary btn-sm btn-width-m btn-height-m">Cone Helpline</button>
+            <div class="top-buffer-sm bottom-buffer-sm">
+                <button id="conebutton" class="btn btn-secondary btn-sm btn-width-lrg btn-height-m">Cone Helpline</button>
             </div>
             <!-- This is the container for ALL newly created buttons -->
             <!--{{> dynamicButtonTemplate}}-->
         </div>
     </div>
+</div>
 </template>
 
 <template name="dynamicButtonTemplate">
