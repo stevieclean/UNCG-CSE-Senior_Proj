@@ -1,22 +1,26 @@
 <template name="GoalTracker">
   <div class="container top-buffer">
-    <header class = "goal_header">
-      <h1>Goal Tracker</h1>
-<!--create a form for the new goals to go into. -->
-<form class="new-goal">
+      <div class="container CURE d-inline-block fill">
+      <header class = "goal_header">
+      <div class="d-flex justify-content-center"> 
+        <h3 class="text-white-50">Goal Tracker</h3>
+      </div>
+        <!--create a form for the new goals to go into. -->
+        <form class="new-goal">
         <input id = "text" type="text" name="text" placeholder="Create a new Goal!" />
-</form>
-<div class="d-block text-center top-buffer2">
-  <button id="addgoal" type="button" class="btn btn-secondary btn-sm">
-      <span class="fas fa-plus"></span> Commit to the Cure!
-  </button>
-</div>
-    </header>
-    <ul class = "goal_list">
+        </form>
+        <div class="d-block text-center top-buffer2">
+        <button id="addgoal" type="button" class="btn btn-secondary btn-sm">
+          <span class="fas fa-plus"></span> Commit to the Cure!
+        </button>
+        </div>
+        </header>
+        <ul class = "goal_list">
       {{#each goals}}
         {{> goal}}
       {{/each}}
-    </ul>
+        </ul>
+  </div>
   </div>
 </template>
 
