@@ -1,5 +1,5 @@
 <template name="HotDial">
-    <div class= "hotdialtitle"> 
+    <div class= "hotdialtitle top-buffer"> 
         Hot Line
     </div>
     <div class= "hotdialdesc">
@@ -7,18 +7,27 @@
     </div>
     <div class="container border">
         <div class="d-flex flex-column align-items-center">
-            <div class="">
-                <button id="addhdbutton" class="btn btn-secondary btn-sm btn-block"><span class="fa fa-plus"></span>&nbsp;Add HotDial</button>
+            <div class="top-buffer-sm">
+                <button id="addhdbutton" class="btn btn-secondary btn-sm btn-width-m btn-height-m"><span class="fa fa-plus"></span>&nbsp;Add HotDial</button>
             </div>
-            <div class="">
-                <button id="gcstopbutton" class="btn btn-secondary  btn-block">GCSTOP</button>
+            <div class="top-buffer-sm">
+                <button id="gcstopbutton" class="btn btn-secondary btn-sm btn-width-m btn-height-m">GCSTOP</button>
             </div>
-            <div class="">
-                <button id="nchrcbutton" class="btn btn-secondary btn-sm btn-block">NCHRC</button>
+            <div class="top-buffer-sm">
+                <button id="nchrcbutton" class="btn btn-secondary btn-sm btn-width-m btn-height-m">NCHRC</button>
             </div>
-            <div class="">
-                <button id="conebutton" class="btn btn-secondary btn-sm btn-block">Cone Helpline</button>
+            <div class="top-buffer-sm">
+                <button id="conebutton" class="btn btn-secondary btn-sm btn-width-m btn-height-m">Cone Helpline</button>
             </div>
+            <!-- This is the container for ALL newly created buttons -->
+            <!--{{> dynamicButtonTemplate}}-->
         </div>
     </div>
+</template>
+
+<template name="dynamicButtonTemplate">
+    <!--
+    {{#each newButton in hotdialbuttons}}
+        {{> }}
+        -->
 </template>
