@@ -2,11 +2,14 @@ import EventListener from "./Events/EventListener.js";
 import { Destination } from "./Events/Destination.js";
 import './calendar.html';
 import { Template } from "meteor/templating";
+import TinyDatePicker from "tiny-date-picker/dist/tiny-date-picker";
+
+g_startDate = new Date();
+g_endDate = new Date();
 
 export default class Calendar {
 	constructor() {
 		this._listeners = new EventListener;
-		this.calOpen = false;
 		this.title = "";
 		this.eventLocation = "";
 		this.notes = "";
@@ -14,6 +17,9 @@ export default class Calendar {
 			"click #sendevent": function() {
 				this.title = document.getElementById("titletextarea").value;
 				this.notes = document.getElementById("messagetextarea").value;
+				var success = function(message) { alert("Successfully added calendar event!"); };
+  				var error = function(message) { alert("Error: " + message); };
+				/*
 				var elem1 = document.getElementById("strtmonthdrop");
 				var elem2 = document.getElementById("endmonthdrop");
 				var elemSDay = document.getElementById("strtdaydrop");
@@ -26,9 +32,6 @@ export default class Calendar {
 				var endMonth = 0;
 				var endDay = parseInt(elemEDay.options[elemEDay.selectedIndex].value, 10);
 				var endYear = parseInt(elemEYear.options[elemEYear.selectedIndex].value, 10);
-
-				var success = function(message) { alert("Success: " + JSON.stringify(message)); };
-  				var error = function(message) { alert("Error: " + message); };
 				switch (elem1.options[elem1.selectedIndex].value){
 					case "Jan":
 						startMonth = 0;
@@ -105,15 +108,19 @@ export default class Calendar {
 						endMonth = 11;
 						break;
 				}
-				var startDate = new Date(startYear, startMonth, startDay, 0, 0, 0, 0);
-				var endDate = new Date(endYear, endMonth, endDay, 0, 0, 0, 0);
-				window.plugins.calendar.createEventInteractively(this.title,this.eventLocation,this.notes,startDate,endDate,success,error);
+				*/
+				console.log(g_startDate);
+				window.plugins.calendar.createEvent(this.title,this.eventLocation,this.notes,g_startDate,g_endDate,success,error);
 			},
-			"click #calendarButton": function() {
-				console.log("Called Calendar Button");
+			"click #delevent": function() {
+				this.title = document.getElementById("titletextarea").value;
+				var success = function(message) { alert("Successfully deleted calendar event!"); };
+  				var error = function(message) { alert("Error: Could not find message"); };
+				window.plugins.calendar.deleteEvent(this.title,null,null,g_startDate,g_endDate,success,error);
 			}
 		});
 		this.templateRender = Template.Calendar.onRendered(function() {
+			/*
 			$('#datepicker').datepicker({
 				uiLibrary: 'bootstrap4',
 				icons: {
@@ -125,6 +132,22 @@ export default class Calendar {
 				icons: {
              rightIcon: '<span class="fa fa-calendar"></span>'
          }
+			});
+			*/
+			const startDate = TinyDatePicker('.startModal', {
+			}).on({
+				select: function (_, dp) {
+					console.log('SELECT ', _, dp.state.selectedDate);
+					g_startDate = dp.state.selectedDate;
+				  }
+			});
+
+			const endDate = TinyDatePicker('.endModal', {	
+			}).on({
+				select: function (_, dp) {
+					console.log('SELECT ', _, dp.state.selectedDate);
+					g_endDate = dp.state.selectedDate;
+				  }
 			});
 		})
 	}
