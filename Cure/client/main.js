@@ -6,6 +6,7 @@ import '@fortawesome/fontawesome-free/js/all.js';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 import Controller from './Controller.js';
 //Goal Tracker import
 import '../imports/ui/body.js';
@@ -13,6 +14,10 @@ import '../imports/ui/body.js';
 import './main.html';
 import './hotdial.html';
 import './settings.html';
+import './clock.html';
+import './profile.html';
+import './password.html';
+import './notes.html';
 import './education.html';
 import './map.html';
 import './calendar.html';
@@ -27,13 +32,15 @@ import './course.html';
 import { Destination } from './Events/Destination.js';
 
 // prep some variables
-var startDate = new Date(2015, 2, 15, 18, 30, 0, 0, 0); // beware: month 0 = january, 11 = december
-var endDate = new Date(2015, 2, 15, 19, 30, 0, 0, 0);
+var startDate = new Date(2015,2,15,18,30,0,0,0); // beware: month 0 = january, 11 = december
+var endDate = new Date(2015,2,15,19,30,0,0,0);
 var title = "CURE Event";
 var eventLocation = "Home";
 var notes = "";
 var success = function(message) { alert("Success: " + JSON.stringify(message)); };
 var error = function(message) { alert("Error: " + message); };
+$('.dropdown-toggle').dropdown();
+
 /*
   // create an event silently (on Android < 4 an interactive dialog is shown)
   window.plugins.calendar.createEvent(title,eventLocation,notes,startDate,endDate,success,error);
@@ -112,32 +119,45 @@ Template.OneDial.events({
 });
 
 Template.buttons.events({
-    "click #location": function() {
-        currPage = "Map";
-        Session.set("myTemplate", currPage);
-    },
-    "click #calendar": function() {
-        currPage = "Calendar"; //Change to name of template
-        Session.set("myTemplate", currPage);
-    },
-    "click #home": function() {
-        currPage = "MainPage";
-        Session.set("myTemplate", currPage);
-    },
-    "click #goalTracker": function() {
-        currPage = "Goaltracker";
-        Session.set("myTemplate", currPage);
-    },
-    "click #education": function() {
-        currPage = "Education";
-        Session.set("myTemplate", currPage);
-    },
+	"click #location": function () {
+		currPage = "Map";
+		Session.set("myTemplate", currPage);
+	},
+	"click #calendar": function () {
+		currPage = "Calendar";//Change to name of template
+		Session.set("myTemplate", currPage);
+	},
+	"click #home": function () {
+		currPage = "MainPage";
+		Session.set("myTemplate", currPage);
+	},
+	"click #goalTracker": function () {
+		currPage = "Goaltracker";
+		Session.set("myTemplate", currPage);
+	},
+	"click #education": function () {
+		currPage = "Education";
+		Session.set("myTemplate", currPage);
+	}
+	//"click #settings": function () {
+	//	currPage = "Settings";
+	//	Session.set("myTemplate", currPage);
+	//}
+
+});
+Template.dropdownmenu.events({
+  "click #settings": function () {
+		currPage = "Settings";
+		Session.set("myTemplate", currPage);
+	}
+})
+
+Template.dropdownmenu.events({
     "click #settings": function() {
         currPage = "Settings";
         Session.set("myTemplate", currPage);
     }
-
-});
+})
 
 var controller = new Controller();
 /* Code to make phone call

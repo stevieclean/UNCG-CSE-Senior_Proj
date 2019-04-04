@@ -13,6 +13,10 @@ import '../imports/ui/body.js';
 import './main.html';
 import './hotdial.html';
 import './settings.html';
+import './clock.html';
+import './profile.html';
+import './password.html';
+import './notes.html';
 import './education.html';
 import './map.html';
 import './calendar.html';
@@ -24,6 +28,8 @@ import './spotlight.html';
 import './handouts.html';
 import './refresher.html';
 import './course.html';
+import '../imports/ui/body.html'
+//import '../imports/ui/goal.html'
 import { Destination } from './Events/Destination.js';
 
 // prep some variables
@@ -34,6 +40,7 @@ var eventLocation = "Home";
 var notes = "";
 var success = function(message) { alert("Success: " + JSON.stringify(message)); };
 var error = function(message) { alert("Error: " + message); };
+$('.dropdown-toggle').dropdown();
 /*
   // create an event silently (on Android < 4 an interactive dialog is shown)
   window.plugins.calendar.createEvent(title,eventLocation,notes,startDate,endDate,success,error);
@@ -131,13 +138,22 @@ Template.buttons.events({
     "click #education": function() {
         currPage = "Education";
         Session.set("myTemplate", currPage);
-    },
+    }
+
+});
+Template.dropdownmenu.events({
+  "click #settings": function () {
+		currPage = "Settings";
+		Session.set("myTemplate", currPage);
+	}
+})
+
+Template.dropdownmenu.events({
     "click #settings": function() {
         currPage = "Settings";
         Session.set("myTemplate", currPage);
     }
-
-});
+})
 
 var controller = new Controller();
 /* Code to make phone call

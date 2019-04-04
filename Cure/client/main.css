@@ -87,6 +87,20 @@ body {
     height: 100%;
 }
 
+/*Dropdown menu stuff */
+.dropdown{
+  position: relative;
+}
+.dropdown-menu{
+  position: relative;
+  background: #343a40;
+}
+.dropdown-toggle{
+  background-color: transparent;
+}
+.dropdown-content{
+  background-color: #343a40;
+}
 
 /* Description of CURE */
 
@@ -106,7 +120,15 @@ body {
     top: 40%;
 }
 
-
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.42;
+  border-radius: 15px;
+}
 /* Actual hot dial button */
 
 .hotDialButtonClass {
@@ -233,35 +255,34 @@ body {
 }
 
 .fa-book {
-    color: lightblue;
+  color: lightblue;
 }
 
-.EduButton {
-    background: transparent;
-    width: 4em;
-    height: 4em;
-    padding: 0px;
-    background-image: url('/images/education.png');
-    background-size: 95%;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: none;
-    outline: none;
-    border-radius: auto;
+.EduButton{
+  background:transparent;
+  width: 4em;
+  height: 4em;
+  padding: 0px;
+  background-image: url('/images/education.png');
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border:none;
+  outline: none;
+  border-radius: auto;
 }
-
-.SettingsButton {
-    background: transparent;
-    width: 4em;
-    height: 4em;
-    padding: 0px;
-    background-image: url('/images/settings.png');
-    background-size: 250%;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: none;
-    outline: none;
-    border-radius: auto;
+.SettingsButton{
+  background:transparent;
+  width: 4em;
+  height: 4em;
+  padding: 0px;
+  background-image: url('/imagessettings.png');
+  background-size: 250%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border:none;
+  outline: none;
+  border-radius: auto;
 }
 
 
@@ -589,21 +610,79 @@ h1 {
     margin-right: 1em;
 }
 
-form {
-    margin-top: 10px;
-    margin-bottom: -10px;
-    position: relative;
+/* Main container for education page */
+.education{
+  background-image: url('/images/ed-head.png');
+  background-size:100% 100%;
+  width: 100%;
+  height: 50%;
+  position: fixed;
+}
+.onlinecourse{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto
+}
+.creditstat{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto
+}
+.spotlight{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto
 }
 
-.new-goal input {
-    text-align: left;
-    box-sizing: border-box;
-    padding: 10px 0;
-    background: transparent;
-    border: none;
-    width: 100%;
-    padding-right: 80px;
-    font-size: 1em;
+.center-of-page{
+  top: 60%;
+}
+.depth1{
+  z-index: 1;
+
+}
+.conference{
+  background-image: url('/images/header-image2.jpg');
+  background-size: 100% 100%;
+  width: 100%;
+  height: 50%;
+  position: fixed;
+}
+.handouts{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto
+}
+.refresher{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto
+}
+.course{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.educationButtons{
+  width: 100%;
+  height: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /*box-shadow: 0px 3px 5px;*/
+  position: relative;
 }
 
 .new-task input:focus {
@@ -649,7 +728,7 @@ li.private {
     border-color: #ddd;
 }
 
-header .hide-completed {
+.goal_header .hide-completed {
     float: right;
 }
 
@@ -725,6 +804,11 @@ header .hide-completed {
     width: 100%;
     height: 30%;
     position: fixed;
+}
+
+.conferencetext{
+    position: relative; 
+    
 }
 
 .handouts {
@@ -827,14 +911,61 @@ header .hide-completed {
 
 /* Main container for settings page */
 
-.settingstitle {
-    font-size: 2.2em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 200px;
-    justify-content: start;
-    color: rgb(70, 67, 67);
+.settings{
+  background-image: url('/images/head-settings.png');
+  background-size: 100%, 80%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 40%;
+  position: fixed;
+  
+  
+}
+.settingsdesc{
+  margin-top:auto;
+  margin-bottom:auto;
+  margin-left: auto;
+  margin-right: auto;
+  
+
+}
+.clock{
+  
+  margin-top:auto;
+  margin-bottom:auto;
+  margin-left: auto;
+  margin-right: auto;
+  
+  
+  
+}
+.profile{
+  
+  margin-top:auto;
+  margin-bottom:auto;
+  margin-left: auto;
+  margin-right: auto;
+  
+  
+}
+.password{
+  
+  margin-top:auto;
+  margin-bottom:auto;
+  margin-left: auto;
+  margin-right: auto;
+  
+  
+  
+}
+.notes{
+  
+  margin-top:auto;
+  margin-bottom:auto;
+  margin-left: auto;
+  margin-right: auto;
+  
+  
 }
 
 .settingsdesc {
@@ -847,22 +978,27 @@ header .hide-completed {
 
 
 /* Settings container for all buttons */
-
-.settingsButtons {
-    box-align: start;
-    font-size: .5em;
-    width: 100%;
-    height: 100%;
-    margin-top: 10%;
-    margin-bottom: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    /*box-shadow: 0px 3px 5px;*/
-    position: relative;
+.settingsButtons{
+  box-align: start;
+  font-size: .4em;
+  width: 60%;
+  height: 40%;
+  margin-top: 30%;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  border-spacing: 5px;
+  border: none;
+  /*box-shadow: 0px 3px 5px;*/
+  position: relative;
 }
-
+.btn{
+    margin-left :15px;
+    margin-bottom: 2px;
+    
+}
 
 /*---------------------------------------------------------------------------*/

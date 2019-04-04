@@ -3,7 +3,7 @@ import { Goals } from '../api/goals.js';
 import './goal.js';
 import './body.html';
 
-Template.body.helpers({
+Template.GoalTracker.helpers({
     goals() {
         //Put the most recent goals at the top of the list
         console.log("Return the list...")
@@ -12,7 +12,7 @@ Template.body.helpers({
     },
 });
 
-Template.body.events({
+Template.GoalTracker.events({
     //create a new goal
     'submit.new-goal' (event) {
         // Prevent default browser form submit
