@@ -26,9 +26,10 @@ export default class EventListener {
             return;
         } else {
             console.log("Got an object of type " + object.constructor.name);
+            this.listeners.push(object); //Add the object to back of listeners array.
             return;
         }
-        this.listeners.push(object); //Add the object to back of listeners array.
+        
     }
 
     removeListener(object) {
@@ -43,8 +44,9 @@ export default class EventListener {
     }
 
     fireEvent(message) {
+        var i = 0
         for (i = 0; i < this.listeners.length; i++) {
-            this.listeners.handleMessage(message); //Fire message to each class
+            this.listeners[i].handleMessage(message); //Fire message to each class
         }
     }
 }
