@@ -2,9 +2,7 @@ import { Template } from 'meteor/templating';
 import { Goals } from '../api/goals.js';
 import EventListener from '../../client/Events/EventListener.js';
 import EventMessage from '../../client/Events/EventMessage.js';
-//import './goal.js';
 import './body.html';
-//import './goal.html';
 
 
 export default class GoalTracker {
