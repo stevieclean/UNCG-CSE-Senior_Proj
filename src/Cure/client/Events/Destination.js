@@ -6,5 +6,4 @@ export const Destination = {
     'CALENDAR': 5,
     'GOALTRACKER': 6,
     'SETTINGS': 7
-    
 }
