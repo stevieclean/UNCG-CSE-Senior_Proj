@@ -76,8 +76,12 @@ export default class GoalTracker {
     handleMessage(message) {
         if (message.dest == Destination["GOALTRACKER"]) {
             // if is true the goaltracker handles the message
-            console.log("Got dat shit!");
+            console.log("Got dat bruh!");
             console.log(message);
+            Goals.insert({
+                text: message,
+                createdAt: new Date()
+            });
 
         }
     }
