@@ -3,8 +3,8 @@ import { Destination } from "./Events/Destination.js";
 
 
 //MongoDB Section
-Events = new Mongo.Collections('Event');
-Locations = new Mongo.Collections('Location');
+Events = new Mongo.Collection('Event');
+Locations = new Mongo.Collection('Location');
 
 
 export default class Map {
