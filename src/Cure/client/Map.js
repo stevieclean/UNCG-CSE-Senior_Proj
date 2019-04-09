@@ -2,13 +2,13 @@ import EventListener from "./Events/EventListener.js";
 import { Destination } from "./Events/Destination.js";
 
 
-<<<<<<< HEAD
+
 //MongoDB Section
 Events = new Mongo.Collection('Event');
 Locations = new Mongo.Collection('Location');
-=======
+
 //SQLite Implementation Section
->>>>>>> 7fc46e0600795cfdc096b6317d4a419aa24f6fa9
+//7fc46e0600795cfdc096b6317d4a419aa24f6fa9
 
 
 export default class Map {
