@@ -409,6 +409,66 @@ body {
 /* MAP/LOCATIONS PAGE */
 
 
+/*body {
+    padding: 0;
+    margin: 0;
+}
+html, body, #mapid {
+    height: 100%;
+    width: 100vw;
+} */
+
+
+/* .exampleButtons {
+    width: 100%;
+    height: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*box-shadow: 0px 3px 5px;
+    position: relative;
+}
+
+.exampleButton {
+    background: auto;
+    width: 12.5em;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    height: 4.7em;
+    padding: 0px 23px;
+    background-size: 100%;
+    background-position: center;
+    border-radius: 2em;
+    outline: none;
+    font-size: 1.25em;
+    border-width: 5px;
+    background-color: lightblue;
+    border-color: grey;
+} 
+
+#mapid { 
+	height: 180px; 
+}
+
+var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+
+L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox.streets',
+    accessToken: 'your.mapbox.access.token'
+}).addTo(mymap);  */
+
+
+
+
+
+
 /*---------------------------------------------------------------------------*/
 
 
