@@ -782,6 +782,7 @@ li.private {
   width: 100%;
   height: 40%;
   position: fixed;
+  justify-content: center;
   
   
 }
@@ -790,7 +791,8 @@ li.private {
   margin-bottom:auto;
   margin-left: auto;
   margin-right: auto;
-  
+  justify-content: center;
+
 
 }
 .clock{
