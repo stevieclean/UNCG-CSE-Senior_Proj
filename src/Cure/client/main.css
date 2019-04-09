@@ -654,6 +654,7 @@ li.private {
     width: 100%;
     height: 30%;
     position: fixed;
+    
 }
 
 .onlinecourse {
@@ -698,6 +699,8 @@ li.private {
     
 }
 .creditstattext{
+    width: 100%;
+    height: 100%;
     position: relative; 
 }
 
@@ -706,6 +709,7 @@ li.private {
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto
+   
 }
 
 .refresher {
@@ -720,6 +724,7 @@ li.private {
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto
+    
 }
 
 .educationButtons {
@@ -740,18 +745,21 @@ li.private {
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto
+    
 }
 .library {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto
+    
 }
 .contact{
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto
+    
 }
 .multi {
     margin-top: auto;
@@ -764,30 +772,35 @@ li.private {
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto
+   
 }
 .pharmacy {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto
+  
 }
 .student {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto
+    
 }
 .clinical {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto
+   
 }
 .residency {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto
+   
 }
 
 /*---------------------------------------------------------------------------*/

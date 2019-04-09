@@ -1,5 +1,6 @@
 import { Template } from 'meteor/templating';
 import { Goals } from '../api/goals.js';
+import { Destination } from '../../client/Events/Destination.js';
 import EventListener from '../../client/Events/EventListener.js';
 import EventMessage from '../../client/Events/EventMessage.js';
 import './body.html';
@@ -79,7 +80,8 @@ export default class GoalTracker {
             console.log("Got dat bruh!");
             console.log(message);
             Goals.insert({
-                text: message,
+
+                text: message.message,
                 createdAt: new Date()
             });
 

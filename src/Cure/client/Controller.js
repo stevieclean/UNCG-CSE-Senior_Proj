@@ -35,11 +35,13 @@ export default class Controller {
         this.listeners.appendListener(this.hotdial);
         this.listeners.appendListener(this.settings);
         this.listeners.appendListener(this.education);
+        /*
         this.listeners.appendListener(this.conference);
         this.listeners.appendListener(this.clock);
         this.listeners.appendListener(this.profile);
         this.listeners.appendListener(this.password);
         this.listeners.appendListener(this.notes);
+        */
 
         //Append this Controller as a listener to each of the modules
         this.calendar.listeners.appendListener(this);
