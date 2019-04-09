@@ -895,7 +895,7 @@ li.private {
   flex-direction: column;
   justify-content: start;
   border-spacing: 5px;
-  border: none;
+  border: 0;
   /*box-shadow: 0px 3px 5px;*/
   position: relative;
 }
