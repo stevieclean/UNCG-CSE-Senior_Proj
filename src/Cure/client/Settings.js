@@ -10,6 +10,7 @@ import './notes.html';
 import './password.html';
 import './profile.html';
 import './settings.html';
+import './signup.html';
 
 export default class Settings {
 	constructor() {
@@ -46,17 +47,17 @@ export default class Settings {
 				console.log(currPage);
 				currPage = "Signup";
                 Session.set("myTemplate", currPage);
-			}
+			},
 			// "click #login": function() {
 			// 	console.log(currPage);
 			// 	currPage = "Login";
             //     Session.set("myTemplate", currPage);
-			// }
-			// "click #signup": function() {
-			// 	console.log(currPage);
-			// 	currPage = "Signup";
-            //     Session.set("myTemplate", currPage);
-			// }
+			
+			"click #signup": function() {
+				console.log(currPage);
+				currPage = "Signup";
+                Session.set("myTemplate", currPage);
+			}
 		})
 	}
 

@@ -7,6 +7,7 @@ import './settings.html';
 import './profile.html';
 
 
+
 export default class Profile {
 	constructor() {
 		//this.events = "";

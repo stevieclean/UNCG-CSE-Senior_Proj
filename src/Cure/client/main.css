@@ -1018,3 +1018,9 @@ li.private {
     color: black;
     background-color: white;
     }
+    .links{
+        color: white;
+    }
+    .links a{
+        margin-left: auto;
+    }

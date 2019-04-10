@@ -1,33 +1,27 @@
 import EventListener from "./Events/EventListener.js";
 import { Destination } from "./Events/Destination.js";
 import { Session } from 'meteor/session';
-import './settings.html';
 import './profile.html';
 import './create.html';
-import './signup.html';
+
 import { Template } from "meteor/templating";
 import { currPage } from "./main.js";
 
 
 
-export default class Login {
+export default class Create {
 	constructor() {
 		//this.events = "";
 		this._listeners = new EventListener;
-		this.template = Template.Password.events({
-            "click #create": function() {
-				console.log(currPage);
-				currPage = "Create";
-               Session.set("myTemplate", currPage);
-            },
-            "click #login": function() {
-				console.log(currPage);
-				currPage = "Login";
-               Session.set("myTemplate", currPage);
-            },
+		this.template = Template.Create.events({
             "click #signup": function() {
 				console.log(currPage);
 				currPage = "Signup";
+               Session.set("myTemplate", currPage);
+            },
+             "click #login": function() {
+				console.log(currPage);
+				currPage = "Login";
                Session.set("myTemplate", currPage);
             },
             "click #settings": function() {
@@ -44,7 +38,7 @@ export default class Login {
     }
         
     handleMessage(message) {
-        if (message.dest == Destination["SETTINGS"]) {
+        if (message.dest == Destination["CREATE"]) {
         // if is true the map handle the message
                     
                     

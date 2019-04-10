@@ -32,7 +32,9 @@ import './password.html';
 import './profile.html';
 import './refresher.html';
 import './settings.html';
+import './signup.html';
 import './spotlight.html';
+
 
 
 // prep some variables
