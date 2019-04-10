@@ -1,16 +1,18 @@
-import './password.html';
-import './notes.html';
+import EventListener from "./Events/EventListener.js";
+import { Destination } from "./Events/Destination.js";
+import { Session } from 'meteor/session';
 import { Template } from "meteor/templating";
 import { currPage } from "./main.js";
+
 //import './css-vars.scss';
 import './create.html';
 import './signup.html';
 
-export default class Settings {
+export default class Signup {
 	constructor() {
 		//this.events = "";
 		this._listeners = new EventListener;
-		this.template = Template.Settings.events({
+		this.template = Template.Signup.events({
 			"click #clock": function() {
 				console.log(currPage);
 				currPage = "Clock";

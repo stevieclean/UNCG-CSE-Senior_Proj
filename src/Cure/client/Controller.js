@@ -1,3 +1,4 @@
+import About from './About.js';
 import Calendar from './Calendar.js';
 import GoalTracker from '../imports/ui/body';
 import Map from './Map.js';
@@ -24,6 +25,7 @@ export default class Controller {
         this.listeners = new EventListener();
         this.education = new Education();
         this.settings = new Settings();
+        this.about = new About();
         this.conference = new Conference();
         this.clock = new Clock();
         this.profile = new Profile();
@@ -33,6 +35,7 @@ export default class Controller {
         this.notes = new Notes();
 
         //Attach each module as a listener to this Controller
+        this.listeners.appendListener(this.about);
         this.listeners.appendListener(this.calendar);
         this.listeners.appendListener(this.goaltracker);
         this.listeners.appendListener(this.map);
@@ -50,6 +53,7 @@ export default class Controller {
         */
 
         //Append this Controller as a listener to each of the modules
+        this.about.listeners.appendListener(this);
         this.calendar.listeners.appendListener(this);
         this.goaltracker.listeners.appendListener(this);
         this.map.listeners.appendListener(this);

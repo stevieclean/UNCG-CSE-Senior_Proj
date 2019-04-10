@@ -6,8 +6,9 @@ export const Source = {
     'CALENDAR': 5,
     'GOALTRACKER': 6,
     'SETTINGS': 7,
-    'CREATE': 8,
-    'SIGNUP': 9
+    'ABOUT': 8,
+    'CREATE': 9,
+    'SIGNUP': 10
     
     
 }

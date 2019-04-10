@@ -3,12 +3,13 @@ import { Destination } from "./Events/Destination.js";
 import { Session } from 'meteor/session';
 import { Template } from "meteor/templating";
 import { currPage } from "./main.js";
-import './settings.html';
+import './about.html';
 import './clock.html';
-import './profile.html';
 import './create.html';
-import './password.html';
 import './notes.html';
+import './password.html';
+import './profile.html';
+import './settings.html';
 
 export default class Settings {
 	constructor() {
