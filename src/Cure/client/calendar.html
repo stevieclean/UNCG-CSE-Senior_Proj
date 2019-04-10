@@ -2,26 +2,26 @@
     <link rel="stylesheet" href="/client/tiny-date-picker.css">
 </head>
 <template name="Calendar">
-    <div class="cbg d-inline-block fill">
+    <div class="d-inline-block fill cbg">
         <div class="container">
-            <div class="col top-buffer-lg bg-dark rounded">
+            <div class="col top-buffer-lg container-color rounded">
                 <div class="d-flex justify-content-center"> 
-                        <h3 class="text-white-50">Add Calendar Event</h3>
+                        <h3>Add Calendar Event</h3>
                 </div>
                 <div class="d-flex justify-content-center">
-                        <label class="text-white-50" for="textarea">Title</label>
+                        <label for="textarea">Title</label>
                 </div>
                 <div class="d-flex justify-content-center">
                     <textarea id="titletextarea" cols="20" rows="1" name="calMessageTitleArea"></textarea>
                 </div>
                 <div class="d-flex justify-content-center">
-                    <label class="text-white-50" for="textarea">Calendar Message</label>
+                    <label for="textarea">Calendar Message</label>
                 </div>
                 <div class="d-flex justify-content-center">
                     <textarea id="messagetextarea" name="calMessageTextArea"></textarea>
                 </div>
                 <div class="d-flex top-buffer-sm justify-content-center">
-                    <label class="text-white-50" for="startdateselect">Select Start Date:</label>
+                    <label for="startdateselect">Select Start Date:</label>
                 </div>
                 <div class="d-flex justify-content-center">
                         <!-- <input type="text" id="datepicker" width="276" /> -->
@@ -29,7 +29,7 @@
                         <div class="d-flex perm-cal"></div>
                 </div>
                 <div class="d-flex justify-content-center">
-                    <label class="text-white-50" for="enddateselect">Select End Date:</label>
+                    <label for="enddateselect">Select End Date:</label>
                 </div>
                 <div class="d-flex justify-content-center">
                     <input id="datepicker2" class="endModal" width="276" />

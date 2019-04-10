@@ -15,7 +15,6 @@ import '../imports/ui/body.html'
 // imports in alphabetical order
 import './about.html';
 import './calendar.html';
-import './clock.html';
 import './conference.html';
 import './course.html';
 import './create.html';
@@ -34,7 +33,7 @@ import './refresher.html';
 import './settings.html';
 import './signup.html';
 import './spotlight.html';
-
+import './theme.html';
 
 
 // prep some variables
@@ -175,7 +174,15 @@ Template.Signup.events({
         Session.set("myTemplate", currPage);
     }
 });
-
+// Template.Main.events({
+//     "click .login-toggle": function() {
+//         currPage = "";
+//         Session.set("myTemplate", currPage);
+//     },
+//     'click .logout': ()=> {
+//         Meteor.logout();
+//     }
+// });
 var controller = new Controller();
 /* Code to make phone call
 "click #onedial": function () {
@@ -186,6 +193,6 @@ var controller = new Controller();
 		function onError(result) {
 			console.log("Error:"+result);
 		}
-		window.plugins.CallNumber.callNumber(onSuccess, onError, '+13367720649', true);
+		window.plugins.CallNumber.callNumber(onSuccess, onError, '+13367729649', true);
 	}
 */

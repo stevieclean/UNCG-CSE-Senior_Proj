@@ -17,6 +17,10 @@ body {
     background-color: purple;
 }
 
+.border-thick {
+    border-width: thick;
+}
+
 .bg-bluecoral {
     background-color: rgb(113, 226, 207);
 }
@@ -207,10 +211,6 @@ body {
 
 /* Every button on the button bar in main.html */
 
-.fa-map-marker-alt {
-    color: lightblue;
-}
-
 .btn-outline-info {
     outline: none;
     border: none;
@@ -230,10 +230,6 @@ body {
     outline: none;
 }
 
-.fa-calendar-alt {
-    color: lightblue;
-}
-
 .CalButton {
     background: transparent;
     width: 4em;
@@ -246,10 +242,6 @@ body {
     border: none;
     outline: none;
     border-radius: auto;
-}
-
-.fa-home {
-    color: lightblue;
 }
 
 .HomeButton {
@@ -266,10 +258,6 @@ body {
     border-radius: auto;
 }
 
-.fa-tasks {
-    color: lightblue;
-}
-
 .GTButton {
     background: transparent;
     width: 4em;
@@ -282,10 +270,6 @@ body {
     border: none;
     outline: none;
     border-radius: auto;
-}
-
-.fa-book {
-    color: lightblue;
 }
 
 .EduButton {
@@ -844,13 +828,13 @@ li.private {
 }
 .about h3{
     font-size:16px;
-    margin-top:40%;
+    margin-top:55%;
     margin-bottom:auto;
     margin-left: auto;
     margin-right: auto; 
     /* justify-content: center; */
 }
-.clock{
+.theme{
   
   margin-top:auto;
   margin-bottom:auto;
@@ -914,7 +898,7 @@ li.private {
   font-size: .4em;
   width: 60%;
   height: 40%;
-  margin-top: 35%;
+  margin-top: 50%;
   margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
@@ -1024,3 +1008,31 @@ li.private {
     .links a{
         margin-left: auto;
     }
+/*---------------------------------------------------------------------------------*/
+
+/* Themes */
+
+/*---------------------------------------------------------------------------------*/
+:root {
+    --bg-primary-color: #0f0f0f;
+    --fg-color: #a5a2a2;
+    --btn-color: #505050;
+    --navbutton-color: #505050;
+}
+
+.btn-secondary {
+    background-color: var(--btn-color) !important;
+    color: var(--fg-color) !important;
+}
+.container-color{
+    background-color: var(--bg-primary-color);
+    color: var(--btn-color);
+}
+.btn-outline-info {
+    border-color: var(--fg-color) !important;
+    color: var(--navbutton-color) !important;
+}
+.navbar-toggler-icon{
+    border-color: var(--fg-color) !important;
+    color: var(--navbutton-color) !important;
+}

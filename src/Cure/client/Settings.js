@@ -4,7 +4,7 @@ import { Session } from 'meteor/session';
 import { Template } from "meteor/templating";
 import { currPage } from "./main.js";
 import './about.html';
-import './clock.html';
+import './theme.html';
 import './create.html';
 import './notes.html';
 import './password.html';
@@ -17,9 +17,9 @@ export default class Settings {
 		//this.events = "";
 		this._listeners = new EventListener;
 		this.template = Template.Settings.events({
-			"click #clock": function() {
+			"click #theme": function() {
 				console.log(currPage);
-				currPage = "Clock";
+				currPage = "Theme";
                 Session.set("myTemplate", currPage);
 			},
 			
