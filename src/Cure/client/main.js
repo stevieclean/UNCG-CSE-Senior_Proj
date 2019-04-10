@@ -15,6 +15,7 @@ import './hotdial.html';
 import './settings.html';
 import './clock.html';
 import './profile.html';
+import './create.html';
 import './password.html';
 import './notes.html';
 import './education.html';
@@ -146,14 +147,20 @@ Template.dropdownmenu.events({
 		currPage = "Settings";
 		Session.set("myTemplate", currPage);
 	}
-})
+});
 
 Template.dropdownmenu.events({
     "click #settings": function() {
         currPage = "Settings";
         Session.set("myTemplate", currPage);
     }
-})
+});
+Template.Create.events({
+    "click #create": function() {
+        currPage = "Create";
+        Session.set("myTemplate", currPage);
+    }
+});
 
 var controller = new Controller();
 /* Code to make phone call

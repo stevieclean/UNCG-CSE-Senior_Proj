@@ -1,14 +1,10 @@
-import EventListener from "./Events/EventListener.js";
-import { Destination } from "./Events/Destination.js";
-import { Session } from 'meteor/session';
-import { Template } from "meteor/templating";
-import { currPage } from "./main.js";
-import './settings.html';
-import './clock.html';
-import './profile.html';
-import './create.html';
 import './password.html';
 import './notes.html';
+import { Template } from "meteor/templating";
+import { currPage } from "./main.js";
+//import './css-vars.scss';
+import './create.html';
+import './signup.html';
 
 export default class Settings {
 	constructor() {
@@ -46,16 +42,7 @@ export default class Settings {
 				currPage = "Signup";
                 Session.set("myTemplate", currPage);
 			}
-			// "click #login": function() {
-			// 	console.log(currPage);
-			// 	currPage = "Login";
-            //     Session.set("myTemplate", currPage);
-			// }
-			// "click #signup": function() {
-			// 	console.log(currPage);
-			// 	currPage = "Signup";
-            //     Session.set("myTemplate", currPage);
-			// }
+			
 		})
 	}
 
