@@ -88,10 +88,10 @@ body {
 
 /* The invisible container which holds all pages that users can choose */
 
-.dynamic {
+/* .dynamic {
     width: 100%;
     height: 100%;
-}
+} */
 
 
 /* Greensboro AHEC Logo to be displayed on main page */
@@ -132,7 +132,13 @@ body {
     width: 100%;
     height: 100%;
 }
-
+.cbg{
+    background-image: url('/images/home-1.png');
+    
+    background-size: 100% 100%;
+    background-repeat: repeat-x;
+    position: center;
+}
 
 /* Description of CURE */
 
@@ -654,6 +660,7 @@ li.private {
     width: 100%;
     height: 30%;
     position: fixed;
+    
 }
 
 .onlinecourse {
@@ -695,9 +702,12 @@ li.private {
 
 .conferencetext{
     position: relative; 
+   
     
 }
 .creditstattext{
+    width: 100%;
+    height: 100%;
     position: relative; 
 }
 
@@ -706,6 +716,7 @@ li.private {
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto
+   
 }
 
 .refresher {
@@ -720,6 +731,7 @@ li.private {
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto
+    
 }
 
 .educationButtons {
@@ -740,18 +752,21 @@ li.private {
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto
+    
 }
 .library {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto
+    
 }
 .contact{
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto
+    
 }
 .multi {
     margin-top: auto;
@@ -764,30 +779,35 @@ li.private {
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto
+   
 }
 .pharmacy {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto
+  
 }
 .student {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto
+    
 }
 .clinical {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto
+   
 }
 .residency {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto
+   
 }
 
 /*---------------------------------------------------------------------------*/
@@ -803,21 +823,33 @@ li.private {
 
 .settings{
   background-image: url('/images/head-settings.png');
+  background-color: #25b6da;
   background-size: 100%, 80%;
   background-repeat: no-repeat;
   width: 100%;
   height: 40%;
   position: fixed;
+  justify-content: center;
   
   
 }
 .settingsdesc{
-  margin-top:auto;
-  margin-bottom:auto;
+ 
+  margin-top: auto;
+  margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
-  
+  justify-content: center;
 
+
+}
+.about h3{
+    font-size:16px;
+    margin-top:40%;
+    margin-bottom:auto;
+    margin-left: auto;
+    margin-right: auto; 
+    /* justify-content: center; */
 }
 .clock{
   
@@ -835,19 +867,30 @@ li.private {
   margin-bottom:auto;
   margin-left: auto;
   margin-right: auto;
-  
-  
 }
+
 .password{
   
   margin-top:auto;
   margin-bottom:auto;
   margin-left: auto;
   margin-right: auto;
-  
-  
-  
 }
+
+.create{
+    margin-top:auto;
+    margin-bottom:auto;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.signup{
+    margin-top:auto;
+    margin-bottom:auto;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
 .notes{
   
   margin-top:auto;
@@ -862,7 +905,7 @@ li.private {
     font-size: .4em;
     margin-left: auto;
     margin-right: auto;
-    background-color: white;
+    background-color:white;
     color: rgb(59, 58, 58);
 }
 /* Settings container for all buttons */
@@ -872,7 +915,7 @@ li.private {
   font-size: .4em;
   width: 60%;
   height: 40%;
-  margin-top: 30%;
+  margin-top: 35%;
   margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
@@ -880,7 +923,7 @@ li.private {
   flex-direction: column;
   justify-content: start;
   border-spacing: 5px;
-  border: none;
+  border: 0;
   /*box-shadow: 0px 3px 5px;*/
   position: relative;
 }
@@ -891,3 +934,94 @@ li.private {
 }
 
 /*---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+ 
+/* Login Container */ 
+
+/*---------------------------------------------------------------------------*/
+.logcontainer{
+    height: 100%;
+    align-content: center;
+    }
+    
+    .card{
+    height: 370px;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    width: 400px;
+    background-color: rgba(0,0,0,0.5) !important;
+    }
+    
+    .social_icon span{
+    font-size: 50px;
+    margin-left: 10px;
+    color: white;
+    }
+    
+    .social_icon span:hover{
+    color: white;
+    cursor: pointer;
+    }
+    
+    .card-header h3{
+    font-size:18px;
+    /* position: float bottom; */
+    color: white;
+    }
+    
+    .card-footer{ /* Don't have an account text*/
+    color: white;
+    }
+
+    .signup-head p{
+        color: white;
+     
+    }
+    .social_icon{
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    }
+    
+    .input-group-prepend span{
+    margin-bottom: -1px;
+    width: 40px;
+    background-color: white;
+    color: black;
+    /* border:0 !important; */
+    }
+    
+    input:focus{
+    outline: 0 0 0 0  !important;
+    box-shadow: 0 0 0 0 !important;
+    
+    }
+    
+    .remember{
+    color: white;
+    }
+    
+    .remember input
+    {
+    width: 10px;
+    height: 10px;
+    margin-left: 15px;
+    margin-right: 5px;
+    }
+    
+    .login_btn{
+    color: black;
+    background-color:white;
+    width: 100px;
+    }
+    
+    .login_btn:hover{
+    color: black;
+    background-color: white;
+    }
+    .links{
+        color: white;
+    }
+    .links a{
+        margin-left: auto;
+    }
