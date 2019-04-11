@@ -17,6 +17,10 @@ body {
     background-color: purple;
 }
 
+.border-thick {
+    border-width: thick;
+}
+
 .bg-bluecoral {
     background-color: rgb(113, 226, 207);
 }
@@ -207,10 +211,6 @@ body {
 
 /* Every button on the button bar in main.html */
 
-.fa-map-marker-alt {
-    color: lightblue;
-}
-
 .btn-outline-info {
     outline: none;
     border: none;
@@ -230,10 +230,6 @@ body {
     outline: none;
 }
 
-.fa-calendar-alt {
-    color: lightblue;
-}
-
 .CalButton {
     background: transparent;
     width: 4em;
@@ -246,10 +242,6 @@ body {
     border: none;
     outline: none;
     border-radius: auto;
-}
-
-.fa-home {
-    color: lightblue;
 }
 
 .HomeButton {
@@ -266,10 +258,6 @@ body {
     border-radius: auto;
 }
 
-.fa-tasks {
-    color: lightblue;
-}
-
 .GTButton {
     background: transparent;
     width: 4em;
@@ -282,10 +270,6 @@ body {
     border: none;
     outline: none;
     border-radius: auto;
-}
-
-.fa-book {
-    color: lightblue;
 }
 
 .EduButton {
@@ -543,8 +527,8 @@ body {
 .goal_header {
     text-align: center;
     font-size: 20px;
-    background: #d2edf4;
-    background-image: linear-gradient(to bottom, #25dab2, #e1e5f0 100%);
+    background-color: rgba(0,0,0,0.5) !important;
+    /* background-image: linear-gradient(to bottom, #25dab2, #e1e5f0 100%); */
     padding: 20px 15px 15px 15px;
     position: relative;
 }
@@ -844,14 +828,17 @@ li.private {
 
 }
 .about h3{
+    width: 100%; 
+    box-sizing: border-box; 
+    display: block;
     font-size:16px;
-    margin-top:40%;
+    margin-top:55%;
     margin-bottom:auto;
     margin-left: auto;
     margin-right: auto; 
-    /* justify-content: center; */
+    justify-content: center;
 }
-.clock{
+.theme{
   
   margin-top:auto;
   margin-bottom:auto;
@@ -913,16 +900,16 @@ li.private {
 .settingsButtons{
   box-align: start;
   font-size: .4em;
-  width: 60%;
+  width: 50%;
   height: 40%;
-  margin-top: 35%;
+  margin-top: 70%;
   margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   flex-direction: column;
   justify-content: start;
-  border-spacing: 5px;
+  border-spacing: 1px;
   border: 0;
   /*box-shadow: 0px 3px 5px;*/
   position: relative;
@@ -1025,3 +1012,31 @@ li.private {
     .links a{
         margin-left: auto;
     }
+/*---------------------------------------------------------------------------------*/
+
+/* Themes */
+
+/*---------------------------------------------------------------------------------*/
+:root {
+    --bg-primary-color: #0f0f0f;
+    --fg-color: #a5a2a2;
+    --btn-color: #505050;
+    --navbutton-color: #505050;
+}
+
+.btn-secondary {
+    background-color: var(--btn-color) !important;
+    color: var(--fg-color) !important;
+}
+.container-color{
+    background-color: var(--bg-primary-color);
+    color: var(--btn-color);
+}
+.btn-outline-info {
+    border-color: var(--fg-color) !important;
+    color: var(--navbutton-color) !important;
+}
+.navbar-toggler-icon{
+    border-color: var(--fg-color) !important;
+    color: var(--navbutton-color) !important;
+}
