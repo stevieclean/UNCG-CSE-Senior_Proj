@@ -70,6 +70,10 @@ body {
     padding-bottom: 1em;
 }
 
+.item-padding-sm {
+    justify-content: center;
+}
+
 /* Button modification classes */
 
 .btn-width-m {
@@ -208,7 +212,11 @@ body {
     border-top: 2px solid;
 }
 
-
+.navbar-brand {
+    width: 100%;
+    margin-right: 0;
+    justify-content: space-between;
+}
 /* Every button on the button bar in main.html */
 
 .btn-outline-info {
