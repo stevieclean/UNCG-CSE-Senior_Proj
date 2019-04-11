@@ -2,6 +2,10 @@ import EventListener from "./Events/EventListener.js";
 import { Destination } from "./Events/Destination.js";
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1951cbb10b3e37bfe44457c54be1473f5929a3c1
 //MongoDB Section
 Events = new Mongo.Collection('Event');
 Locations = new Mongo.Collection('Location');

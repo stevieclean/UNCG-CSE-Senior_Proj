@@ -3,20 +3,26 @@ import { Destination } from "./Events/Destination.js";
 import { Session } from 'meteor/session';
 import { Template } from "meteor/templating";
 import { currPage } from "./main.js";
-import './settings.html';
-import './clock.html';
+ import './settings.html';
+import './about.html';
 
 
-export default class Clock {
+export default class About {
 	constructor() {
 		//this.events = "";
 		this._listeners = new EventListener;
-		this.template = Template.Clock.events({
-			"click #settings": function() {
+		this.template = Template.dropdownmenu.events({
+            "click #about": function() {
+				console.log(currPage);
+				currPage = "About";
+                Session.set("myTemplate", currPage);
+            },
+            "click #settings": function() {
 				console.log(currPage);
 				currPage = "Settings";
                 Session.set("myTemplate", currPage);
             }
+            
         })
     }
 
