@@ -527,8 +527,8 @@ body {
 .goal_header {
     text-align: center;
     font-size: 20px;
-    background: #d2edf4;
-    background-image: linear-gradient(to bottom, #25dab2, #e1e5f0 100%);
+    background-color: rgba(0,0,0,0.5) !important;
+    /* background-image: linear-gradient(to bottom, #25dab2, #e1e5f0 100%); */
     padding: 20px 15px 15px 15px;
     position: relative;
 }
@@ -828,12 +828,15 @@ li.private {
 
 }
 .about h3{
+    width: 100%; 
+    box-sizing: border-box; 
+    display: block;
     font-size:16px;
     margin-top:55%;
     margin-bottom:auto;
     margin-left: auto;
     margin-right: auto; 
-    /* justify-content: center; */
+     
 }
 .theme{
   
@@ -899,14 +902,14 @@ li.private {
   font-size: .4em;
   width: 60%;
   height: 40%;
-  margin-top: 50%;
+  margin-top: 70%;
   margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   flex-direction: column;
   justify-content: start;
-  border-spacing: 5px;
+  border-spacing: 1px;
   border: 0;
   /*box-shadow: 0px 3px 5px;*/
   position: relative;
