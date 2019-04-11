@@ -836,7 +836,7 @@ li.private {
     margin-bottom:auto;
     margin-left: auto;
     margin-right: auto; 
-     
+    justify-content: center;
 }
 .theme{
   
@@ -900,7 +900,7 @@ li.private {
 .settingsButtons{
   box-align: start;
   font-size: .4em;
-  width: 60%;
+  width: 50%;
   height: 40%;
   margin-top: 70%;
   margin-bottom: auto;

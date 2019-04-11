@@ -34,6 +34,12 @@ export default class Theme {
                 document.documentElement.style.setProperty('--fg-color', 'gray');
                 document.documentElement.style.setProperty('--btn-color', '#fff933');
                 document.documentElement.style.setProperty('--navbutton-color', '#fff933');
+            },
+            "click #pink": function() {
+				document.documentElement.style.setProperty('--bg-primary-color', '#ffb6c1');
+                document.documentElement.style.setProperty('--fg-color', 'black');
+                document.documentElement.style.setProperty('--btn-color', '#fadadd');
+                document.documentElement.style.setProperty('--navbutton-color', 'gray');
             }
         })
     }
