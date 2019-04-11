@@ -152,6 +152,14 @@ body {
     background-repeat: no-repeat;
     top: 5%;
 }
+
+.CUREEducation {
+    background-image: url('/graphics/home.png');
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
 .cbg{
     background-image: url('/images/home-1.png');
     
