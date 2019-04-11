@@ -8,7 +8,7 @@ import EventMessage from './Events/EventMessage.js';
 import Settings from './Settings.js';
 import Education from './Education.js';
 import Conference from './Conference.js';
-import Clock from './Clock.js';
+import Theme from './Theme.js';
 import Profile from './Profile.js';
 import Create from './Create.js';
 import Signup from './Signup.js';
@@ -27,7 +27,7 @@ export default class Controller {
         this.settings = new Settings();
         this.about = new About();
         this.conference = new Conference();
-        this.clock = new Clock();
+        this.theme = new Theme();
         this.profile = new Profile();
         this.create = new Create();
         this.signup = new Signup();
@@ -61,7 +61,7 @@ export default class Controller {
         this.settings.listeners.appendListener(this);
         this.education.listeners.appendListener(this);
         this.conference.listeners.appendListener(this);
-        this.clock.listeners.appendListener(this);
+        this.theme.listeners.appendListener(this);
         this.profile.listeners.appendListener(this);
         this.create.listeners.appendListener(this);
         this.signup.listeners.appendListener(this);
