@@ -5,32 +5,36 @@ import { Session } from 'meteor/session';
 import '@fortawesome/fontawesome-free/js/all.js';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import { Destination } from './Events/Destination.js';
 import Controller from './Controller.js';
 //Goal Tracker import
 import '../imports/ui/body.js';
-//End goal tracker import
-import './main.html';
-import './hotdial.html';
-import './settings.html';
-import './clock.html';
-import './profile.html';
-import './password.html';
-import './notes.html';
-import './education.html';
-import './map.html';
-import './calendar.html';
-import './goaltracker.html';
-import './onlinecourse.html';
-import './conference.html';
-import './creditstat.html';
-import './spotlight.html';
-import './handouts.html';
-import './refresher.html';
-import './course.html';
 import '../imports/ui/body.html'
 //import '../imports/ui/goal.html'
-import { Destination } from './Events/Destination.js';
+//End goal tracker import
+// imports in alphabetical order
+import './about.html';
+import './calendar.html';
+import './conference.html';
+import './course.html';
+import './create.html';
+import './creditstat.html';
+import './education.html';
+import './goaltracker.html';
+import './handouts.html';
+import './hotdial.html';
+import './main.html';
+import './map.html';
+import './notes.html';
+import './onlinecourse.html';
+import './password.html';
+import './profile.html';
+import './refresher.html';
+import './settings.html';
+import './signup.html';
+import './spotlight.html';
+import './theme.html';
+
 
 // prep some variables
 var startDate = new Date(2015, 2, 15, 18, 30, 0, 0, 0); // beware: month 0 = january, 11 = december
@@ -146,15 +150,39 @@ Template.dropdownmenu.events({
 		currPage = "Settings";
 		Session.set("myTemplate", currPage);
 	}
-})
-
+});
 Template.dropdownmenu.events({
     "click #settings": function() {
         currPage = "Settings";
         Session.set("myTemplate", currPage);
+    },
+    "click #about": function () {
+    currPage = "About";
+    Session.set("myTemplate", currPage);
     }
-})
 
+});
+Template.Create.events({
+    "click #create": function() {
+        currPage = "Create";
+        Session.set("myTemplate", currPage);
+    }
+});
+Template.Signup.events({
+    "click #signup": function() {
+        currPage = "Signup";
+        Session.set("myTemplate", currPage);
+    }
+});
+// Template.Main.events({
+//     "click .login-toggle": function() {
+//         currPage = "";
+//         Session.set("myTemplate", currPage);
+//     },
+//     'click .logout': ()=> {
+//         Meteor.logout();
+//     }
+// });
 var controller = new Controller();
 /* Code to make phone call
 "click #onedial": function () {
@@ -165,6 +193,6 @@ var controller = new Controller();
 		function onError(result) {
 			console.log("Error:"+result);
 		}
-		window.plugins.CallNumber.callNumber(onSuccess, onError, '+13367720649', true);
+		window.plugins.CallNumber.callNumber(onSuccess, onError, '+13367729649', true);
 	}
 */
