@@ -9,32 +9,69 @@
                         <h3>Add Calendar Event</h3>
                 </div>
                 <div class="d-flex justify-content-center">
-                        <label for="textarea">Title</label>
+                        <label for="textarea">Message Title</label>
                 </div>
                 <div class="d-flex justify-content-center">
-                    <textarea id="titletextarea" cols="20" rows="1" name="calMessageTitleArea"></textarea>
+                    <textarea class="textfield" id="titletextarea" cols="20" rows="1" name="calMessageTitleArea"></textarea>
                 </div>
-                <div class="d-flex justify-content-center">
+                <div class="d-flex justify-content-center top-buffer-sm">
                     <label for="textarea">Calendar Message</label>
                 </div>
                 <div class="d-flex justify-content-center">
-                    <textarea id="messagetextarea" name="calMessageTextArea"></textarea>
+                    <textarea class="textfield" id="messagetextarea" rows="3" name="calMessageTextArea"></textarea>
                 </div>
-                <div class="d-flex top-buffer-sm justify-content-center">
-                    <label for="startdateselect">Select Start Date:</label>
+                <div class="d-flex row justify-content-center top-buffer-sm-2">
+                    <div class="row-md-auto justify-content-center">
+                        <div class="col d-flex justify-content-center">
+                            <label for="startdateselect">Select Start Date</label>
+                        </div>
+                        <div class="col d-flex justify-content-center">
+                                <!-- <input type="text" id="datepicker" width="276" /> -->
+                                <input type="text" class="startModal" style="width: 150px;">
+                                <div class="d-flex perm-cal"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="d-flex justify-content-center">
-                        <!-- <input type="text" id="datepicker" width="276" /> -->
-                        <input type="text" class="startModal" width="100">
-                        <div class="d-flex perm-cal"></div>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <label for="enddateselect">Select End Date:</label>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <input id="datepicker2" class="endModal" width="276" />
-                </div>
-                <div class="row justify-content-center">
+                <div class="d-flex row justify-content-center top-buffer-sm-2">
+                        <div class="row-md-auto justify-content-center">
+                                <div class="col d-flex justify-content-center">
+                                    <label for="timestarttextarea">Start Time</label>
+                                </div>
+                                <div class="col d-flex justify-content-center">
+                                    <input class="startTimeText" type="text" id="timeStart" style="width: 70px;" data-toggle="modal" data-target="#startTimeModal"/>
+                                        
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="startTimeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                ...
+                                                </div>
+                                                <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        <div class="row-md-auto justify-content-center">
+                            <div class="col d-flex justify-content-center">
+                                <label for="timestarttextarea">End Time</label>
+                            </div>
+                            <div class="col d-flex justify-content-center">
+                                <input class="endTimeText" type="text" id="timeStart" style="width: 70px;"/>
+                            </div>
+                        </div>
+                    </div>
+                <div class="row item-padding-sm">
                     <div class="d-block text-center top-buffer2">
                             <button id="sendevent" type="button" class="btn btn-secondary btn-sm">
                                 <span class="fas fa-plus"></span> Add Event

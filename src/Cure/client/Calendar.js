@@ -30,6 +30,7 @@ export default class Calendar {
         this.title = "";
         this.eventLocation = "";
         this.notes = "";
+        this.time = "";
         var sendMessage = (message) => {
             console.log("fire");
             this._listeners.fireEvent(message);
@@ -43,13 +44,13 @@ export default class Calendar {
                 console.log(g_startDate);
                 event = new EventMessage(this.notes, Destination['GOALTRACKER'], Source['CALENDAR']);
                 sendMessage(event);
-                //window.plugins.calendar.createEvent(this.title, this.eventLocation, this.notes, g_startDate, g_endDate, success, error);
+                window.plugins.calendar.createEvent(this.title, this.eventLocation, this.notes, g_startDate, g_startDate, success, error);
             },
             "click #delevent": function() {
                 this.title = document.getElementById("titletextarea").value;
                 var success = function(message) { alert("Successfully deleted calendar event!"); };
                 var error = function(message) { alert("Error: Could not find message"); };
-                window.plugins.calendar.deleteEvent(this.title, null, null, g_startDate, g_endDate, success, error);
+                window.plugins.calendar.deleteEvent(this.title, null, null, g_startDate, g_startDate, success, error);
             }
         });
         this.templateRender = Template.Calendar.onRendered(function() {
