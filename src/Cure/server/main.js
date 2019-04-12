@@ -1,5 +1,6 @@
 //import the goals collection to the server.
 import '../imports/api/goals.js';
+import '../imports/api/hotdialbuttons.js';
 //End import for the goals
 import { Meteor } from 'meteor/meteor';
 // import './imports/api/tasks.js';
