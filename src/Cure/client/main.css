@@ -25,6 +25,35 @@ body {
     background-color: rgb(113, 226, 207);
 }
 
+/* Clean UI for textboxes, inputs and textareas */
+input[type=text] {
+    background: transparent;
+    border: none;
+    border-radius: 10px;
+    border-bottom: 2px solid var(--fg-color);
+    color: var(--btn-color);
+    text-align: center;
+    outline: none;
+}
+
+input:focus {
+    outline: none;
+    outline-width: 0;
+    box-shadow: none;
+
+}
+
+.textfield {
+    background: transparent;
+    border: none;
+    border-radius: 10px;
+    border-bottom: 2px solid var(--fg-color);
+    color: var(--btn-color);
+    text-align: center;
+}
+
+.modal-backdrop { display: none; } 
+.modal { background: rgba(0,0,0,0.5); }
 
 /* Container for all pages and the button bar */
 
@@ -93,8 +122,13 @@ body {
     bottom: 10px;
 }
 .item-padding-sm {
+    
+/* HEAD */ 
     justify-content: center;
     /* beta */
+
+    justify-content: space-around;
+/* d86e72c3412b0b6d2a47996fe22e1b037a46e0df */
 }
 
 /* Button modification classes */
@@ -215,6 +249,12 @@ body {
     outline: none;
 }
 
+.hotdialscroll {
+    margin-top: 20%;
+    height: 70%;
+    overflow-y: scroll;
+}
+
 
 /* The invisible container holding every button and the button bar to keep the bar staticly the same */
 
@@ -243,15 +283,10 @@ body {
 
 .navbar-brand {
     width: 100%;
-    margin-right: 0;
+    float: none;
     justify-content: space-between;
 }
 /* Every button on the button bar in main.html */
-
-.btn-outline-info {
-    outline: none;
-    border: none;
-}
 
 .LocButton {
     width: 4em;
@@ -485,16 +520,9 @@ body {
 
 /* Main container for calendar page */
 
-.calendar {
-    text-align: center;
-    height: 60%;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: 5%;
-    bottom: 0;
-    border-width: 15px;
-    z-index: 1;
+.calendar-scroll {
+    height: 90%;
+    overflow-y: scroll;
 }
 
 .fa-calendar {
@@ -950,11 +978,6 @@ li.private {
   /*box-shadow: 0px 3px 5px;*/
   position: relative;
 }
-.btn{
-    margin-left :15px;
-    margin-bottom: 2px;
-    
-}
 
 /*---------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------*/
@@ -1055,6 +1078,7 @@ li.private {
 /*---------------------------------------------------------------------------------*/
 :root {
     --bg-primary-color: #0f0f0f;
+    --fg-text: #5c5c5c;
     --fg-color: #a5a2a2;
     --btn-color: #505050;
     --navbutton-color: #505050;
@@ -1066,11 +1090,12 @@ li.private {
 }
 .container-color{
     background-color: var(--bg-primary-color);
-    color: var(--btn-color);
+    color: var(--fg-color);
 }
 .btn-outline-info {
     border-color: var(--fg-color) !important;
     color: var(--navbutton-color) !important;
+    border: none !important;
 }
 .navbar-toggler-icon{
     border-color: var(--fg-color) !important;
