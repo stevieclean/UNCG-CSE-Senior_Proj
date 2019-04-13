@@ -24,3 +24,4 @@ accounts-password
 accounts-base
 useraccounts:unstyled
 raix:handlebar-helpers
+frozeman:persistent-minimongo2

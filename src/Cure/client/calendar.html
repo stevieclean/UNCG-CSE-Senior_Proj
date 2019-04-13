@@ -41,21 +41,21 @@
                                     <input class="startTimeText" type="text" readonly="true" id="timeStart" style="width: 70px;" data-toggle="modal" data-target="#startTimeModal"/>
                                         
                                         <!-- Modal -->
-                                        <div class="modal fade" id="startTimeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal fade" id="startTimeModal" tabindex="-1" role="dialog" aria-labelledby="timerModal" aria-hidden="true">
                                             <div class="modal-dialog modal-dialog-centered" role="document">
                                             <div class="modal-content">
-                                                <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                <div class="modal-header container-color">
+                                                <h5 class="modal-title" id="timerModal">Select Time</h5>
                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
+                                                    <span class="navbar-toggler-icon" aria-hidden="true">&times;</span>
                                                 </button>
                                                 </div>
-                                                <div class="modal-body">
+                                                <div class="modal-body container-color">
                                                     {{> timeSelection}}
                                                 </div>
-                                                <div class="modal-footer">
+                                                <div class="modal-footer container-color">
                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                <button id="selectTime" type="button" class="btn btn-primary" data-dismiss="modal">Select</button>
+                                                <button id="selectTime" type="button" class="btn btn-secondary" data-dismiss="modal">Select</button>
                                                 </div>
                                             </div>
                                             </div>
@@ -114,7 +114,7 @@
             <option value="13">13</option>
             <option value="14">14</option>
             <option value="15">15</option>
-            <option value="16">4</option>
+            <option value="16">16</option>
             <option value="17">17</option>
             <option value="18">18</option>
             <option value="19">19</option>
