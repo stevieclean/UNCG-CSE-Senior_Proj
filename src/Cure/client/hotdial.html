@@ -26,33 +26,35 @@
                 <div class="modal fade" id="newButtonModal" tabindex="-1" role="dialog" aria-labelledby="numberEntry" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
-                        <div class="modal-header">
+                        <div class="modal-header container-color">
                         <h5 class="modal-title" id="numberEntry">Add New Contact</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                         </div>
-                        <div class="modal-body row justify-content-center">
-                            <div class="row-md-auto justify-content-center">
-                                <div class="col d-flex justify-content-center">
-                                    <label for="input">Name</label>
+                        <div class="modal-body container-color">
+                            <div class="row justify-content-center">
+                                <div class="row-md-auto justify-content-center">
+                                    <div class="col d-flex justify-content-center">
+                                        <label for="input">Name</label>
+                                    </div>
+                                    <div class="col justify-content-center">
+                                        <input class="" type="text" id="nameEntry" style="width: 150px;"/>
+                                    </div>
                                 </div>
-                                <div class="col d-flex justify-content-center">
-                                    <input class="" type="text" id="nameEntry" style="width: 150px;"/>
-                                </div>
-                            </div>
-                            <div class="row-md-auto justify-content-center">
-                                <div class="col d-flex justify-content-center">
-                                    <label for="input">Phone Number</label>
-                                </div>
-                                <div class="col d-flex justify-content-center">
-                                    <input class="" type="text" id="phoneNumberEntry" style="width: 120px;"/>
+                                <div class="row-md-auto justify-content-center">
+                                    <div class="col d-flex justify-content-center">
+                                        <label for="input">Phone Number</label>
+                                    </div>
+                                    <div class="col justify-content-center">
+                                        <input class="" type="text" id="phoneNumberEntry" style="width: 120px;"/>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="modal-footer">
+                        <div class="modal-footer container-color">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button id="addNewNumber" type="button" class="btn btn-secondary errorPopover" data-toggle="popover" data-trigger="click">Add Contact</button>
+                        <button id="addNewNumber" type="button" class="btn btn-secondary errorPopover" data-toggle="popover" data-placement="bottom" data-trigger="focus">Add Contact</button>
                     </div>
                     </div>
                     </div>
@@ -65,18 +67,18 @@
                     <div class="modal fade" id="deleteButtonModal" tabindex="-1" role="dialog" aria-labelledby="numberEntry" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
-                            <div class="modal-header">
+                            <div class="modal-header container-color">
                             <h5 class="modal-title" id="numberEntry">Delete A Saved Number</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                             </div>
-                            <div class="modal-body col justify-content-center">
+                            <div class="modal-body container-color col justify-content-center">
                                 <dev class="d-flex flex-column align-items-center">
                                     {{> deleteButtonsTemplate}}
                                 </dev>
                             </div>
-                            <div class="modal-footer">
+                            <div class="modal-footer container-color">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>    
                         </div>
                         </div>

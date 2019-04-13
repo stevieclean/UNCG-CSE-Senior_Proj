@@ -5,6 +5,8 @@ import { Template } from "meteor/templating";
 import { Mongo } from "meteor/mongo";
 import { hotDialButtons } from "../imports/api/hotdialbuttons.js";
 
+var localStorage = new PersistentMinimongo2(hotDialButtons, "userHotDialButtons");
+
 export default class HotDial {
     constructor() {
 		this._listeners = new EventListener;
@@ -41,6 +43,13 @@ export default class HotDial {
 					$('.errorPopover').popover('show');
 					return;
 				}
+				//If doesn't have ONLY numbers then throw error
+				else if (!(/^\d+$/.test(phoneNumber))) {
+					$('.errorPopover').attr('data-content', 'Phone Number must contain ONLY numbers.');
+					$('.errorPopover').attr('title', 'Error Message');
+					$('.errorPopover').popover('show');
+					return;
+				}
 				else if (phoneNumber.length != 10) {
 					$('.errorPopover').attr('data-content', 'Phone Number must be exactly 10 digits with no dashes\/hyphens.');
 					$('.errorPopover').attr('title', 'Error Message');
@@ -55,6 +64,7 @@ export default class HotDial {
 					number: phoneNumber,
 				});
 				console.log(userName.length == 0 || phoneNumber.length == 0);
+				$('#newButtonModal').modal('hide');
 			},
 
 			"click #gcstopbutton": function() {
