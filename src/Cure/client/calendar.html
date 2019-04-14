@@ -3,38 +3,67 @@
 </head>
 <template name="Calendar">
     <div class="d-inline-block fill cbg">
-        <div class="container">
-            <div class="col top-buffer-lg container-color rounded">
+        <div class="container calendar-scroll">
+            <div class="col top-buffer container-color rounded">
                 <div class="d-flex justify-content-center"> 
-                        <h3>Add Calendar Event</h3>
+                        <h3>Calendar Event</h3>
                 </div>
                 <div class="d-flex justify-content-center">
-                        <label for="textarea">Title</label>
+                        <label for="textarea">Message Title</label>
                 </div>
                 <div class="d-flex justify-content-center">
-                    <textarea id="titletextarea" cols="20" rows="1" name="calMessageTitleArea"></textarea>
+                    <textarea class="textfield" id="titletextarea" cols="20" rows="1" name="calMessageTitleArea"></textarea>
                 </div>
-                <div class="d-flex justify-content-center">
+                <div class="d-flex justify-content-center top-buffer-sm">
                     <label for="textarea">Calendar Message</label>
                 </div>
                 <div class="d-flex justify-content-center">
-                    <textarea id="messagetextarea" name="calMessageTextArea"></textarea>
+                    <textarea class="textfield" id="messagetextarea" rows="3" name="calMessageTextArea"></textarea>
                 </div>
-                <div class="d-flex top-buffer-sm justify-content-center">
-                    <label for="startdateselect">Select Start Date:</label>
+                <div class="d-flex row justify-content-center top-buffer-sm-2">
+                    <div class="row-md-auto justify-content-center">
+                        <div class="col d-flex justify-content-center">
+                            <label for="startdateselect">Select Date</label>
+                        </div>
+                        <div class="col d-flex justify-content-center">
+                                <!-- <input type="text" id="datepicker" width="276" /> -->
+                                <input type="text" readonly="true" class="startModal" style="width: 150px;">
+                                <div class="d-flex perm-cal"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="d-flex justify-content-center">
-                        <!-- <input type="text" id="datepicker" width="276" /> -->
-                        <input type="text" class="startModal" width="100">
-                        <div class="d-flex perm-cal"></div>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <label for="enddateselect">Select End Date:</label>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <input id="datepicker2" class="endModal" width="276" />
-                </div>
-                <div class="row justify-content-center">
+                <div class="d-flex row justify-content-center top-buffer-sm-2">
+                        <div class="row-md-auto justify-content-center">
+                                <div class="col d-flex justify-content-center">
+                                    <label for="timestarttextarea">Time</label>
+                                </div>
+                                <div class="col d-flex justify-content-center">
+                                    <input class="startTimeText" type="text" readonly="true" id="timeStart" style="width: 70px;" data-toggle="modal" data-target="#startTimeModal"/>
+                                        
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="startTimeModal" tabindex="-1" role="dialog" aria-labelledby="timerModal" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header container-color">
+                                                <h5 class="modal-title" id="timerModal">Select Time</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span class="navbar-toggler-icon" aria-hidden="true">&times;</span>
+                                                </button>
+                                                </div>
+                                                <div class="modal-body container-color">
+                                                    {{> timeSelection}}
+                                                </div>
+                                                <div class="modal-footer container-color">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button id="selectTime" type="button" class="btn btn-secondary" data-dismiss="modal">Select</button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                    </div>
+                <div class="row item-padding-sm">
                     <div class="d-block text-center top-buffer2">
                             <button id="sendevent" type="button" class="btn btn-secondary btn-sm">
                                 <span class="fas fa-plus"></span> Add Event
@@ -51,6 +80,88 @@
     </div>
 </template>
 
-<template name="bootstrapCalendar">
-    
+<template name="timeSelection">
+    <div class="row justify-content-center">
+        <select id="hourSelect" class="btn btn-secondary btn-sm">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+        &nbsp;<b>:</b>&nbsp;
+        <select id="minSelect" class="btn btn-secondary btn-sm">
+            <option value="00">00</option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+            <option value="32">32</option>
+            <option value="33">33</option>
+            <option value="34">34</option>
+            <option value="35">35</option>
+            <option value="36">36</option>
+            <option value="37">37</option>
+            <option value="38">38</option>
+            <option value="39">39</option>
+            <option value="40">40</option>
+            <option value="41">41</option>
+            <option value="42">42</option>
+            <option value="43">43</option>
+            <option value="44">44</option>
+            <option value="45">45</option>
+            <option value="46">46</option>
+            <option value="47">47</option>
+            <option value="48">48</option>
+            <option value="49">49</option>
+            <option value="50">50</option>
+            <option value="51">51</option>
+            <option value="52">52</option>
+            <option value="53">53</option>
+            <option value="54">54</option>
+            <option value="55">55</option>
+            <option value="56">56</option>
+            <option value="57">57</option>
+            <option value="58">58</option>
+            <option value="59">59</option>
+        </select>
+        <select id="timePeriod" class="timePeriod btn btn-secondary btn-sm">
+            <option value="am">am</option>
+            <option value="pm">pm</option>
+        </select>
+    </div>
 </template>
