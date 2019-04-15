@@ -1097,10 +1097,16 @@ li.private {
     background-color: var(--btn-color) !important;
     color: var(--fg-color) !important;
 }
-.container-color{
-    background-color: var(--bg-primary-color);
+.container-color {
+    background-color: var(--bg-primary-color) !important;
+    color: var(--fg-color) !important;
+}
+
+.modal-color {
+    background-color: var(--navbutton-color);
     color: var(--fg-color);
 }
+
 .btn-outline-info {
     border-color: var(--fg-color) !important;
     color: var(--navbutton-color) !important;
