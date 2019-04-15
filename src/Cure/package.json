@@ -16,6 +16,8 @@
     "datepicker-bootstrap": "^1.9.13",
     "jquery": "^3.4.0",
     "leaflet": "^1.4.0",
+    "leaflet-google-places-autocomplete": "0.0.8",
+    "leaflet-search": "^2.9.8",
     "meteor-node-stubs": "^0.4.1",
     "moment": "^2.24.0",
     "popper.js": "^1.15.0",

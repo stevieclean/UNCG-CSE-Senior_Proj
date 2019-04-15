@@ -6,16 +6,30 @@
    integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
    crossorigin=""/>
    
- 
+ <script src="../dist/leaflet.customsearchbox.min.js"></script>
+<link href="../dist/searchbox.min.css" rel="stylesheet" />
+
+
 
    
+ 
 <div id="mapid" style="width: 100vw; height: 100%;">
 
-  <!-- Make sure you put this AFTER Leaflet's CSS -->
+<form action="/action_page.php">
+  First name:<br>
+  <input type="text" value="Mickey"><br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+  
  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
    integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
    crossorigin="">
    </script>
+   
+
  
 
 <script>
@@ -43,9 +57,11 @@ mymap.locate({setView: true, maxZoom: 16});
 
 //Adds a marker somewhere
 var marker = L.marker([36.067833, -79.808292]).addTo(mymap);
+var marker2 = L.marker([36.0589, -79.853804]).addTo(mymap);
 
 //Sample, makes a pop up happen upon click
 marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
+marker2.bindPopup("<form></form>").openPopup();
 
 //Added some sample click to test Map Clicks
 var popup = L.popup();
@@ -59,9 +75,57 @@ function onMapClick(e) {
 
 mymap.on('click', onMapClick);
 
+var searchLayer = L.layerGroup().addTo(map);
+//... adding data in searchLayer ...
+map.addControl( new L.Control.Search({layer: searchLayer}) );
+//searchLayer is a L.LayerGroup contains searched markers
+
+
+
+
+
+//Search Bar
+$(document).ready(function () {
+        
+        /*var map = L.map('map').setView([51.505, -0.09], 5);
+        map.zoomControl.setPosition('topright');
+        map.addLayer(new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+            {attribution:'Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'}
+            ));*/
+	    
+        var searchboxControl=createSearchboxControl();
+        var control = new searchboxControl({
+            sidebarTitleText: 'Header',
+            sidebarMenuItems: {
+                Items: [
+                    { type: "link", name: "Link 1 (github.com)", href: "http://github.com", icon: "icon-local-carwash" },
+                    { type: "link", name: "Link 2 (google.com)", href: "http://google.com", icon: "icon-cloudy" },
+                    { type: "button", name: "Button 1", onclick: "alert('button 1 clicked !')", icon: "icon-potrait" },
+                    { type: "button", name: "Button 2", onclick: "button2_click();", icon: "icon-local-dining" },
+                    { type: "link", name: "Link 3 (stackoverflow.com)", href: 'http://stackoverflow.com', icon: "icon-bike" },
+                ]
+            }
+        });
+        control._searchfunctionCallBack = function (searchkeywords)
+        {
+            if (!searchkeywords) {
+                searchkeywords = "The search call back is clicked !!"
+            }
+            alert(searchkeywords);
+        }
+        map.addControl(control);
+    });
+    
+    function button2_click()
+    {
+        alert('button 2 clicked !!!');
+    }
+
 </script>
 
-</div>
+
+
+ </div>
 
 
  

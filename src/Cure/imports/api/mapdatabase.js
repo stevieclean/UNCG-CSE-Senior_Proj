@@ -1,3 +1,3 @@
-//import { Mongo } from 'meteor/mongo';
+import { Mongo } from 'meteor/mongo';
  
-//export const MapDB = new Mongo.Collection('mapdb');
+export const MapDB = new Mongo.Collection('mapdb');
