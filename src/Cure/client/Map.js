@@ -4,9 +4,8 @@ import { Destination } from "./Events/Destination.js";
 
 
 //MongoDB Section
-//Events = new Mongo.Collection('Event');
-//Locations = new Mongo.Collection('Location');
-//Locations = new Mongo.Collection('Location');
+Events = new Mongo.Collection('Event');
+Locations = new Mongo.Collection('Location');
 
 //SQLite Implementation Section
 //7fc46e0600795cfdc096b6317d4a419aa24f6fa9

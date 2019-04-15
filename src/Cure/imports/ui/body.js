@@ -5,6 +5,7 @@ import EventListener from '../../client/Events/EventListener.js';
 import EventMessage from '../../client/Events/EventMessage.js';
 import './body.html';
 
+var localStorage = new PersistentMinimongo2(Goals, "goalTrackerGoals");
 
 export default class GoalTracker {
     constructor() {
