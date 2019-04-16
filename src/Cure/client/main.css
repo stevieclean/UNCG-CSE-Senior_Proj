@@ -115,8 +115,8 @@ body {
   position: relative;
 }
 .dropdown-menu{
-  position: relative;
-  background: #343a40;
+    position: relative;
+    background: #343a40;
 }
 .dropdown-toggle{
   background-color: transparent;
@@ -651,21 +651,21 @@ li.private {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
 }
 
 .creditstat {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
 }
 
 .spotlight {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
 }
 
 .center-of-page {
@@ -699,7 +699,7 @@ li.private {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
    
 }
 
@@ -707,14 +707,14 @@ li.private {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
 }
 
 .course {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
     
 }
 
@@ -735,62 +735,62 @@ li.private {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
     
 }
 .library {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
     
 }
 .contact{
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
     
 }
 .multi {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
 }
 .thereach {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
    
 }
 .pharmacy {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
   
 }
 .student {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
     
 }
 .clinical {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
    
 }
 .residency {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
    
 }
 
@@ -902,7 +902,7 @@ li.private {
   font-size: .4em;
   width: 50%;
   height: 40%;
-  margin-top: 70%;
+  margin-top: 40%;
   margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
@@ -927,16 +927,20 @@ li.private {
 
 /*---------------------------------------------------------------------------*/
 .logcontainer{
+    display: flex;
+    overflow-y: auto;
     height: 100%;
+    scroll-margin-bottom: auto;
     align-content: center;
+    justify-content: center;
     }
     
     .card{
-    height: 370px;
-    margin-top: 15%;
-    margin-bottom: 15%;
-    width: 400px;
-    background-color: rgba(0,0,0,0.5) !important;
+        height: 470px;
+        margin-top: 15%;
+        margin-bottom: 5%;
+        width: 400px;
+        background-color: rgba(0,0,0,0.5) !important;
     }
     
     .social_icon span{
@@ -999,19 +1003,20 @@ li.private {
     .login_btn{
     color: black;
     background-color:white;
-    width: 100px;
+    width: auto;
     }
     
-    .login_btn:hover{
+    /* .login_btn:hover{
     color: black;
     background-color: white;
-    }
+    } */
     .links{
         color: white;
     }
     .links a{
         margin-left: auto;
     }
+  
 /*---------------------------------------------------------------------------------*/
 
 /* Themes */
@@ -1029,8 +1034,8 @@ li.private {
     color: var(--fg-color) !important;
 }
 .container-color{
-    background-color: var(--bg-primary-color);
-    color: var(--btn-color);
+    background-color: var(--bg-primary-color) !important;
+    color: var(--btn-color) !important;
 }
 .btn-outline-info {
     border-color: var(--fg-color) !important;

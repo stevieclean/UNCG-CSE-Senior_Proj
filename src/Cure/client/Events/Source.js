@@ -7,8 +7,7 @@ export const Source = {
     'GOALTRACKER': 6,
     'SETTINGS': 7,
     'ABOUT': 8,
-    'CREATE': 9,
-    'SIGNUP': 10
+    'CREATE': 9
     
     
 }

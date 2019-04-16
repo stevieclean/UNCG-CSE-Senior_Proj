@@ -6,6 +6,7 @@ import './create.html';
 
 import { Template } from "meteor/templating";
 import { currPage } from "./main.js";
+import {Accounts} from 'meteor/accounts-base';
 
 
 
@@ -14,20 +15,25 @@ export default class Create {
 		//this.events = "";
 		this._listeners = new EventListener;
 		this.template = Template.Create.events({
-            "click #signup": function() {
+            "click #create": function() {
 				console.log(currPage);
-				currPage = "Signup";
-               Session.set("myTemplate", currPage);
-            },
-             "click #login": function() {
-				console.log(currPage);
-				currPage = "Login";
+				currPage = "Create";
                Session.set("myTemplate", currPage);
             },
             "click #settings": function() {
 				console.log(currPage);
 				currPage = "Settings";
                Session.set("myTemplate", currPage);
+            },
+            'click .close-login': ()=>{
+                Session.set('nav-toggle', '');
+            },
+            'click .login-toggle': ()=> {
+                Session.set('nav-toggle', 'open');
+                
+            },
+            'click .logout': ()=> {
+                Accounts.logout();
             }
         })
     }
