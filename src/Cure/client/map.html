@@ -58,7 +58,7 @@ var popup = L.popup();
 }*/
 
 function onMapClick(e) {
-    if (confirm("You clicked the map at " + e.latlng.toString() + ". Add this location to your scheduled events?")) {
+    if (confirm("You clicked the map! Add this location to your scheduled events?")) {
   var marker = L.marker(e.latlng).addTo(mymap);
   alert("Done! Here's a marker!");
 } else {
@@ -140,7 +140,7 @@ function myFunction() {
   }
   //mymap.locate({setView: false, maxZoom: 16});
   //mymap.locate({setView: [36.059941, -79.914701], maxZoom: 16});
-  mymap.flyTo([36.059941, -79.914701],16);
+  mymap.flyTo([-25.740529, 134.230957],8);
 }
 </script>
 
