@@ -960,7 +960,16 @@ li.private {
     position: fixed;
     
 }
-
+.educationcroll {
+    margin-top: 40%;
+    height: 60%;
+    overflow-y: scroll;
+}
+.educationcroll1 {
+    margin-top: 40%;
+    height: 90%;
+    overflow-y: scroll;
+}
 .onlinecourse {
     margin-top: auto;
     margin-bottom: auto;
