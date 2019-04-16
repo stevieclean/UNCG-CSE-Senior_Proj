@@ -5,6 +5,15 @@ import EventListener from '../../client/Events/EventListener.js';
 import EventMessage from '../../client/Events/EventMessage.js';
 import './body.html';
 
+import { MapDB } from '../api/mapdatabase.js';
+//Map Database data
+Template.body.helpers({
+  mapdb() {
+    return MapDB.find({});
+  },
+});
+
+var localStorage = new PersistentMinimongo2(Goals, "goalTrackerGoals");
 
 export default class GoalTracker {
     constructor() {
