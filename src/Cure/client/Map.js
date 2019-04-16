@@ -1,5 +1,7 @@
 import EventListener from "./Events/EventListener.js";
 import { Destination } from "./Events/Destination.js";
+import L from 'leaflet';
+import { GeoSearchControl, OpenStreetMapProvider } from 'leaflet-geosearch';
 
 
 
@@ -36,6 +38,8 @@ export default class Map {
 	}
 	
 	//var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+	
+	
 	
 	
 

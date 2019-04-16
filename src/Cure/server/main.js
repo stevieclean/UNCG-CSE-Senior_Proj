@@ -3,7 +3,8 @@ import '../imports/api/goals.js';
 import '../imports/api/hotdialbuttons.js';
 //End import for the goals
 import { Meteor } from 'meteor/meteor';
-// import './imports/api/tasks.js';
+//import mapdatabase data
+import '../imports/api/mapdatabase.js';
 import {Mongo} from 'meteor/mongo';
 // export constr Tasks = new Mongo.Collection('tasks');
 
