@@ -116,6 +116,19 @@ $(document).ready(function () {
     }
 	
 	*/
+
+const provider = new OpenStreetMapProvider();
+
+const searchControl = new GeoSearchControl({
+  provider: provider,
+});
+
+mymap.addControl(searchControl);
+
+new GeoSearchControl({
+  provider: provider,           // required
+  style: 'bar',                   // optional: bar|button  - default button
+}).addTo(mymap);
 	
 
 
