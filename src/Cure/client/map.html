@@ -1,5 +1,13 @@
 <template name="Map">
 
+
+
+
+
+   
+ 
+<div id="mapid" style="width: 100vw; height: 100%;">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
@@ -8,20 +16,6 @@
    
  <script src="../dist/leaflet.customsearchbox.min.js"></script>
 <link href="../dist/searchbox.min.css" rel="stylesheet" />
-
-
-
-   
- 
-<div id="mapid" style="width: 100vw; height: 100%;">
-
-<form action="/action_page.php">
-  First name:<br>
-  <input type="text" value="Mickey"><br>
-  Last name:<br>
-  <input type="text" name="lastname" value="Mouse"><br><br>
-  <input type="submit" value="Submit">
-</form>
 
   
  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
@@ -43,16 +37,6 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
     accessToken: 'pk.eyJ1IjoiY2xkYXZpZHMiLCJhIjoiY2p0cnVxMXJtMGxjbDQ0czBjMjNpMXY2bCJ9.GFLFPUNG28GNkO6IFN_2ew'
 }).addTo(mymap);  
 
-/*var map = L.map('mapid').fitWorld();
-
-L.tileLayer('https://api.tiles.mapbox.com/v4/MapID/997/256/{z}/{x}/{y}.png?access_token={accessToken}', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 18,
-	id: 'mapbox.satellite',
-	accessToken: 'pk.eyJ1IjoiY2xkYXZpZHMiLCJhIjoiY2p0cnVxMXJtMGxjbDQ0czBjMjNpMXY2bCJ9.GFLFPUNG28GNkO6IFN_2ew'
-	
-}).addTo(map); */
-
 mymap.locate({setView: true, maxZoom: 16}); 
 
 //Adds a marker somewhere
@@ -61,20 +45,30 @@ var marker2 = L.marker([36.0589, -79.853804]).addTo(mymap);
 
 //Sample, makes a pop up happen upon click
 marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
-marker2.bindPopup("<form></form>").openPopup();
+marker2.bindPopup("This is an example marker.").openPopup();
 
 //Added some sample click to test Map Clicks
 var popup = L.popup();
 
-function onMapClick(e) {
+/*function onMapClick(e) {
     popup
         .setLatLng(e.latlng)
         .setContent("You clicked the map at " + e.latlng.toString())
         .openOn(mymap);
+}*/
+
+function onMapClick(e) {
+    if (confirm("You clicked the map at " + e.latlng.toString() + ". Add this location to your scheduled events?")) {
+  var marker = L.marker(e.latlng).addTo(mymap);
+  alert("Done! Here's a marker!");
+} else {
+  alert("Ok! Click another location to schedule it.");
+}
 }
 
 mymap.on('click', onMapClick);
 
+/*
 var searchLayer = L.layerGroup().addTo(map);
 //... adding data in searchLayer ...
 map.addControl( new L.Control.Search({layer: searchLayer}) );
@@ -91,7 +85,7 @@ $(document).ready(function () {
         map.zoomControl.setPosition('topright');
         map.addLayer(new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
             {attribution:'Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'}
-            ));*/
+            ));
 	    
         var searchboxControl=createSearchboxControl();
         var control = new searchboxControl({
@@ -120,14 +114,37 @@ $(document).ready(function () {
     {
         alert('button 2 clicked !!!');
     }
+	
+	*/
+	
+
 
 </script>
 
 
 
  </div>
+ 
 
+<div class="mapform">
+<button onclick="myFunction()">Enter Address Here!</button>
 
+<script>
+function myFunction() {
+  var txt;
+  var person = prompt("Please enter an address:", "Australia");
+  if (person == null || person == "") {
+    txt = "User cancelled the prompt.";
+  } else {
+    txt = "Hello " + person + "! How are you today?";
+  }
+  //mymap.locate({setView: false, maxZoom: 16});
+  //mymap.locate({setView: [36.059941, -79.914701], maxZoom: 16});
+  mymap.flyTo([36.059941, -79.914701],16);
+}
+</script>
+
+</div>
  
 
    
