@@ -1371,3 +1371,11 @@ li.private {
     border-color: var(--fg-color) !important;
     color: var(--navbutton-color) !important;
 }
+
+.goaltracker-text-color {
+	color: var(--fg-color) !important;
+}
+
+.goaltracker-header-color {
+	color: var(--fg-color) !important;
+}
