@@ -30,7 +30,7 @@ export default class Controller {
         this.theme = new Theme();
         this.profile = new Profile();
         this.create = new Create();
-        this.signup = new Signup();
+        
         this.password = new Password();
         this.notes = new Notes();
 
@@ -43,7 +43,7 @@ export default class Controller {
         this.listeners.appendListener(this.settings);
         this.listeners.appendListener(this.education);
         this.listeners.appendListener(this.create);
-        this.listeners.appendListener(this.signup);
+        
         /*
         this.listeners.appendListener(this.conference);
         this.listeners.appendListener(this.clock);
@@ -64,7 +64,7 @@ export default class Controller {
         this.theme.listeners.appendListener(this);
         this.profile.listeners.appendListener(this);
         this.create.listeners.appendListener(this);
-        this.signup.listeners.appendListener(this);
+        // this.signup.listeners.appendListener(this);
         this.password.listeners.appendListener(this);
         this.notes.listeners.appendListener(this);
 

@@ -1,35 +1,116 @@
 <template name="HotDial">
-    <div class="CURE d-inline-block fill align-content-center">
-    <div class="container bg-dark rounded">
-            <div class= "hotdialtitle text-white-50 top-buffer text-center"> 
+    <div class="CURE fill align-content-center">
+    <div class="container container-color rounded hotdialscroll">
+            <div class= "hotdialtitle top-buffer-sm text-center"> 
                     Hot Line
                 </div>
-                <div class= "hotdialdesc text-white-50 text-center">
-                    Click a button to call one of the following facilities.
+                <div class= "hotdialdesc text-center">
+                    Click a button to call one of the following contacts.
                 </div>
         <div class="d-flex flex-column align-items-center">
-            <div class="top-buffer-sm">
-                <button id="addhdbutton" class="btn btn-secondary btn-sm btn-width-lrg btn-height-m"><span class="fa fa-plus"></span>&nbsp;Add HotDial</button>
-            </div>
-            <div class="top-buffer-sm">
+            <div class="top-buffer-sm bottom-buffer-sm">
                 <button id="gcstopbutton" class="btn btn-secondary btn-sm btn-width-lrg btn-height-m">GCSTOP</button>
             </div>
-            <div class="top-buffer-sm">
+            <div class="bottom-buffer-sm">
                 <button id="nchrcbutton" class="btn btn-secondary btn-sm btn-width-lrg btn-height-m">NCHRC</button>
             </div>
-            <div class="top-buffer-sm bottom-buffer-sm">
+            <div class="bottom-buffer-sm">
                 <button id="conebutton" class="btn btn-secondary btn-sm btn-width-lrg btn-height-m">Cone Helpline</button>
             </div>
-            <!-- This is the container for ALL newly created buttons -->
-            <!--{{> dynamicButtonTemplate}}-->
+            {{> dynamicButtonTemplate}}
+            <div class="row justify-content-center">
+            <div class="top-buffer-sm bottom-buffer-sm col">
+                <button type="button" id="addhdbutton" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#newButtonModal"><span class="fa fa-plus"></span></button>
+            </div>
+                <!-- Start of Add a Button Modal -->
+                <div class="modal fade" id="newButtonModal" tabindex="-1" role="dialog" aria-labelledby="numberEntry" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header container-color">
+                        <h5 class="modal-title" id="numberEntry">Add New Contact</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body container-color">
+                            <div class="row justify-content-center">
+                                <div class="row-md-auto justify-content-center">
+                                    <div class="col d-flex justify-content-center">
+                                        <label for="input">Name</label>
+                                    </div>
+                                    <div class="col justify-content-center">
+                                        <input class="" type="text" id="nameEntry" style="width: 150px;"/>
+                                    </div>
+                                </div>
+                                <div class="row-md-auto justify-content-center">
+                                    <div class="col d-flex justify-content-center">
+                                        <label for="input">Phone Number</label>
+                                    </div>
+                                    <div class="col justify-content-center">
+                                        <input class="" type="text" id="phoneNumberEntry" style="width: 120px;"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer container-color">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button id="addNewNumber" type="button" class="btn btn-secondary errorPopover" data-toggle="popover" data-placement="bottom" data-trigger="focus">Add Contact</button>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- End of Add Button Modal -->
+                <div class="top-buffer-sm bottom-buffer-sm col">
+                    <button type="button" id="deletehdbutton" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#deleteButtonModal"><span class="fa fa-minus"></span></button>
+                </div>
+                <!-- Start of Delete a Button Modal -->
+                    <div class="modal fade" id="deleteButtonModal" tabindex="-1" role="dialog" aria-labelledby="numberEntry" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header container-color">
+                            <h5 class="modal-title" id="numberEntry">Delete A Saved Number</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body container-color col justify-content-center">
+                                <dev class="d-flex flex-column align-items-center">
+                                    {{> deleteButtonsTemplate}}
+                                </dev>
+                            </div>
+                            <div class="modal-footer container-color">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>    
+                        </div>
+                        </div>
+                        </div>
+                    </div>
+                <!-- End of Delete Button Modal -->
+            </div>
         </div>
     </div>
 </div>
 </template>
 
 <template name="dynamicButtonTemplate">
-    <!--
-    {{#each newButton in hotdialbuttons}}
-        {{> }}
-        -->
+        {{#each hotdialbuttons}}
+            {{> newButton}}
+        {{/each}}
+</template>
+
+<template name="newButton">
+    <div class="bottom-buffer-sm">
+        <button id="userButton" class="btn btn-secondary btn-sm btn-width-lrg btn-height-m">{{name}}</button>
+    </div>
+</template>
+
+<template name="deleteButtonsTemplate">
+    {{#each hotdialbuttons}}
+        {{> deleteButton}}
+    {{/each}}
+</template>
+
+<template name="deleteButton">
+    <div class="bottom-buffer-sm">
+        <button id="buttonToDelete" class="btn btn-secondary btn-sm btn-width-lrg btn-height-m">{{name}}</button>
+    </div>
 </template>

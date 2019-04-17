@@ -42,22 +42,15 @@ export default class Settings {
 				console.log(currPage);
 				currPage = "Create";
                 Session.set("myTemplate", currPage);
-			},
-			"click #signup": function() {
-				console.log(currPage);
-				currPage = "Signup";
-                Session.set("myTemplate", currPage);
-			},
+			}
+		
+			
 			// "click #login": function() {
 			// 	console.log(currPage);
 			// 	currPage = "Login";
             //     Session.set("myTemplate", currPage);
 			
-			"click #signup": function() {
-				console.log(currPage);
-				currPage = "Signup";
-                Session.set("myTemplate", currPage);
-			}
+			
 		})
 	}
 

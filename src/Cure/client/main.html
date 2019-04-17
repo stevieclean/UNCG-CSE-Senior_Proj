@@ -1,11 +1,6 @@
 <head>
   <title>CURE App</title>
-    <!--
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
-    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
-    -->
+    
 </head>
 
 <body>
@@ -14,7 +9,7 @@
         {{> dropdownmenu}}
       </nav>
       {{> dynamicTemplate}}
-      <nav class="navbar-brand navbar-dark container-color fixed-bottom d-flex">
+      <nav class="navbar-brand navbar-dark container-color fixed-bottom d-inline-flex">
       {{> buttons}}
     </nav>
   </div>
@@ -27,16 +22,11 @@
 <template name="MainPage">
     <div class="CURE">
     </div>
-    <!--
-    <div class="mainpagedesc">
-        Community United in Response to an Epidemic (CURE) was designed to serve as a connector of resources,
-        services and education for our community in response to
-        the opioid crisis in central NC including Alamance, Caswell,
-        Chatham, Guilford, Montgomery, Orange, Randolph, and Rockingham counties.
-    </div>
-    -->
       <div class="d-block text-center HotDial">
         {{> OneDial}}
+        <!-- {{#if currentUser}}
+          {{> Create }}
+        {{/if}} -->
       </div>
 </template>
 
@@ -65,24 +55,27 @@
 </template>
 
 <template name="dropdownmenu">
-  <div class="dropdown ml-auto container-color" >
+  <div class="dropdown ml-auto" >
     <button class="btn btn-secondary dropdown-toggle btn-sm" type="button" data-toggle="dropdown" data-target="#dropdown-menu" aria-hashpopup="true" aria-expanded="false">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="dropdown-menu dropdown-menu-right" id="dropdown-menu" aria-labelledby="dropdown-menu">
+    <div class="dropdown-menu dropdown-menu-right container-color" id="dropdown-menu" aria-labelledby="dropdown-menu">
+      <div class="d-flex justify-content-center row">
+        <div class="w-100"></div>
         <button class="btn btn-secondary btn-sm" id="settings" type='button'>Settings</button>
+        <div class="w-100"></div>
         <button class="btn btn-secondary btn-sm" id="about" type='button'>About</button>
+        <div class="w-100"></div>
+        {{#if currentUser}}
+        <button class="btn btn-secondary btn-sm" id="logout">Logout</button>
+        {{else}}
+        <button class="login-toggle btn-secondary">Login</button>
+        {{/if}}
+      </div>
     </div>
-  </div>
+    </div>
 </template>
-<!-- <template name="create">
-  {{#if $not currentUser}}
-    <div class="create {{$.Session.get 'login'}}">
-      <i class="fa fa-close close-login"></i>
-      {{>atForm}}
-    </div>
-  {{/if}}
-</template> -->
+
 <!-- <template name="Main">
   <nav class="main">
     <ul>
