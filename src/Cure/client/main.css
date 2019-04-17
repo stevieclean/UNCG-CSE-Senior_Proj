@@ -65,6 +65,8 @@ input:focus {
     position: absolute;
     /*box-shadow: 0px 3px 5px;*/
 }
+
+
 /* Editing container sizes */
 
 
@@ -107,6 +109,7 @@ input:focus {
     justify-content: space-around;
 }
 
+
 /* Button modification classes */
 
 .btn-width-m {
@@ -129,6 +132,7 @@ input:focus {
 
 /* The invisible container which holds all pages that users can choose */
 
+
 /* .dynamic {
     width: 100%;
     height: 100%;
@@ -147,20 +151,25 @@ input:focus {
     height: 15%;
 }
 
+
 /*Dropdown menu stuff */
-.dropdown{
-  position: relative;
+
+.dropdown {
+    position: relative;
 }
 .dropdown-menu{
     position: relative;
     background: #343a40;
 }
-.dropdown-toggle{
-  background-color: transparent;
+
+.dropdown-toggle {
+    background-color: transparent;
 }
-.dropdown-content{
-  background-color: #343a40;
+
+.dropdown-content {
+    background-color: #343a40;
 }
+
 
 /* CURE background image to be displayed on main page */
 
@@ -173,13 +182,14 @@ input:focus {
     width: 100%;
     height: 100%;
 }
-.cbg{
+
+.cbg {
     background-image: url('/images/home-1.png');
-    
     background-size: 100% 100%;
     background-repeat: repeat-x;
     position: center;
 }
+
 
 /* Description of CURE */
 
@@ -256,6 +266,8 @@ input:focus {
     float: none;
     justify-content: space-between;
 }
+
+
 /* Every button on the button bar in main.html */
 
 .LocButton {
@@ -841,7 +853,7 @@ a, button, h1, h2, h3, h4, h5, h6, input, ol, p, textarea, th, ul {
 .goal_header {
     text-align: center;
     font-size: 20px;
-    background-color: rgba(0,0,0,0.5) !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
     /* background-image: linear-gradient(to bottom, #25dab2, #e1e5f0 100%); */
     padding: 20px 15px 15px 15px;
     position: relative;
@@ -958,7 +970,6 @@ li.private {
     width: 100%;
     height: 30%;
     position: fixed;
-    
 }
 .educationcroll {
     margin-top: 40%;
@@ -1007,15 +1018,14 @@ li.private {
     position: fixed;
 }
 
-.conferencetext{
-    position: relative; 
-   
-    
+.conferencetext {
+    position: relative;
 }
-.creditstattext{
+
+.creditstattext {
     width: 100%;
     height: 100%;
-    position: relative; 
+    position: relative;
 }
 
 .handouts {
@@ -1023,7 +1033,6 @@ li.private {
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
-   
 }
 
 .refresher {
@@ -1038,7 +1047,6 @@ li.private {
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
-    
 }
 
 .educationButtons {
@@ -1054,68 +1062,70 @@ li.private {
     /*box-shadow: 0px 3px 5px;*/
     position: relative;
 }
+
 .cone {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
-    
 }
+
 .library {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
-    
 }
-.contact{
+
+.contact {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
-    
 }
+
 .multi {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
 }
+
 .thereach {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
-   
 }
+
 .pharmacy {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
-  
 }
+
 .student {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
-    
 }
+
 .clinical {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
-   
 }
+
 .residency {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
-   
 }
+
 
 /*---------------------------------------------------------------------------*/
 
@@ -1128,96 +1138,88 @@ li.private {
 
 /* Main container for settings page */
 
-.settings{
-  background-image: url('/images/head-settings.png');
-  background-color: #25b6da;
-  background-size: 100%, 80%;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 40%;
-  position: fixed;
-  justify-content: center;
-  
-  
-}
-.settingsdesc{
- 
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
-
-
-}
-.about h3{
-    width: 100%; 
-    box-sizing: border-box; 
-    display: block;
-    font-size:16px;
-    margin-top:55%;
-    margin-bottom:auto;
-    margin-left: auto;
-    margin-right: auto; 
+.settings {
+    background-image: url('/images/head-settings.png');
+    background-color: #25b6da;
+    background-size: 100%, 80%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 40%;
+    position: fixed;
     justify-content: center;
 }
-.theme{
-  
-  margin-top:auto;
-  margin-bottom:auto;
-  margin-left: auto;
-  margin-right: auto;
-  
-  
-  
-}
-.profile{
-  
-  margin-top:auto;
-  margin-bottom:auto;
-  margin-left: auto;
-  margin-right: auto;
-}
 
-.password{
-  
-  margin-top:auto;
-  margin-bottom:auto;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.create{
-    margin-top:auto;
-    margin-bottom:auto;
+.settingsdesc {
+    margin-top: auto;
+    margin-bottom: auto;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
+    justify-content: center;
 }
 
-.signup{
-    margin-top:auto;
-    margin-bottom:auto;
+.about h3 {
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    font-size: 16px;
+    margin-top: 55%;
+    margin-bottom: auto;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
+    justify-content: center;
 }
 
-.notes{
-  
-  margin-top:auto;
-  margin-bottom:auto;
-  margin-left: auto;
-  margin-right: auto;
-  
-  
+.theme {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.password {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.create {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.signup {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.notes {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .settingsdesc {
     font-size: .4em;
     margin-left: auto;
     margin-right: auto;
-    background-color:white;
+    background-color: white;
     color: rgb(59, 58, 58);
 }
+
+
 /* Settings container for all buttons */
 
 .settingsButtons{
@@ -1238,12 +1240,18 @@ li.private {
   position: relative;
 }
 
-/*---------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------*/
- 
-/* Login Container */ 
 
 /*---------------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------------*/
+
+
+/* Login Container */
+
+
+/*---------------------------------------------------------------------------*/
+
 .logcontainer{
     display: flex;
     overflow-y: auto;
@@ -1272,79 +1280,88 @@ li.private {
     color: white;
     }
     
-    .social_icon span:hover{
+.social_icon span{
+font-size: 50px;
+margin-left: 10px;
+color: white;
+}
+
+.social_icon span:hover {
     color: white;
     cursor: pointer;
-    }
-    
-    .card-header h3{
-    font-size:18px;
+}
+
+.card-header h3 {
+    font-size: 18px;
     /* position: float bottom; */
     color: white;
-    }
-    
-    .card-footer{ /* Don't have an account text*/
-    color: white;
-    }
+}
 
-    .signup-head p{
-        color: white;
-     
-    }
-    .social_icon{
+.card-footer {
+    /* Don't have an account text*/
+    color: white;
+}
+
+.signup-head p {
+    color: white;
+}
+
+.social_icon {
     position: absolute;
     right: 20px;
     top: -15px;
-    }
-    
-    .input-group-prepend span{
+}
+
+.input-group-prepend span {
     margin-bottom: -1px;
     width: 40px;
     background-color: white;
     color: black;
     /* border:0 !important; */
-    }
-    
-    input:focus{
-    outline: 0 0 0 0  !important;
+}
+
+input:focus {
+    outline: 0 0 0 0 !important;
     box-shadow: 0 0 0 0 !important;
-    
-    }
-    
-    .remember{
+}
+
+.remember {
     color: white;
-    }
-    
-    .remember input
-    {
+}
+
+.remember input {
     width: 10px;
     height: 10px;
     margin-left: 15px;
     margin-right: 5px;
-    }
-    
-    .login_btn{
+}
+
+.login_btn {
     color: black;
-    background-color:white;
-    width: auto;
-    }
-    
-    /* .login_btn:hover{
-    color: black;
+
     background-color: white;
-    } */
-    .links{
-        color: white;
-    }
-    .links a{
-        margin-left: auto;
-    }
-  
+    width: 100px;
+}
+    
+/* .login_btn:hover{
+color: black;
+background-color: white;
+} */
+.links{
+    color: white;
+}
+.links a{
+    margin-left: auto;
+}
+
 /*---------------------------------------------------------------------------------*/
+
 
 /* Themes */
 
+
 /*---------------------------------------------------------------------------------*/
+
 :root {
     --bg-primary-color: #0f0f0f;
     --fg-text: #5c5c5c;
@@ -1353,10 +1370,15 @@ li.private {
     --navbutton-color: #505050;
 }
 
+.transluscent-bg {
+    color: var(--btn-color);
+}
+
 .btn-secondary {
     background-color: var(--btn-color) !important;
     color: var(--fg-color) !important;
 }
+
 .container-color {
     background-color: var(--bg-primary-color) !important;
     color: var(--fg-color) !important;
@@ -1372,7 +1394,17 @@ li.private {
     color: var(--navbutton-color) !important;
     border: none !important;
 }
-.navbar-toggler-icon{
+
+.navbar-toggler-icon {
     border-color: var(--fg-color) !important;
     color: var(--navbutton-color) !important;
+
+}
+
+.goaltracker-text-color {
+	color: var(--fg-color) !important;
+}
+
+.goaltracker-header-color {
+	color: var(--fg-color) !important;
 }
