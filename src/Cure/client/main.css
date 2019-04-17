@@ -183,6 +183,14 @@ input:focus {
     height: 100%;
 }
 
+.CUREEducation {
+    background-image: url('/graphics/home.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: fixed;
+    
+}
+
 .cbg {
     background-image: url('/images/home-1.png');
     background-size: 100% 100%;
