@@ -2,6 +2,7 @@ import { Template } from 'meteor/templating';
 import { Meteor } from 'meteor/meteor';
 import { ReactiveVar } from 'meteor/reactive-var';
 import { Session } from 'meteor/session';
+import { Accounts }  from 'meteor/accounts-base';
 import '@fortawesome/fontawesome-free/js/all.js';
 import 'bootstrap';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
@@ -35,6 +36,7 @@ import './settings.html';
 import './signup.html';
 import './spotlight.html';
 import './theme.html';
+// import './Accounts.js';
 
 
 
@@ -95,6 +97,13 @@ Template.dropdownmenu.events({
     "click #about": function () {
     currPage = "About";
     Session.set("myTemplate", currPage);
+    },
+    "click .login-toggle": function(){
+        currPage = "Create";
+        Session.set("myTemplate", currPage);
+    },
+    "click #logout": function() {
+        Accounts.logout();
     }
 
 });
@@ -102,6 +111,13 @@ Template.Create.events({
     "click #create": function() {
         currPage = "Create";
         Session.set("myTemplate", currPage);
+    },
+    "click .login-toggle": function() {
+        currPage = "Create";
+        Session.set("myTemplate", currPage);
+    },
+    'click .logout': ()=> {
+        Accounts.logout();
     }
 });
 Template.Signup.events({
@@ -119,6 +135,7 @@ Template.Signup.events({
 //         Meteor.logout();
 //     }
 // });
+
 var controller = new Controller();
 /* Code to make phone call
 "click #onedial": function () {

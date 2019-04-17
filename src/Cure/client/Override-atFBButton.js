@@ -1,0 +1,1 @@
+Template['override-atFBButton'].replaces('atOauthBtn');

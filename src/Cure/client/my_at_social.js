@@ -1,0 +1,1 @@
+Template.myAtSocial.replaces('atSocial');
