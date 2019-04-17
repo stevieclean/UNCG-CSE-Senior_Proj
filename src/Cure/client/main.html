@@ -1,5 +1,6 @@
 <head>
   <title>CURE App</title>
+    
 </head>
 
 <body>
@@ -23,6 +24,9 @@
     </div>
       <div class="d-block text-center HotDial">
         {{> OneDial}}
+        <!-- {{#if currentUser}}
+          {{> Create }}
+        {{/if}} -->
       </div>
 </template>
 
@@ -51,24 +55,27 @@
 </template>
 
 <template name="dropdownmenu">
-  <div class="dropdown ml-auto container-color" >
+  <div class="dropdown ml-auto" >
     <button class="btn btn-secondary dropdown-toggle btn-sm" type="button" data-toggle="dropdown" data-target="#dropdown-menu" aria-hashpopup="true" aria-expanded="false">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="dropdown-menu dropdown-menu-right" id="dropdown-menu" aria-labelledby="dropdown-menu">
+    <div class="dropdown-menu dropdown-menu-right container-color" id="dropdown-menu" aria-labelledby="dropdown-menu">
+      <div class="d-flex justify-content-center row">
+        <div class="w-100"></div>
         <button class="btn btn-secondary btn-sm" id="settings" type='button'>Settings</button>
+        <div class="w-100"></div>
         <button class="btn btn-secondary btn-sm" id="about" type='button'>About</button>
+        <div class="w-100"></div>
+        {{#if currentUser}}
+        <button class="btn btn-secondary btn-sm" id="logout">Logout</button>
+        {{else}}
+        <button class="login-toggle btn-secondary">Login</button>
+        {{/if}}
+      </div>
     </div>
-  </div>
+    </div>
 </template>
-<!-- <template name="create">
-  {{#if $not currentUser}}
-    <div class="create {{$.Session.get 'login'}}">
-      <i class="fa fa-close close-login"></i>
-      {{>atForm}}
-    </div>
-  {{/if}}
-</template> -->
+
 <!-- <template name="Main">
   <nav class="main">
     <ul>

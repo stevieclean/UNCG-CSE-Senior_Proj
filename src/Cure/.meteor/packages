@@ -25,3 +25,9 @@ accounts-base
 useraccounts:unstyled
 raix:handlebar-helpers
 frozeman:persistent-minimongo2
+
+aldeed:template-extension
+accounts-ui
+accounts-facebook
+aldeed:simple-schema
+facebook-config-ui
