@@ -981,6 +981,14 @@ li.private {
     height: 90%;
     overflow-y: scroll;
 }
+.CUREEducation {
+    background-image: url('/graphics/home.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: fixed;
+
+}
+
 .onlinecourse {
     margin-top: auto;
     margin-bottom: auto;
