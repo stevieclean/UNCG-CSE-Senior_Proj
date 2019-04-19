@@ -183,6 +183,14 @@ input:focus {
     height: 100%;
 }
 
+.CUREEducation {
+    background-image: url('/graphics/home.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: fixed;
+    
+}
+
 .cbg {
     background-image: url('/images/home-1.png');
     background-size: 100% 100%;
@@ -1266,16 +1274,27 @@ li.private {
     height: 100%;
     scroll-margin-bottom: auto;
     align-content: center;
-}
-
-
-.card{
-    height: 470px;
-    margin-top: 15%;
-    margin-bottom: 5%;
-    width: 400px;
-    background-color: rgba(0,0,0,0.5) !important;
-}
+    justify-content: center;
+    
+    
+    /* background-color:transparent; */
+    }
+    
+    .card{
+        height: 470px;
+        margin-top: 15%;
+        margin-bottom: 5%;
+        width: 400px;
+        color: transparent;
+        
+        background-color:  rgba(0,0,0,0.5)!important;
+    }
+     
+    .social_icon span{
+    font-size: 50px;
+    margin-left: 10px;
+    color: white;
+    }
     
 .social_icon span{
 font-size: 50px;
