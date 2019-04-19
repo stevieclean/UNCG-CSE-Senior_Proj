@@ -188,7 +188,8 @@ input:focus {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     position: fixed;
-    
+    width: 100%;
+    height: 100%;  
 }
 
 .cbg {
@@ -994,7 +995,8 @@ li.private {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     position: fixed;
-
+    width: 100%;
+    height: 100%;
 }
 
 .onlinecourse {
