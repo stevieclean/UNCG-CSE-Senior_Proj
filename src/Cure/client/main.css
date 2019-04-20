@@ -188,7 +188,8 @@ input:focus {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     position: fixed;
-    
+    width: 100%;
+    height: 100%;  
 }
 
 .cbg {
@@ -989,6 +990,15 @@ li.private {
     height: 90%;
     overflow-y: scroll;
 }
+.CUREEducation {
+    background-image: url('/graphics/home.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
 .onlinecourse {
     margin-top: auto;
     margin-bottom: auto;
