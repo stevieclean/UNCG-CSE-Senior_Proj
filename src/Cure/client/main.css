@@ -1157,7 +1157,7 @@ li.private {
 /* Main container for settings page */
 
 .settings {
-    background-image: url('/images/settings_page.png');
+    background-image: url('/images/Settings_main.png');
     background-color: #25b6da;
     background-size: 100%, 130%;
     background-repeat: no-repeat;
