@@ -1,8 +1,23 @@
 <template name="Notes">
-    <div class="notes CURE">
-        <header>Notes</header>
+    <div class="notes settings">
+        
         <div class="settingsButtons">
-            <button id="settings" class="btn btn-secondary btn-sm"><span class = 'fas fa-cog'></span> Back</button>
+            
+            
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-secondary active">
+                    <input type="On" name="options" id="option1" autocomplete="off" checked> Turn Notes On
+                </label>
+                <label class="btn btn-secondary">
+                    <input type="Off" name="options" id="option2" autocomplete="off"> Turn Notes off
+                </label>
+            </div>
+            <button id="fonts" class="btn btn-secondary btn-sm"><span class='fas fa-font'></span> Change Fonts</button>
+            <button id="fontsize" class="btn btn-secondary btn-sm"><span class='fas fa-text-height'></span> Change Font Size</button>
+            <button id="layout" class="btn btn-secondary btn-sm"><span class='fas fa-paragraph'></span> Change Layout</button>
+            <button id="settings" class="btn btn-secondary btn-sm"><span class='fas fa-cog'></span> Back</button>
+
+
             
         </div>
     </div>
