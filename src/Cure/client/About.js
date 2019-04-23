@@ -11,15 +11,10 @@ export default class About {
 	constructor() {
 		//this.events = "";
 		this._listeners = new EventListener;
-		this.template = Template.dropdownmenu.events({
-            "click #about": function() {
+		this.template = Template.buttons.events({
+            "click #home": function() {
 				console.log(currPage);
-				currPage = "About";
-                Session.set("myTemplate", currPage);
-            },
-            "click #settings": function() {
-				console.log(currPage);
-				currPage = "Settings";
+				currPage = "MainPage";
                 Session.set("myTemplate", currPage);
             }
             

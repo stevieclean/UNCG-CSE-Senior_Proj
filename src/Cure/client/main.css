@@ -87,6 +87,9 @@ input:focus {
 .top-buffer-sm-2 {
     margin-top: 20px;
 }
+.top-buffer-med{
+    margin-top:65px;
+}
 
 .top-buffer {
     margin-top: 70px;
@@ -98,6 +101,10 @@ input:focus {
 
 .top-bufferX2 {
     margin-top: 140px;
+}
+.top-bufferX3 {
+    margin-top: 170px;
+    background-color: rgba(0,0,0,0.5);
 }
 
 .top-buffer2 {
@@ -159,7 +166,7 @@ input:focus {
 }
 .dropdown-menu{
     position: relative;
-    background: #343a40;
+    background-color: rgba(0,0,0,0.5);
 }
 
 .dropdown-toggle {
@@ -167,8 +174,9 @@ input:focus {
 }
 
 .dropdown-content {
-    background-color: #343a40;
+    background-color: rgba(0,0,0,0.5);
 }
+
 
 
 /* CURE background image to be displayed on main page */
@@ -181,6 +189,15 @@ input:focus {
     top: 5%;
     width: 100%;
     height: 100%;
+}
+
+.CUREEducation {
+    background-image: url('/graphics/home.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 100%;
+    height: 100%;  
 }
 
 .cbg {
@@ -981,6 +998,15 @@ li.private {
     height: 90%;
     overflow-y: scroll;
 }
+.CUREEducation {
+    background-image: url('/graphics/home.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
 .onlinecourse {
     margin-top: auto;
     margin-bottom: auto;
@@ -1008,6 +1034,9 @@ li.private {
 
 .depth1 {
     z-index: 1;
+}
+.depth2 {
+    z-index: 2;
 }
 
 .conference {
@@ -1139,14 +1168,14 @@ li.private {
 /* Main container for settings page */
 
 .settings {
-    background-image: url('/images/head-settings.png');
-    background-color: #25b6da;
-    background-size: 100%, 80%;
+    background-image: url('/images/Settings_main.png');
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 40%;
     position: fixed;
-    justify-content: center;
+    top: 5%;
+    width: 100%;
+    height: 100%;
+    
 }
 
 .settingsdesc {
@@ -1157,17 +1186,35 @@ li.private {
     justify-content: center;
 }
 
-.about h3 {
+.about {
     width: 100%;
+    position: relative;
     box-sizing: border-box;
-    display: block;
-    font-size: 16px;
-    margin-top: 55%;
+    display: flex;
+    /* font-size: 16px; */
+    margin-top: 5%;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
 }
+.aboutContainer{
+    box-align: start;
+    font-size: .4em;
+    width: 90%;
+    height: 40%;
+    margin-top: 40%;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    border-spacing: 1px;
+    border: 0;
+    /*box-shadow: 0px 3px 5px;*/
+    position: relative;
+  }
 
 .theme {
     margin-top: auto;
@@ -1209,6 +1256,21 @@ li.private {
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
+}
+.security {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pin {
+    justify-content: center;
+    background-repeat: no-repeat;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgba(0,0,0,0.5);
 }
 
 .settingsdesc {
@@ -1258,16 +1320,27 @@ li.private {
     height: 100%;
     scroll-margin-bottom: auto;
     align-content: center;
-}
-
-
-.card{
-    height: 470px;
-    margin-top: 15%;
-    margin-bottom: 5%;
-    width: 400px;
-    background-color: rgba(0,0,0,0.5) !important;
-}
+    justify-content: center;
+    
+    
+    /* background-color:transparent; */
+    }
+    
+    .card{
+        height: 470px;
+        margin-top: 40%;
+        margin-bottom: 5%;
+        width: 400px;
+        color: white;
+        
+        background-color:  rgba(0,0,0,0.5)!important;
+    }
+     
+    .social_icon span{
+    font-size: 50px;
+    margin-left: 10px;
+    color: white;
+    }
     
 .social_icon span{
 font-size: 50px;
@@ -1396,4 +1469,34 @@ background-color: white;
 
 .goaltracker-header-color {
 	color: var(--fg-color) !important;
+}
+
+/*----------------------------------------------------------------------------------------------*/
+
+                                /*Password & Security*/
+
+/*---------------------------------------------------------------------------------------------*/
+.textA{
+    margin-top: 30px;
+    color:white;
+    font-size: 20px;
+    margin-right:auto;
+    margin-left:auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.sec_dropdown {
+    position: relative;
+}
+.sec_dropdown-menu{
+    position: relative;
+    background: #343a40;
+}
+
+.sec_dropdown-toggle {
+    background-color: transparent;
+}
+
+.sec_dropdown-content {
+    background-color: #343a40;
 }
