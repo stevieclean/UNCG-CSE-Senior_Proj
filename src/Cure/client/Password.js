@@ -5,6 +5,8 @@ import { Template } from "meteor/templating";
 import { currPage } from "./main.js";
 import './settings.html';
 import './password.html';
+import './security.html';
+import './pin.html';
 
 
 export default class Password {
@@ -12,7 +14,17 @@ export default class Password {
 		//this.events = "";
 		this._listeners = new EventListener;
 		this.template = Template.Password.events({
-			"click #settings": function() {
+			"click #security": function() {
+				console.log(currPage);
+				currPage = "Security";
+                Session.set("myTemplate", currPage);
+            },
+            "click #pin": function() {
+				console.log(currPage);
+				currPage = "Pin";
+                Session.set("myTemplate", currPage);
+            },
+            "click #settings": function() {
 				console.log(currPage);
 				currPage = "Settings";
                 Session.set("myTemplate", currPage);

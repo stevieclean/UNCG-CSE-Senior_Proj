@@ -126,6 +126,26 @@ Template.Signup.events({
         Session.set("myTemplate", currPage);
     }
 });
+Template.Password.events({
+    "click #security": function() {
+        currPage = "Security";
+        Session.set("myTemplate", currPage);
+    },
+    "click #pin": function() {
+        currPage = "Pin";
+        Session.set("myTemplate", currPage);
+    }
+});
+Template.Security.events({
+    "click #security": function() {
+        currPage = "Security";
+        Session.set("myTemplate", currPage);
+    },
+    "click #pin": function() {
+        currPage = "Pin";
+        Session.set("myTemplate", currPage);
+    }
+});
 // Template.Main.events({
 //     "click .login-toggle": function() {
 //         currPage = "";

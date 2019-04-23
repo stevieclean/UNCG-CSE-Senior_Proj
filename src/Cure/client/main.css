@@ -87,6 +87,9 @@ input:focus {
 .top-buffer-sm-2 {
     margin-top: 20px;
 }
+.top-buffer-med{
+    margin-top:65px;
+}
 
 .top-buffer {
     margin-top: 70px;
@@ -98,6 +101,10 @@ input:focus {
 
 .top-bufferX2 {
     margin-top: 140px;
+}
+.top-bufferX3 {
+    margin-top: 170px;
+    background-color: rgba(0,0,0,0.5);
 }
 
 .top-buffer2 {
@@ -159,7 +166,7 @@ input:focus {
 }
 .dropdown-menu{
     position: relative;
-    background: #343a40;
+    background-color: rgba(0,0,0,0.5);
 }
 
 .dropdown-toggle {
@@ -167,8 +174,9 @@ input:focus {
 }
 
 .dropdown-content {
-    background-color: #343a40;
+    background-color: rgba(0,0,0,0.5);
 }
+
 
 
 /* CURE background image to be displayed on main page */
@@ -1027,6 +1035,9 @@ li.private {
 .depth1 {
     z-index: 1;
 }
+.depth2 {
+    z-index: 2;
+}
 
 .conference {
     background-image: url('/images/header-image2.jpg');
@@ -1177,10 +1188,11 @@ li.private {
 
 .about h3 {
     width: 100%;
+    position: relative;
     box-sizing: border-box;
     display: flex;
     font-size: 16px;
-    margin-top: 45%;
+    margin-top: 70%;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
@@ -1227,6 +1239,21 @@ li.private {
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
+}
+.security {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pin {
+    justify-content: center;
+    background-repeat: no-repeat;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgba(0,0,0,0.5);
 }
 
 .settingsdesc {
@@ -1425,4 +1452,32 @@ background-color: white;
 
 .goaltracker-header-color {
 	color: var(--fg-color) !important;
+}
+
+/*----------------------------------------------------------------------------------------------*/
+
+                                /*Password & Security*/
+
+/*---------------------------------------------------------------------------------------------*/
+.textA{
+    color:white;
+    font-size: 23px;
+    margin-right:auto;
+    margin-left:auto;
+    background-color: rgba(0,0,0,0.5);
+}
+.sec_dropdown {
+    position: relative;
+}
+.sec_dropdown-menu{
+    position: relative;
+    background: #343a40;
+}
+
+.sec_dropdown-toggle {
+    background-color: transparent;
+}
+
+.sec_dropdown-content {
+    background-color: #343a40;
 }

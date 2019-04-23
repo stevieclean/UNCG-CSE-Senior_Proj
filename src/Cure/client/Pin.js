@@ -3,36 +3,27 @@ import { Destination } from "./Events/Destination.js";
 import { Session } from 'meteor/session';
 import { Template } from "meteor/templating";
 import { currPage } from "./main.js";
-import './settings.html';
-import './notes.html';
+
+import './password.html';
+import './security.html';
+import './pin.html';
 
 
-export default class Notes {
+export default class Pin {
 	constructor() {
-		//this.events = "";
+		
 		this._listeners = new EventListener;
-		this.template = Template.Notes.events({
-			"click #settings": function() {
+		this.template = Template.Pin.events({
+			"click #pin": function() {
 				console.log(currPage);
-				currPage = "Settings";
+				currPage = "Pin";
                 Session.set("myTemplate", currPage);
             },
-            "click #fonts": function() {
-				console.log(currPage);
-				currPage = "Settings";
-                Session.set("myTemplate", currPage);
-            },
-            "click #fontSize": function() {
-				console.log(currPage);
-				currPage = "Settings";
-                Session.set("myTemplate", currPage);
-            },
-            "click #layout": function() {
+            "click #settings": function() {
 				console.log(currPage);
 				currPage = "Settings";
                 Session.set("myTemplate", currPage);
             }
-            
         })
     }
 
