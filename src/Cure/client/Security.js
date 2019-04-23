@@ -4,35 +4,31 @@ import { Session } from 'meteor/session';
 import { Template } from "meteor/templating";
 import { currPage } from "./main.js";
 import './settings.html';
-import './notes.html';
+import './password.html';
+import './security.html';
+import './pin.html';
 
 
-export default class Notes {
+export default class Security {
 	constructor() {
 		//this.events = "";
 		this._listeners = new EventListener;
-		this.template = Template.Notes.events({
+		this.template = Template.Security.events({
 			"click #settings": function() {
 				console.log(currPage);
 				currPage = "Settings";
                 Session.set("myTemplate", currPage);
             },
-            "click #fonts": function() {
-				console.log(currPage);
-				currPage = "Settings";
+            "click #pin": function() {
+                console.log(currPage);
+                currPage = "Pin";
                 Session.set("myTemplate", currPage);
             },
-            "click #fontSize": function() {
-				console.log(currPage);
-				currPage = "Settings";
-                Session.set("myTemplate", currPage);
-            },
-            "click #layout": function() {
-				console.log(currPage);
-				currPage = "Settings";
+            "click #security": function() {
+                console.log(currPage);
+                currPage = "Security";
                 Session.set("myTemplate", currPage);
             }
-            
         })
     }
 

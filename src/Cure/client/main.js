@@ -30,12 +30,15 @@ import './map.html';
 import './notes.html';
 import './onlinecourse.html';
 import './password.html';
+import './pin.html';
 import './profile.html';
 import './refresher.html';
+import './security.html';
 import './settings.html';
 import './signup.html';
 import './spotlight.html';
 import './theme.html';
+
 // import './Accounts.js';
 
 
@@ -104,6 +107,10 @@ Template.dropdownmenu.events({
     },
     "click #logout": function() {
         Accounts.logout();
+    },
+    "click #home": function() {
+        currPage = "About";
+        Session.set("myTemplate", currPage);
     }
 
 });
@@ -123,6 +130,26 @@ Template.Create.events({
 Template.Signup.events({
     "click #signup": function() {
         currPage = "Signup";
+        Session.set("myTemplate", currPage);
+    }
+});
+Template.Password.events({
+    "click #security": function() {
+        currPage = "Security";
+        Session.set("myTemplate", currPage);
+    },
+    "click #pin": function() {
+        currPage = "Pin";
+        Session.set("myTemplate", currPage);
+    }
+});
+Template.Security.events({
+    "click #security": function() {
+        currPage = "Security";
+        Session.set("myTemplate", currPage);
+    },
+    "click #pin": function() {
+        currPage = "Pin";
         Session.set("myTemplate", currPage);
     }
 });
