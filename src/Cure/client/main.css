@@ -507,6 +507,16 @@ input:focus {
     margin-right: auto;
 }
 
+input[type=button] {
+  background-color: #C0C0C0;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
 #controlbox
 {
     position: absolute;
