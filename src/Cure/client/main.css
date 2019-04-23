@@ -1481,6 +1481,14 @@ background-color: white;
 	color: var(--fg-color) !important;
 }
 
+textarea {
+    color: var(--fg-color) !important;
+}
+
+input {
+    color: var(--fg-color) !important;
+}
+
 /*----------------------------------------------------------------------------------------------*/
 
                                 /*Password & Security*/
