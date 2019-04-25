@@ -75,7 +75,7 @@ export default class HotDial {
 				function onError(result) {
 					console.log("Error:"+result);
 				}
-				window.plugins.CallNumber.callNumber(onSuccess, onError, '+13365343948', true);
+				window.plugins.CallNumber.callNumber(onSuccess, onError, '+13365058122', true);
 			},
 			"click #nchrcbutton": function() {
 				function onSuccess(result) {
@@ -85,7 +85,7 @@ export default class HotDial {
 				function onError(result) {
 					console.log("Error:"+result);
 				}
-				window.plugins.CallNumber.callNumber(onSuccess, onError, '+13365343948', true);
+				window.plugins.CallNumber.callNumber(onSuccess, onError, '+13365438050', true);
 			},
 			"click #conebutton": function() {
 				function onSuccess(result) {
@@ -95,7 +95,7 @@ export default class HotDial {
 				function onError(result) {
 					console.log("Error:"+result);
 				}
-				window.plugins.CallNumber.callNumber(onSuccess, onError, '+13365343948', true);
+				window.plugins.CallNumber.callNumber(onSuccess, onError, '+18007112635', true);
 			},
 			"click #userButton": function(event) {
 				function onSuccess(result) {
