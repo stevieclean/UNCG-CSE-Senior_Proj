@@ -14,6 +14,8 @@ import Create from './Create.js';
 import Signup from './Signup.js';
 import Password from './Password.js';
 import Notes from './Notes.js';
+import Security from './Security.js';
+import Pin from './Pin.js';
 
 
 export default class Controller {
@@ -30,9 +32,11 @@ export default class Controller {
         this.theme = new Theme();
         this.profile = new Profile();
         this.create = new Create();
-        
-        this.password = new Password();
         this.notes = new Notes();
+        this.password = new Password();
+        this.security = new Security();
+        this.pin = new Pin();
+        this.signup = new Signup();
 
         //Attach each module as a listener to this Controller
         this.listeners.appendListener(this.about);
@@ -43,7 +47,8 @@ export default class Controller {
         this.listeners.appendListener(this.settings);
         this.listeners.appendListener(this.education);
         this.listeners.appendListener(this.create);
-        
+        this.listeners.appendListener(this.security);
+        this.listeners.appendListener(this.pin);
         /*
         this.listeners.appendListener(this.conference);
         this.listeners.appendListener(this.clock);
@@ -64,9 +69,11 @@ export default class Controller {
         this.theme.listeners.appendListener(this);
         this.profile.listeners.appendListener(this);
         this.create.listeners.appendListener(this);
-        // this.signup.listeners.appendListener(this);
+        //this.signup.listeners.appendListener(this);
         this.password.listeners.appendListener(this);
         this.notes.listeners.appendListener(this);
+        this.security.listeners.appendListener(this);
+        this.pin.listeners.appendListener(this);
 
     }
 
