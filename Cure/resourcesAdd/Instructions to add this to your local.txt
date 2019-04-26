@@ -1,8 +1,0 @@
-C:\Users\stevi\OneDrive\Documents\GitHub\UNCG-CSE-senior_proj\Cure\.meteor\local\cordova-build\platforms\ios\src\config.xml
-
-C:\Users\stevi\OneDrive\Documents\GitHub\UNCG-CSE-senior_proj\Cure\.meteor\local\cordova-build\platforms\android\res\
-
-folders mipmap-hdpi to mipmap-xxxhdpi
-
-
-C:\Users\stevi\OneDrive\Documents\GitHub\UNCG-CSE-senior_proj\Cure\.meteor\local\cordova-build\platforms\android\res\xml\config.xml
