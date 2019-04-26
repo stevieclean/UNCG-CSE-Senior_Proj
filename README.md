@@ -1,4 +1,4 @@
-# UNCG-CSE-senior_proj
+# CURE App
 Senior Capstone 490
 
 Chauncey Davidson - https://github.com/stevieclean/UNCG-CSE-Senior_Proj/tree/CJ
