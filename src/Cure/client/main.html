@@ -1,0 +1,91 @@
+<head>
+  <title>CURE App</title>
+    
+</head>
+
+<body>
+  <div class="Wrapper">
+      <nav class="navbar navbar-expand-sm navbar-dark container-color fixed-top">
+        {{> dropdownmenu}}
+      </nav>
+      {{> dynamicTemplate}}
+      <nav class="navbar-brand navbar-dark container-color fixed-bottom d-inline-flex">
+      {{> buttons}}
+    </nav>
+  </div>
+</body>
+
+<template name="OneDial">
+  <button id="onedial" type="button" class="bg-transparent btn-outline-danger border-0"><span class="fas fa-phone fa-5x"></span></button>
+</template>
+
+<template name="MainPage">
+    <div class="CURE">
+    </div>
+      <div class="d-block text-center HotDial">
+        {{> OneDial}}
+        <!-- {{#if currentUser}}
+          {{> Create }}
+        {{/if}} -->
+      </div>
+</template>
+
+<template name="dynamicTemplate">
+    {{> Template.dynamic template=page}}
+  </template>
+
+<template name="buttons">
+            <!-- <button id="theme" class="btn btn-secondary btn-sm"><span class = 'fas fa-palette'></span>Themes</button> -->
+            <button id="location" class="btn btn-outline-info"><span class="fas fa-map-marker-alt fa-2x"></span></button>
+            <button id="calendar" class="btn btn-outline-info"><span class="fas fa-calendar-alt fa-2x"></span></button>
+            <button id="home" class="btn btn-outline-info"><span class="fas fa-home fa-2x"></span></button>
+            <button id="goalTracker" class="btn btn-outline-info  "><span class="fas fa-tasks fa-2x"></span></button>
+            <button id="education" class="btn btn-outline-info"><span class="fas fa-book fa-2x"></span></button>
+    <!--    
+    <div class="TouchBar">
+        <button id="location" class="LocButton"></button>
+        <button id="calendar" class="CalButton"></button>
+        <button id="home" class="HomeButton"></button>
+        <button id="goalTracker" class="GTButton"></button>
+        <button id="education" class="EduButton"></button>
+        <button id="settings" class="SettingsButton"></button>
+      </div>
+      -->
+      
+</template>
+
+<template name="dropdownmenu">
+  <div class="dropdown ml-auto" >
+    <button class="btn btn-secondary dropdown-toggle btn-sm" type="button" data-toggle="dropdown" data-target="#dropdown-menu" aria-hashpopup="true" aria-expanded="false">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="dropdown-menu dropdown-menu-right container-color" id="dropdown-menu" aria-labelledby="dropdown-menu">
+      <div class="d-flex justify-content-center row">
+        <div class="w-100"></div>
+        <button class="btn btn-secondary btn-sm" id="settings" type='button'>Settings</button>
+        <div class="w-100"></div>
+        <button class="btn btn-secondary btn-sm" id="about" type='button'>About</button>
+        <div class="w-100"></div>
+        {{#if currentUser}}
+        <button class="btn btn-secondary btn-sm" id="logout">Logout</button>
+        {{else}}
+        <button class="login-toggle btn-secondary">Login</button>
+        {{/if}}
+      </div>
+    </div>
+    </div>
+</template>
+
+<!-- <template name="Main">
+  <nav class="main">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/logcontainer">Login</a></li>
+      {{#if currentUser}}
+        <li class="logout">Logout</li>
+      {{else}}
+        <li class="login-toggle">Login/Sign-up</li>
+      {{/if}}
+    </ul>
+  </nav>
+</template> -->
