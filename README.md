@@ -41,6 +41,6 @@ Future updates provided and changes will be reflected in documentation folder.
 
 # Development
 
-For first time building you may need to install necessary Node Modules.  To do so, simply run the following command inside the "Cure" directory:
+For first time building you may need to install necessary Node Modules.  To do so, simply run the following command through 'cmd' inside the "Cure" directory:
 
-meteor npm install --save @babel/runtime @fortawesome/fontawesome-free bootstrap tiny-date-picker leaflet leaflet-geosearch
+meteor npm install --save @babel/runtime @fortawesome/fontawesome-free bootstrap jquery popper.js tiny-date-picker leaflet leaflet-geosearch
