@@ -16,27 +16,28 @@ import '../imports/ui/body.html'
 //End goal tracker import
 // imports in alphabetical order
 import './about.html';
-import './calendar.html';
-import './conference.html';
-import './course.html';
+import './Calendar/calendar.html';
+import './Education/conference.html';
+import './Education/course.html';
+import './Education/spotlight.html';
+import './Education/creditstat.html';
+import './Education/education.html';
+import './Education/handouts.html';
+import './Education/onlinecourse.html';
+import './Education/refresher.html';
 import './create.html';
-import './creditstat.html';
-import './education.html';
 import './goaltracker.html';
-import './handouts.html';
-import './hotdial.html';
+import './HotDial/hotdial.html';
 import './main.html';
 import './map.html';
 import './notes.html';
-import './onlinecourse.html';
 import './password.html';
 import './pin.html';
 import './profile.html';
-import './refresher.html';
 import './security.html';
 import './settings.html';
 import './signup.html';
-import './spotlight.html';
+
 import './theme.html';
 
 // import './Accounts.js';

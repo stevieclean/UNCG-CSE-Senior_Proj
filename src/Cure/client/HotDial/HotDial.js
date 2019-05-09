@@ -1,9 +1,9 @@
-import EventListener from "./Events/EventListener.js";
-import { Destination } from "./Events/Destination.js";
+import EventListener from "../Events/EventListener.js";
+import { Destination } from "../Events/Destination.js";
 import './hotdial.html';
 import { Template } from "meteor/templating";
 import { Mongo } from "meteor/mongo";
-import { hotDialButtons } from "../imports/api/hotdialbuttons.js";
+import { hotDialButtons } from "../../imports/api/hotdialbuttons.js";
 
 var localStorage = new PersistentMinimongo2(hotDialButtons, "userHotDialButtons");
 

@@ -15,7 +15,7 @@ Locations = new Mongo.Collection('Location');
 
 export default class Map {
 	constructor() {
-		this.events = "Bodulus";
+		this.events = "";
 		this._listeners = new EventListener;
 	}
 

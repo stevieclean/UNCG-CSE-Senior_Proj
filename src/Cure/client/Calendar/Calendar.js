@@ -1,11 +1,11 @@
-import EventListener from "./Events/EventListener.js";
-import { Destination } from "./Events/Destination.js";
-import { Source } from "./Events/Source.js";
+import EventListener from "../Events/EventListener.js";
+import { Destination } from "../Events/Destination.js";
+import { Source } from "../Events/Source.js";
 import './calendar.html';
 import { Template } from "meteor/templating";
 import TinyDatePicker from "tiny-date-picker/dist/tiny-date-picker";
-import EventMessage from "./Events/EventMessage.js";
-import Controller from "./Controller.js";
+import EventMessage from "../Events/EventMessage.js";
+import Controller from "../Controller.js";
 
 g_startDate = new Date();
 g_endDate = new Date();
