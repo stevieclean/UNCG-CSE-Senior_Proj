@@ -41,6 +41,10 @@ Future updates provided and changes will be reflected in documentation folder.
 
 # Development
 
-For first time building you may need to install necessary Node Modules.  To do so, simply run the following command through 'cmd' inside the "Cure" directory:
+For first time building you may need to install necessary Node Modules and Meteor/Cordova Plugins.  To do so, simply run the following commands through 'cmd' or 'terminal' (if on MacOS) inside the "Cure" directory:
+
+meteor add frozeman:persistant-minimongo2
+meteor add cordova:cordova-plugin-calendar@5.1.4
+meteor add cordova:cordova-plugin-call-number@1.0.1
 
 meteor npm install --save @babel/runtime @fortawesome/fontawesome-free bootstrap jquery popper.js tiny-date-picker leaflet leaflet-geosearch
