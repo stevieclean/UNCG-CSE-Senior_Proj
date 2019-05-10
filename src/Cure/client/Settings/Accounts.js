@@ -7,7 +7,7 @@ import { Meteor } from 'meteor/meteor';
 import { ReactiveVar } from 'meteor/reactive-var';
 import { Session } from 'meteor/session';
 import { Template } from "meteor/templating";
-import { currPage } from "./main.js";
+import { currPage } from "../main.js";
 import './create.html';
 
 var acct = document.getElementById('email').value;

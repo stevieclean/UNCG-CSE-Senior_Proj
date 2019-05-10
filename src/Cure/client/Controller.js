@@ -1,21 +1,21 @@
 import About from './About.js';
 import Calendar from './Calendar/Calendar.js';
 import GoalTracker from '../imports/ui/body';
-import Map from './Map.js';
+import Map from './Map/Map.js';
 import HotDial from './HotDial/HotDial.js';
 import EventListener from './Events/EventListener.js';
 import EventMessage from './Events/EventMessage.js';
-import Settings from './Settings.js';
+import Settings from './Settings/Settings.js';
 import Education from './Education/Education.js';
 import Conference from './Education/Conference.js';
-import Theme from './Theme.js';
-import Profile from './Profile.js';
-import Create from './Create.js';
-import Signup from './Signup.js';
-import Password from './Password.js';
-import Notes from './Notes.js';
-import Security from './Security.js';
-import Pin from './Pin.js';
+import Theme from './Settings/Theme.js';
+import Profile from './Settings/Profile.js';
+import Create from './Settings/Create.js';
+import Signup from './Settings/Signup.js';
+import Password from './Settings/Password.js';
+import Notes from './Settings/Notes.js';
+import Security from './Settings/Security.js';
+import Pin from './Settings/Pin.js';
 
 
 export default class Controller {

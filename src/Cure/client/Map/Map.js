@@ -1,5 +1,5 @@
-import EventListener from "./Events/EventListener.js";
-import { Destination } from "./Events/Destination.js";
+import EventListener from "../Events/EventListener.js";
+import { Destination } from "../Events/Destination.js";
 import L from 'leaflet';
 import { GeoSearchControl, OpenStreetMapProvider } from 'leaflet-geosearch';
 

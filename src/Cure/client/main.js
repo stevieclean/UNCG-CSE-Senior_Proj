@@ -25,30 +25,24 @@ import './Education/education.html';
 import './Education/handouts.html';
 import './Education/onlinecourse.html';
 import './Education/refresher.html';
-import './create.html';
-import './goaltracker.html';
+import './Settings/create.html';
+import './Goaltracker/goaltracker.html';
 import './HotDial/hotdial.html';
 import './main.html';
-import './map.html';
-import './notes.html';
-import './password.html';
-import './pin.html';
-import './profile.html';
-import './security.html';
-import './settings.html';
-import './signup.html';
+import './Map/map.html';
+import './Settings/notes.html';
+import './Settings/password.html';
+import './Settings/pin.html';
+import './Settings/profile.html';
+import './Settings/security.html';
+import './Settings/settings.html';
+import './Settings/signup.html';
+import './Settings/theme.html';
 
-import './theme.html';
-
-// import './Accounts.js';
-
-
-
-// $('.dropdown-toggle').dropdown();
-// console.log(Destination['GOALTRACKER']);
+//Variable (stored with Session map) that is used to indicate which page to visit dynamically
 export var currPage = "MainPage";
 
-//For changing the current page
+//For changing the current page, First time setup creates the "myTemplate" key - currPage value pairing
 Session.set({ "myTemplate": currPage });
 
 Template.dynamicTemplate.helpers({

@@ -3,7 +3,6 @@ import { Destination } from "./Events/Destination.js";
 import { Session } from 'meteor/session';
 import { Template } from "meteor/templating";
 import { currPage } from "./main.js";
- import './settings.html';
 import './about.html';
 
 

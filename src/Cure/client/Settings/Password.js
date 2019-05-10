@@ -1,38 +1,34 @@
-import EventListener from "./Events/EventListener.js";
-import { Destination } from "./Events/Destination.js";
+import EventListener from "../Events/EventListener.js";
+import { Destination } from "../Events/Destination.js";
 import { Session } from 'meteor/session';
 import { Template } from "meteor/templating";
-import { currPage } from "./main.js";
+import { currPage } from "../main.js";
 import './settings.html';
-import './notes.html';
+import './password.html';
+import './security.html';
+import './pin.html';
 
 
-export default class Notes {
+export default class Password {
 	constructor() {
 		//this.events = "";
 		this._listeners = new EventListener;
-		this.template = Template.Notes.events({
-			"click #settings": function() {
+		this.template = Template.Password.events({
+			"click #security": function() {
 				console.log(currPage);
-				currPage = "Settings";
+				currPage = "Security";
                 Session.set("myTemplate", currPage);
             },
-            "click #fonts": function() {
+            "click #pin": function() {
 				console.log(currPage);
-				currPage = "Settings";
+				currPage = "Pin";
                 Session.set("myTemplate", currPage);
             },
-            "click #fontSize": function() {
-				console.log(currPage);
-				currPage = "Settings";
-                Session.set("myTemplate", currPage);
-            },
-            "click #layout": function() {
+            "click #settings": function() {
 				console.log(currPage);
 				currPage = "Settings";
                 Session.set("myTemplate", currPage);
             }
-            
         })
     }
 

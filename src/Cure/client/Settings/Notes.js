@@ -1,29 +1,38 @@
-import EventListener from "./Events/EventListener.js";
-import { Destination } from "./Events/Destination.js";
+import EventListener from "../Events/EventListener.js";
+import { Destination } from "../Events/Destination.js";
 import { Session } from 'meteor/session';
 import { Template } from "meteor/templating";
-import { currPage } from "./main.js";
-
-import './password.html';
-import './security.html';
-import './pin.html';
+import { currPage } from "../main.js";
+import './settings.html';
+import './notes.html';
 
 
-export default class Pin {
+export default class Notes {
 	constructor() {
-		
+		//this.events = "";
 		this._listeners = new EventListener;
-		this.template = Template.Pin.events({
-			"click #pin": function() {
+		this.template = Template.Notes.events({
+			"click #settings": function() {
 				console.log(currPage);
-				currPage = "Pin";
+				currPage = "Settings";
                 Session.set("myTemplate", currPage);
             },
-            "click #settings": function() {
+            "click #fonts": function() {
+				console.log(currPage);
+				currPage = "Settings";
+                Session.set("myTemplate", currPage);
+            },
+            "click #fontSize": function() {
+				console.log(currPage);
+				currPage = "Settings";
+                Session.set("myTemplate", currPage);
+            },
+            "click #layout": function() {
 				console.log(currPage);
 				currPage = "Settings";
                 Session.set("myTemplate", currPage);
             }
+            
         })
     }
 

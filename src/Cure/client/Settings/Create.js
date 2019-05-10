@@ -1,11 +1,11 @@
-import EventListener from "./Events/EventListener.js";
-import { Destination } from "./Events/Destination.js";
+import EventListener from "../Events/EventListener.js";
+import { Destination } from "../Events/Destination.js";
 import { Session } from 'meteor/session';
 import './profile.html';
 import './create.html';
 
 import { Template } from "meteor/templating";
-import { currPage } from "./main.js";
+import { currPage } from "../main.js";
 import {Accounts} from 'meteor/accounts-base';
 
 
