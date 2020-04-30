@@ -14,7 +14,7 @@
     "bootstrap": "^4.3.1",
     "call-number": "^1.0.1",
     "datepicker-bootstrap": "^1.9.13",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "leaflet": "^1.4.0",
     "leaflet-geosearch": "^2.7.0",
     "leaflet-google-places-autocomplete": "0.0.8",
