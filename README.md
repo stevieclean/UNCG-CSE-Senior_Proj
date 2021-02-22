@@ -3,7 +3,7 @@ Senior Capstone 490
 
 Chauncey Davidson - https://github.com/stevieclean/UNCG-CSE-Senior_Proj/tree/CJ
 
-Brian Goughnor - https://github.com/stevieclean/UNCG-CSE-Senior_Proj/tree/Brian
+
 
 Joshua Brown - https://github.com/stevieclean/UNCG-CSE-Senior_Proj/tree/Josh
 
