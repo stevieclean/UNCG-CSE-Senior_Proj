@@ -20,7 +20,7 @@
     "leaflet-google-places-autocomplete": "0.0.8",
     "leaflet-search": "^2.9.8",
     "meteor-node-stubs": "^0.4.1",
-    "moment": "^2.29.2",
+    "moment": "^2.29.4",
     "popper.js": "^1.15.0",
     "tiny-date-picker": "^3.2.8"
   },
