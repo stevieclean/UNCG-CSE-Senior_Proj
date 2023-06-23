@@ -10,7 +10,7 @@
   "dependencies": {
     "@babel/runtime": "^7.4.3",
     "@fortawesome/fontawesome": "^1.1.8",
-    "bcrypt": "^5.0.0",
+    "bcrypt": "^5.1.0",
     "bootstrap": "^4.3.1",
     "call-number": "^1.0.1",
     "datepicker-bootstrap": "^1.9.13",
